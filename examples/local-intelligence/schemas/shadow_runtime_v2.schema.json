@@ -1,0 +1,337 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "authority",
+    "may_override",
+    "source_fingerprint",
+    "identity",
+    "boundaries",
+    "requirements",
+    "retrieval_context",
+    "model_metadata"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "career-ops-li-shadow-output-v1"
+      ]
+    },
+    "authority": {
+      "type": "string",
+      "enum": [
+        "ADVISORY_ONLY"
+      ]
+    },
+    "may_override": {
+      "type": "boolean",
+      "enum": [
+        false
+      ]
+    },
+    "source_fingerprint": {
+      "type": "string"
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "employer_name",
+        "job_title",
+        "requisition_id",
+        "current_posting_confidence",
+        "observations"
+      ],
+      "properties": {
+        "employer_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "job_title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "requisition_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "current_posting_confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "observation_type",
+              "exact_source_quote",
+              "start_line",
+              "end_line",
+              "confidence",
+              "rationale",
+              "semantic_flags"
+            ],
+            "properties": {
+              "observation_type": {
+                "type": "string",
+                "enum": [
+                  "IDENTITY_CONFIRMATION",
+                  "IDENTITY_CONFLICT"
+                ]
+              },
+              "exact_source_quote": {
+                "type": "string"
+              },
+              "start_line": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "end_line": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0.5,
+                "maximum": 1
+              },
+              "rationale": {
+                "type": "string"
+              },
+              "semantic_flags": {
+                "type": "array",
+                "uniqueItems": true,
+                "maxItems": 2,
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "CURRENT_REQUISITION_IDENTITY_CONFLICT",
+                    "EMPLOYER_HISTORY_NOT_CANDIDATE_TENURE",
+                    "APPLICATION_QUESTION_NOT_JD_REQUIREMENT",
+                    "PAGE_CHROME_NOT_JD",
+                    "PREFERRED_NOT_REQUIRED",
+                    "EDUCATION_EXPERIENCE_SUBSTITUTION",
+                    "GENERIC_NO_SPONSORSHIP_REVIEW_ONLY",
+                    "EXPLICIT_CURRENT_OR_FUTURE_SPONSORSHIP_HARD_BLOCK",
+                    "ACTIVE_CLEARANCE_REQUIRED",
+                    "ABILITY_TO_OBTAIN_CLEARANCE_NOT_ACTIVE_BLOCKER",
+                    "TOOL_TENURE_NOT_OCCUPATIONAL_TENURE",
+                    "OCCUPATIONAL_DURATION_REQUIREMENT",
+                    "COMPOUND_REQUIREMENT",
+                    "SECTION_CONTEXT_RESET"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "boundaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "boundary_type",
+          "material",
+          "exact_source_quote",
+          "start_line",
+          "end_line",
+          "confidence",
+          "rationale",
+          "semantic_flags"
+        ],
+        "properties": {
+          "boundary_type": {
+            "type": "string",
+            "enum": [
+              "EMPLOYER_HISTORY",
+              "APPLICATION_QUESTION",
+              "PAGE_CHROME",
+              "SECTION_HEADER",
+              "OTHER_NON_REQUIREMENT"
+            ]
+          },
+          "material": {
+            "type": "boolean"
+          },
+          "exact_source_quote": {
+            "type": "string"
+          },
+          "start_line": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "end_line": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0.5,
+            "maximum": 1
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "semantic_flags": {
+            "type": "array",
+            "uniqueItems": true,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "enum": [
+                "CURRENT_REQUISITION_IDENTITY_CONFLICT",
+                "EMPLOYER_HISTORY_NOT_CANDIDATE_TENURE",
+                "APPLICATION_QUESTION_NOT_JD_REQUIREMENT",
+                "PAGE_CHROME_NOT_JD",
+                "PREFERRED_NOT_REQUIRED",
+                "EDUCATION_EXPERIENCE_SUBSTITUTION",
+                "GENERIC_NO_SPONSORSHIP_REVIEW_ONLY",
+                "EXPLICIT_CURRENT_OR_FUTURE_SPONSORSHIP_HARD_BLOCK",
+                "ACTIVE_CLEARANCE_REQUIRED",
+                "ABILITY_TO_OBTAIN_CLEARANCE_NOT_ACTIVE_BLOCKER",
+                "TOOL_TENURE_NOT_OCCUPATIONAL_TENURE",
+                "OCCUPATIONAL_DURATION_REQUIREMENT",
+                "COMPOUND_REQUIREMENT",
+                "SECTION_CONTEXT_RESET"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "requirement_id",
+          "classification",
+          "suggested_priority",
+          "suggested_relation",
+          "exact_source_quote",
+          "start_line",
+          "end_line",
+          "confidence",
+          "rationale",
+          "semantic_flags"
+        ],
+        "properties": {
+          "requirement_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "classification": {
+            "type": "string",
+            "enum": [
+              "REQUIRED",
+              "PREFERRED",
+              "RESPONSIBILITY",
+              "CONTEXT",
+              "SUBSTITUTION",
+              "EQUIVALENT",
+              "HARD_BLOCK",
+              "POSSIBLE_MISSED_REQUIREMENT",
+              "POSSIBLE_FALSE_REQUIREMENT"
+            ]
+          },
+          "suggested_priority": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "P0",
+              "P1",
+              "P2",
+              "P3",
+              null
+            ]
+          },
+          "suggested_relation": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "AND",
+              "OR",
+              "SUBSTITUTION",
+              "EQUIVALENT",
+              "NONE",
+              null
+            ]
+          },
+          "exact_source_quote": {
+            "type": "string"
+          },
+          "start_line": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "end_line": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0.5,
+            "maximum": 1
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "semantic_flags": {
+            "type": "array",
+            "uniqueItems": true,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "enum": [
+                "CURRENT_REQUISITION_IDENTITY_CONFLICT",
+                "EMPLOYER_HISTORY_NOT_CANDIDATE_TENURE",
+                "APPLICATION_QUESTION_NOT_JD_REQUIREMENT",
+                "PAGE_CHROME_NOT_JD",
+                "PREFERRED_NOT_REQUIRED",
+                "EDUCATION_EXPERIENCE_SUBSTITUTION",
+                "GENERIC_NO_SPONSORSHIP_REVIEW_ONLY",
+                "EXPLICIT_CURRENT_OR_FUTURE_SPONSORSHIP_HARD_BLOCK",
+                "ACTIVE_CLEARANCE_REQUIRED",
+                "ABILITY_TO_OBTAIN_CLEARANCE_NOT_ACTIVE_BLOCKER",
+                "TOOL_TENURE_NOT_OCCUPATIONAL_TENURE",
+                "OCCUPATIONAL_DURATION_REQUIREMENT",
+                "COMPOUND_REQUIREMENT",
+                "SECTION_CONTEXT_RESET"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "retrieval_context": {
+      "type": "array"
+    },
+    "model_metadata": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}

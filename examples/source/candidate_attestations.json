@@ -1,0 +1,29 @@
+{
+  "schema_version": "candidate-attestations-v1",
+  "synthetic": true,
+  "authority": "FICTIONAL_EXAMPLE_ONLY",
+  "project_ownership": {
+    "all_projects_owned_by_user": true,
+    "preserve_project_vs_employment_boundary": true
+  },
+  "capability_status_override": {
+    "authority": "DIRECT_USER_CORRECTION",
+    "all_assumed_market_coverage_capabilities_are_actual_user_skills": true,
+    "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+    "applies_to": [
+      "explicit_skill_registry",
+      "deep_capability_registry",
+      "skill_family_registry"
+    ],
+    "policy": {
+      "must_not_be_back_projected_to_specific_employer_or_project_without_support": true,
+      "must_not_create_new_metrics": true
+    }
+  },
+  "experience_date_override": {
+    "status": "DIRECT_USER_CONFIRMED",
+    "Harborlight Museum Cooperative | Analytics Engineer": "Feb 2017 - Nov 2019",
+    "Maple Lantern Logistics | Data Analyst": "Mar 2020 - Aug 2023"
+  },
+  "project_display_overrides": {}
+}

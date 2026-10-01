@@ -1,0 +1,147 @@
+{
+  "status": "INGESTED",
+  "source_type": "file",
+  "source_name": "examples/run/input_jd.txt",
+  "source_url": null,
+  "raw_jd_text": "Fictional job posting for offline testing only.\nEmployer: Glasswing Civic Archive\nPosition: Data Analyst\nRequisition ID: DEMO-DA-701\nLocation: Example City, USA\nResponsibilities\nBuild SQL queries and Python data pipelines for public collection reporting.\nCreate Power BI dashboards using DAX and Power Query.\nValidate data quality, reconcile missing records, and explain results to coordinators.\nQualifications\nBachelor degree in mathematics or a related field required.\nTwo years of SQL analytics experience required.\nPython and Power BI experience required.\nPreferred\nExperience with DuckDB, Parquet, and classification model evaluation.",
+  "original_source_artifact": "examples/run/results/jd_source_original.txt",
+  "cleaning_audit": {
+    "policy": "CONSERVATIVE_CTRL_A_V1",
+    "ambiguous_lines_retained": true,
+    "summarization_or_rewrite": false,
+    "boundary_trimming": false,
+    "removed_line_count": 0,
+    "removed_lines": [],
+    "cleaning_fallback": false,
+    "input_character_count": 639,
+    "output_character_count": 639,
+    "input_representation": "TEXT",
+    "html_visible_text_extracted": false,
+    "clipboard_mime_evidence": null
+  },
+  "identity_evidence": {
+    "schema_version": "job-identity-evidence-v1",
+    "status": "COMPLETE_HIGH",
+    "company": {
+      "status": "RESOLVED_HIGH",
+      "value": "Glasswing Civic Archive",
+      "confidence": "HIGH",
+      "sources": [
+        "VISIBLE_LABELED_COMPANY"
+      ],
+      "confirmed_in_current_job": true,
+      "alternatives": []
+    },
+    "position": {
+      "status": "RESOLVED_HIGH",
+      "value": "Data Analyst",
+      "confidence": "HIGH",
+      "sources": [
+        "VISIBLE_LABELED_POSITION"
+      ],
+      "confirmed_in_current_job": true,
+      "alternatives": []
+    },
+    "candidate_count": 2,
+    "candidates": [
+      {
+        "field": "company",
+        "value": "Glasswing Civic Archive",
+        "source": "VISIBLE_LABELED_COMPANY",
+        "confidence": "HIGH",
+        "priority": 110,
+        "requisition_bound": false
+      },
+      {
+        "field": "position",
+        "value": "Data Analyst",
+        "source": "VISIBLE_LABELED_POSITION",
+        "confidence": "HIGH",
+        "priority": 110,
+        "requisition_bound": false
+      }
+    ],
+    "policy": {
+      "high_confidence_autofill_eligible": true,
+      "current_requisition_confirmation_required": true,
+      "silent_guessing_forbidden": true
+    }
+  },
+  "metadata": {
+    "character_count": 639,
+    "word_count": 87,
+    "line_count": 15,
+    "detected_section_headings": [
+      {
+        "line_index": 5,
+        "heading": "Responsibilities",
+        "section_type": "responsibilities"
+      },
+      {
+        "line_index": 9,
+        "heading": "Qualifications",
+        "section_type": "qualifications"
+      }
+    ]
+  },
+  "ats": {
+    "platform": "UNKNOWN_ATS",
+    "confidence": "UNKNOWN",
+    "reason": "No job/application URL supplied.",
+    "behavior_profile_supported": true,
+    "behavior_profile_source": "UNKNOWN_FALLBACK",
+    "behavior_family": "UNKNOWN_CONSERVATIVE_MIXED",
+    "simulation_profile": "UNKNOWN_CONSERVATIVE_MIXED",
+    "known_dimensions": [
+      "exact title",
+      "required qualifications",
+      "core tools and methods",
+      "work products and responsibilities",
+      "structured dates titles and education",
+      "exact searchable terminology",
+      "semantic related concepts",
+      "formatting and parseability"
+    ],
+    "feature_state": "unknown",
+    "behavior_confidence": "heuristic",
+    "never_assume": [
+      "AI/matching module is enabled",
+      "vendor defaults equal employer configuration",
+      "keyword frequency alone determines ranking",
+      "resume match score equals hiring decision",
+      "the underlying ATS or employer scoring configuration is known"
+    ],
+    "behavior_profile": {
+      "rank": null,
+      "platform": "UNKNOWN_ATS",
+      "behavior_family": "UNKNOWN_CONSERVATIVE_MIXED",
+      "platform_role": "fallback_profile",
+      "url_patterns": [],
+      "configuration_dependence": "unknown",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "exact title",
+        "required qualifications",
+        "core tools and methods",
+        "work products and responsibilities",
+        "structured dates titles and education",
+        "exact searchable terminology",
+        "semantic related concepts",
+        "formatting and parseability"
+      ],
+      "simulation_profile": "UNKNOWN_CONSERVATIVE_MIXED",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision",
+        "the underlying ATS or employer scoring configuration is known"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    }
+  },
+  "ingested_at_utc": "2026-10-01T23:21:00.434611+00:00",
+  "schema_version": "jd-intake-v1"
+}

@@ -1,0 +1,1621 @@
+{
+  "metadata": {
+    "purpose": "Reusable internal scoring configuration; not private market research or vendor scoring claims."
+  },
+  "behavior_families": {
+    "SEMANTIC_QUALIFICATION_GRADING": {
+      "description": "Parsed candidate profile compared against job qualifications, often with semantic or AI evaluation; exact employer module/configuration may be optional.",
+      "simulation_weights": {
+        "eligibility": 8,
+        "structured_assessment": 4,
+        "required_qualifications": 20,
+        "title_experience": 15,
+        "skills_methods": 15,
+        "work_products": 14,
+        "domain_context": 5,
+        "education_certifications": 5,
+        "parseability": 4,
+        "lexical_searchability": 3,
+        "semantic_concept_match": 7
+      },
+      "resume_strategy": [
+        "prove every required qualification in context",
+        "use exact JD form once for critical terms",
+        "prioritize title/experience/work-product alignment",
+        "use semantic depth rather than repetition",
+        "keep structured dates/titles/education clean"
+      ]
+    },
+    "CALIBRATED_SEMANTIC_MATCH": {
+      "description": "Hiring team defines calibration criteria and importance; matching uses parsed resume concepts and related terms.",
+      "simulation_weights": {
+        "eligibility": 8,
+        "structured_assessment": 4,
+        "required_qualifications": 18,
+        "title_experience": 17,
+        "skills_methods": 18,
+        "work_products": 13,
+        "domain_context": 6,
+        "education_certifications": 4,
+        "parseability": 4,
+        "lexical_searchability": 3,
+        "semantic_concept_match": 5
+      },
+      "resume_strategy": [
+        "maximize calibrated likely criteria",
+        "show relevant job titles and experience context",
+        "prove core skills through bullets",
+        "avoid synonym-only coverage for must-haves",
+        "do not keyword-repeat because related terms can map to one skill"
+      ]
+    },
+    "CONFIGURABLE_AI_RATING": {
+      "description": "AI rating or matching may score structured dimensions such as education, experience, and skills with administrator-defined weights.",
+      "simulation_weights": {
+        "eligibility": 8,
+        "structured_assessment": 5,
+        "required_qualifications": 16,
+        "title_experience": 20,
+        "skills_methods": 20,
+        "work_products": 9,
+        "domain_context": 5,
+        "education_certifications": 10,
+        "parseability": 4,
+        "lexical_searchability": 1,
+        "semantic_concept_match": 2
+      },
+      "resume_strategy": [
+        "protect education/experience/skills structured fields",
+        "show skill use inside relevant experience",
+        "align years/title context without inflating tenure",
+        "use exact required skills",
+        "treat employer weighting as unknown unless configured values are known"
+      ]
+    },
+    "SKILLS_ONTOLOGY_MATCH": {
+      "description": "Skills are extracted from job descriptions and resumes and matched through a skills ontology or AI-assisted compatibility layer.",
+      "simulation_weights": {
+        "eligibility": 8,
+        "structured_assessment": 4,
+        "required_qualifications": 15,
+        "title_experience": 13,
+        "skills_methods": 24,
+        "work_products": 12,
+        "domain_context": 6,
+        "education_certifications": 4,
+        "parseability": 4,
+        "lexical_searchability": 3,
+        "semantic_concept_match": 7
+      },
+      "resume_strategy": [
+        "cover primary and secondary role skills",
+        "place high-value skills in proof-bearing context",
+        "retain canonical skill names and exact vendor names",
+        "include adjacent technical skills only when role-relevant",
+        "avoid bloated skill lists that lack proof"
+      ]
+    },
+    "PARSE_MATCH_RANK": {
+      "description": "Resume parsing plus candidate search, recommendation, or matching/ranking; public exact weights are usually not disclosed.",
+      "simulation_weights": {
+        "eligibility": 8,
+        "structured_assessment": 5,
+        "required_qualifications": 16,
+        "title_experience": 15,
+        "skills_methods": 18,
+        "work_products": 13,
+        "domain_context": 7,
+        "education_certifications": 4,
+        "parseability": 5,
+        "lexical_searchability": 4,
+        "semantic_concept_match": 5
+      },
+      "resume_strategy": [
+        "clean parsing",
+        "exact central terminology",
+        "strong title/experience alignment",
+        "skills in context",
+        "domain/work-product evidence",
+        "assume employer configuration varies"
+      ]
+    },
+    "FULL_TEXT_STRUCTURED_SEARCH": {
+      "description": "ATS emphasizes parsed candidate records, exact/full-text/Boolean search, filters, and recruiter review; semantic AI may be optional or secondary.",
+      "simulation_weights": {
+        "eligibility": 9,
+        "structured_assessment": 5,
+        "required_qualifications": 15,
+        "title_experience": 15,
+        "skills_methods": 16,
+        "work_products": 12,
+        "domain_context": 6,
+        "education_certifications": 4,
+        "parseability": 6,
+        "lexical_searchability": 9,
+        "semantic_concept_match": 3
+      },
+      "resume_strategy": [
+        "exact phrase presence matters",
+        "use common abbreviations plus JD form when useful",
+        "make titles/tools/searchable",
+        "put niche terms in Technical Skills if proof context is awkward",
+        "keep PDF parsing simple"
+      ]
+    },
+    "LEGACY_ENTERPRISE_MATCH": {
+      "description": "Older enterprise ATS with candidate profiles, requisition criteria, keyword/search filtering, and configurable screening; semantic matching is less consistently documented.",
+      "simulation_weights": {
+        "eligibility": 12,
+        "structured_assessment": 8,
+        "required_qualifications": 18,
+        "title_experience": 15,
+        "skills_methods": 14,
+        "work_products": 10,
+        "domain_context": 5,
+        "education_certifications": 6,
+        "parseability": 5,
+        "lexical_searchability": 6,
+        "semantic_concept_match": 1
+      },
+      "resume_strategy": [
+        "favor explicit exact requirements",
+        "clean conventional formatting",
+        "make minimum qualifications obvious",
+        "use standard titles and dates",
+        "avoid depending on semantic synonym recognition"
+      ]
+    },
+    "INSTITUTIONAL_HUMAN_WORKFLOW": {
+      "description": "University, healthcare, government, or institutional recruiting workflow where structured applications, screening questions, recruiter/search-committee review, and attachments are important.",
+      "simulation_weights": {
+        "eligibility": 14,
+        "structured_assessment": 12,
+        "required_qualifications": 19,
+        "title_experience": 14,
+        "skills_methods": 10,
+        "work_products": 10,
+        "domain_context": 5,
+        "education_certifications": 8,
+        "parseability": 4,
+        "lexical_searchability": 3,
+        "semantic_concept_match": 1
+      },
+      "resume_strategy": [
+        "mirror minimum/preferred qualifications",
+        "show education and experience clearly",
+        "cover institutional/domain terminology",
+        "optimize for both recruiter and committee readability",
+        "do not trade human readability for minor keyword gains"
+      ]
+    },
+    "HCM_WORKFLOW_SEARCH": {
+      "description": "General HCM recruiting workflow with structured applicant records, configurable filters/questions, parsing/search, and primarily human decision-making.",
+      "simulation_weights": {
+        "eligibility": 12,
+        "structured_assessment": 10,
+        "required_qualifications": 17,
+        "title_experience": 15,
+        "skills_methods": 14,
+        "work_products": 10,
+        "domain_context": 5,
+        "education_certifications": 6,
+        "parseability": 5,
+        "lexical_searchability": 4,
+        "semantic_concept_match": 2
+      },
+      "resume_strategy": [
+        "make requirements easy to verify",
+        "retain exact core keywords",
+        "clean structured history",
+        "strong human scan",
+        "do not assume native AI ranking is enabled"
+      ]
+    },
+    "SMB_ATS_SEARCH": {
+      "description": "SMB or mid-market ATS centered on parsing, candidate organization, filters/search, workflow, and recruiter review; advanced scoring varies by product tier and integrations.",
+      "simulation_weights": {
+        "eligibility": 10,
+        "structured_assessment": 8,
+        "required_qualifications": 16,
+        "title_experience": 15,
+        "skills_methods": 15,
+        "work_products": 11,
+        "domain_context": 6,
+        "education_certifications": 5,
+        "parseability": 6,
+        "lexical_searchability": 6,
+        "semantic_concept_match": 2
+      },
+      "resume_strategy": [
+        "exact searchable terms",
+        "clean parsing",
+        "fast human relevance",
+        "proof not keyword lists",
+        "keep role title prominent"
+      ]
+    },
+    "STAFFING_CRM_SEARCH": {
+      "description": "Agency/staffing ATS and CRM where resumes are parsed, indexed, repeatedly searched, and reused across requisitions.",
+      "simulation_weights": {
+        "eligibility": 6,
+        "structured_assessment": 5,
+        "required_qualifications": 13,
+        "title_experience": 15,
+        "skills_methods": 20,
+        "work_products": 10,
+        "domain_context": 10,
+        "education_certifications": 4,
+        "parseability": 5,
+        "lexical_searchability": 9,
+        "semantic_concept_match": 3
+      },
+      "resume_strategy": [
+        "maximize durable searchability",
+        "include exact niche tools and domains",
+        "make recent use and role context clear",
+        "avoid obscure internal phrasing",
+        "use technically dense but recruiter-readable bullets"
+      ]
+    },
+    "FEDERAL_ASSESSMENT": {
+      "description": "Federal hiring ecosystem where minimum qualifications, screen-outs, assessment questionnaires, selective/quality ranking factors, structured resume review, and other assessments may determine eligibility and ranking.",
+      "simulation_weights": {
+        "eligibility": 15,
+        "structured_assessment": 25,
+        "required_qualifications": 20,
+        "title_experience": 10,
+        "skills_methods": 6,
+        "work_products": 9,
+        "domain_context": 3,
+        "education_certifications": 5,
+        "parseability": 3,
+        "lexical_searchability": 4,
+        "semantic_concept_match": 0
+      },
+      "resume_strategy": [
+        "treat specialized experience language as critical",
+        "answer questionnaires consistently with resume evidence",
+        "show dates/hours/duties/grade-equivalent detail when required",
+        "do not use private-sector one-page compression blindly",
+        "respect announcement-specific assessment rules"
+      ]
+    },
+    "HIGH_VOLUME_STRUCTURED": {
+      "description": "High-volume or conversational hiring where screening questions, eligibility, availability, assessments, and workflow steps often matter more than deep resume matching.",
+      "simulation_weights": {
+        "eligibility": 20,
+        "structured_assessment": 25,
+        "required_qualifications": 15,
+        "title_experience": 10,
+        "skills_methods": 7,
+        "work_products": 5,
+        "domain_context": 5,
+        "education_certifications": 4,
+        "parseability": 4,
+        "lexical_searchability": 3,
+        "semantic_concept_match": 2
+      },
+      "resume_strategy": [
+        "focus on knockout requirements",
+        "keep resume clean and concise",
+        "do not over-optimize rare keywords",
+        "ensure structured application answers are consistent"
+      ]
+    },
+    "EXPERIENCE_LAYER_OR_CRM": {
+      "description": "Recruitment experience, CRM, or AI layer that may sit on top of another ATS. The underlying ATS must be resolved separately whenever possible.",
+      "simulation_weights": {
+        "eligibility": 10,
+        "structured_assessment": 7,
+        "required_qualifications": 16,
+        "title_experience": 14,
+        "skills_methods": 17,
+        "work_products": 11,
+        "domain_context": 6,
+        "education_certifications": 5,
+        "parseability": 4,
+        "lexical_searchability": 4,
+        "semantic_concept_match": 6
+      },
+      "resume_strategy": [
+        "resolve underlying ATS if possible",
+        "optimize both semantic matching and recruiter search",
+        "treat platform-only inference as provisional"
+      ]
+    },
+    "UNKNOWN_CONSERVATIVE_MIXED": {
+      "description": "Conservative mixed ATS profile used only when the actual ATS cannot be resolved. Protects hard qualifications, structured resume data, exact searchable terminology, semantic coverage, and parseability without pretending the employer's private ranking logic is known.",
+      "priority_dimensions": {
+        "exact_title_and_required_qualifications": "very_high",
+        "core_tools_and_methods": "high",
+        "work_products_and_responsibilities": "high",
+        "structured_dates_titles_education": "high",
+        "exact_searchable_terminology": "medium_high",
+        "semantic_related_concepts": "medium",
+        "formatting_and_parseability": "high"
+      },
+      "keyword_frequency_policy": "Near-zero incremental value beyond natural contextual repetition.",
+      "resume_strategy": [
+        "protect all supportable hard requirements",
+        "preserve exact searchable terminology",
+        "preserve semantic concept coverage",
+        "preserve structured parsing fields",
+        "optimize for recruiter readability",
+        "do not infer proprietary scoring behavior"
+      ]
+    }
+  },
+  "platform_profiles": [
+    {
+      "rank": 1,
+      "platform": "Workday Recruiting",
+      "behavior_family": "SEMANTIC_QUALIFICATION_GRADING",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "myworkdayjobs.com",
+        "wd1.myworkdaysite.com",
+        "workdayjobs.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "basic qualifications",
+        "preferred qualifications",
+        "professional experience",
+        "education",
+        "skills",
+        "languages",
+        "certifications",
+        "resume summary"
+      ],
+      "simulation_profile": "SEMANTIC_QUALIFICATION_GRADING",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 2,
+      "platform": "Greenhouse",
+      "behavior_family": "CALIBRATED_SEMANTIC_MATCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "greenhouse.io",
+        "job-boards.greenhouse.io"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "skills",
+        "relevant experience",
+        "job titles",
+        "industry",
+        "criterion importance"
+      ],
+      "simulation_profile": "CALIBRATED_SEMANTIC_MATCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 3,
+      "platform": "SAP SuccessFactors Recruiting",
+      "behavior_family": "SKILLS_ONTOLOGY_MATCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "successfactors.com",
+        "jobs2web.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "primary skills",
+        "secondary skills",
+        "resume-extracted skills",
+        "job-description skills",
+        "candidate profile"
+      ],
+      "simulation_profile": "SKILLS_ONTOLOGY_MATCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 4,
+      "platform": "Oracle Cloud HCM Recruiting",
+      "behavior_family": "CONFIGURABLE_AI_RATING",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "oraclecloud.com/hcmUI/CandidateExperience",
+        "fa.ocs.oraclecloud.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "education",
+        "experience",
+        "skills"
+      ],
+      "simulation_profile": "CONFIGURABLE_AI_RATING",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 5,
+      "platform": "iCIMS",
+      "behavior_family": "PARSE_MATCH_RANK",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "icims.com/jobs",
+        "careers-*.icims.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "resume fields",
+        "skills",
+        "experience",
+        "titles",
+        "candidate profile",
+        "screening responses"
+      ],
+      "simulation_profile": "PARSE_MATCH_RANK",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 6,
+      "platform": "Avature",
+      "behavior_family": "PARSE_MATCH_RANK",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "avature.net",
+        "*.avature.net"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "skills",
+        "experience",
+        "semantic concepts",
+        "candidate profile fields",
+        "search criteria"
+      ],
+      "simulation_profile": "PARSE_MATCH_RANK",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 7,
+      "platform": "Eightfold AI",
+      "behavior_family": "SKILLS_ONTOLOGY_MATCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "eightfold.ai",
+        "*.eightfold.ai"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "skills",
+        "inferred adjacent skills",
+        "experience",
+        "role fit",
+        "career profile"
+      ],
+      "simulation_profile": "SKILLS_ONTOLOGY_MATCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 8,
+      "platform": "SmartRecruiters",
+      "behavior_family": "SEMANTIC_QUALIFICATION_GRADING",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "jobs.smartrecruiters.com",
+        "smartrecruiters.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "skills",
+        "experience",
+        "education",
+        "candidate-verified profile data",
+        "parsed resume data"
+      ],
+      "simulation_profile": "SEMANTIC_QUALIFICATION_GRADING",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 9,
+      "platform": "Oracle Taleo",
+      "behavior_family": "LEGACY_ENTERPRISE_MATCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "taleo.net/careersection",
+        "taleo.net"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "LEGACY_ENTERPRISE_MATCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 10,
+      "platform": "Ashby",
+      "behavior_family": "FULL_TEXT_STRUCTURED_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "jobs.ashbyhq.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "parsed resume text",
+        "job titles",
+        "employers",
+        "skills",
+        "full-text search terms"
+      ],
+      "simulation_profile": "FULL_TEXT_STRUCTURED_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 11,
+      "platform": "Lever",
+      "behavior_family": "FULL_TEXT_STRUCTURED_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "jobs.lever.co"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "positions",
+        "titles",
+        "experience summaries",
+        "dates",
+        "employers",
+        "education",
+        "resume text"
+      ],
+      "simulation_profile": "FULL_TEXT_STRUCTURED_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 12,
+      "platform": "USAJobs / USA Staffing",
+      "behavior_family": "FEDERAL_ASSESSMENT",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "usajobs.gov",
+        "usastaffing.gov"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "eligibility",
+        "minimum qualifications",
+        "specialized experience",
+        "assessment questionnaire",
+        "competencies",
+        "selective factors",
+        "quality ranking factors",
+        "structured resume review",
+        "supporting documents"
+      ],
+      "simulation_profile": "FEDERAL_ASSESSMENT",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 13,
+      "platform": "Phenom",
+      "behavior_family": "EXPERIENCE_LAYER_OR_CRM",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "phenompeople.com",
+        "phenom.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "skills",
+        "experience",
+        "candidate profile",
+        "job requirements"
+      ],
+      "simulation_profile": "EXPERIENCE_LAYER_OR_CRM",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 14,
+      "platform": "UKG Pro Recruiting / UltiPro",
+      "behavior_family": "HCM_WORKFLOW_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "recruiting.ultipro.com",
+        "ultipro.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HCM_WORKFLOW_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 15,
+      "platform": "PageUp",
+      "behavior_family": "INSTITUTIONAL_HUMAN_WORKFLOW",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "pageuppeople.com",
+        "careers.pageuppeople.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "application fields",
+        "resume",
+        "qualifications",
+        "screening questions",
+        "candidate search"
+      ],
+      "simulation_profile": "INSTITUTIONAL_HUMAN_WORKFLOW",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 16,
+      "platform": "Cornerstone Recruiting",
+      "behavior_family": "INSTITUTIONAL_HUMAN_WORKFLOW",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "csod.com",
+        "cornerstoneondemand.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "INSTITUTIONAL_HUMAN_WORKFLOW",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 17,
+      "platform": "Workable",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "apply.workable.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 18,
+      "platform": "BambooHR Recruiting",
+      "behavior_family": "HCM_WORKFLOW_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "bamboohr.com/careers"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HCM_WORKFLOW_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 19,
+      "platform": "Jobvite",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "jobs.jobvite.com",
+        "jobvite.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 20,
+      "platform": "ADP Recruiting / Recruiting Management",
+      "behavior_family": "HCM_WORKFLOW_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "workforcenow.adp.com",
+        "adp.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HCM_WORKFLOW_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 21,
+      "platform": "Dayforce Recruiting",
+      "behavior_family": "HCM_WORKFLOW_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "dayforcehcm.com/CandidatePortal",
+        "dayforcehcm.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HCM_WORKFLOW_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 22,
+      "platform": "Paylocity Recruiting",
+      "behavior_family": "HCM_WORKFLOW_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "recruiting.paylocity.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HCM_WORKFLOW_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 23,
+      "platform": "Paycom Recruiting",
+      "behavior_family": "HCM_WORKFLOW_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "paycomonline.net/v4/ats",
+        "paycomonline.net"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HCM_WORKFLOW_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 24,
+      "platform": "PeopleAdmin / TalentEd",
+      "behavior_family": "INSTITUTIONAL_HUMAN_WORKFLOW",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "peopleadmin.com",
+        "schooljobs.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "minimum qualifications",
+        "application fields",
+        "supplemental questions",
+        "committee criteria",
+        "resume/attachments"
+      ],
+      "simulation_profile": "INSTITUTIONAL_HUMAN_WORKFLOW",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 25,
+      "platform": "NEOGOV",
+      "behavior_family": "INSTITUTIONAL_HUMAN_WORKFLOW",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "governmentjobs.com/careers",
+        "neogov.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "supplemental questions",
+        "eligibility",
+        "minimum qualifications",
+        "rank/score criteria",
+        "resume/attachments"
+      ],
+      "simulation_profile": "INSTITUTIONAL_HUMAN_WORKFLOW",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 26,
+      "platform": "IBM Kenexa / BrassRing",
+      "behavior_family": "LEGACY_ENTERPRISE_MATCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "brassring.com",
+        "kenexa.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "LEGACY_ENTERPRISE_MATCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 27,
+      "platform": "JazzHR",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "applytojob.com",
+        "jazzhr.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 28,
+      "platform": "Teamtailor",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "teamtailor.com/jobs"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 29,
+      "platform": "Recruitee",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "recruitee.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 30,
+      "platform": "Personio Recruiting",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "jobs.personio.com",
+        "jobs.personio.de",
+        "jobs.personio.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 31,
+      "platform": "ClearCompany",
+      "behavior_family": "HCM_WORKFLOW_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "clearcompany.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HCM_WORKFLOW_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 32,
+      "platform": "Paycor Recruiting",
+      "behavior_family": "HCM_WORKFLOW_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "paycor.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HCM_WORKFLOW_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 33,
+      "platform": "Rippling Recruiting",
+      "behavior_family": "HCM_WORKFLOW_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "ats.rippling.com",
+        "rippling.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HCM_WORKFLOW_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 34,
+      "platform": "ApplicantPro",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "applicantpro.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 35,
+      "platform": "ApplicantStack",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "applicantstack.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 36,
+      "platform": "Breezy HR",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "breezy.hr"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 37,
+      "platform": "Pinpoint",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "pinpointhq.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 38,
+      "platform": "Comeet",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "comeet.com/jobs"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 39,
+      "platform": "Zoho Recruit",
+      "behavior_family": "PARSE_MATCH_RANK",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "zohorecruit.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "skills",
+        "skill rarity",
+        "co-occurring skills",
+        "proficiency",
+        "skill experience",
+        "last use",
+        "industry",
+        "job title",
+        "years of experience"
+      ],
+      "simulation_profile": "PARSE_MATCH_RANK",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 40,
+      "platform": "Bullhorn ATS",
+      "behavior_family": "STAFFING_CRM_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "bullhorn.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "STAFFING_CRM_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 41,
+      "platform": "CEIPAL",
+      "behavior_family": "STAFFING_CRM_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "ceipal.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "STAFFING_CRM_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 42,
+      "platform": "Recruit CRM",
+      "behavior_family": "STAFFING_CRM_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "recruitcrm.io"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "STAFFING_CRM_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 43,
+      "platform": "CATS ATS",
+      "behavior_family": "STAFFING_CRM_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "catsone.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "STAFFING_CRM_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 44,
+      "platform": "PCRecruiter",
+      "behavior_family": "STAFFING_CRM_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "pcrecruiter.net",
+        "mainsequence.net"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "STAFFING_CRM_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 45,
+      "platform": "JobScore",
+      "behavior_family": "SMB_ATS_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "jobscore.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "SMB_ATS_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 46,
+      "platform": "Hireology",
+      "behavior_family": "HCM_WORKFLOW_SEARCH",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "hireology.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HCM_WORKFLOW_SEARCH",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 47,
+      "platform": "TalentReef",
+      "behavior_family": "HIGH_VOLUME_STRUCTURED",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "talentreef.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HIGH_VOLUME_STRUCTURED",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 48,
+      "platform": "Fountain",
+      "behavior_family": "HIGH_VOLUME_STRUCTURED",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "fountain.com/apply",
+        "fountain.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HIGH_VOLUME_STRUCTURED",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 49,
+      "platform": "Paradox",
+      "behavior_family": "HIGH_VOLUME_STRUCTURED",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "paradox.ai"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [],
+      "simulation_profile": "HIGH_VOLUME_STRUCTURED",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    },
+    {
+      "rank": 50,
+      "platform": "Radancy / Symphony Talent",
+      "behavior_family": "EXPERIENCE_LAYER_OR_CRM",
+      "platform_role": "ATS_or_recruiting_platform",
+      "url_patterns": [
+        "radancy.com",
+        "symphonytalent.com"
+      ],
+      "configuration_dependence": "high",
+      "public_exact_weights_known": false,
+      "known_dimensions": [
+        "candidate profile",
+        "search",
+        "CRM attributes",
+        "integrated ATS data"
+      ],
+      "simulation_profile": "EXPERIENCE_LAYER_OR_CRM",
+      "never_assume": [
+        "AI/matching module is enabled",
+        "vendor defaults equal employer configuration",
+        "keyword frequency alone determines ranking",
+        "resume match score equals hiring decision"
+      ],
+      "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+      "feature_state": "unknown",
+      "confidence": "heuristic"
+    }
+  ],
+  "unknown_profile": {
+    "rank": null,
+    "platform": "UNKNOWN_ATS",
+    "behavior_family": "UNKNOWN_CONSERVATIVE_MIXED",
+    "platform_role": "fallback_profile",
+    "url_patterns": [],
+    "configuration_dependence": "unknown",
+    "public_exact_weights_known": false,
+    "known_dimensions": [
+      "exact title",
+      "required qualifications",
+      "core tools and methods",
+      "work products and responsibilities",
+      "structured dates titles and education",
+      "exact searchable terminology",
+      "semantic related concepts",
+      "formatting and parseability"
+    ],
+    "simulation_profile": "UNKNOWN_CONSERVATIVE_MIXED",
+    "never_assume": [
+      "AI/matching module is enabled",
+      "vendor defaults equal employer configuration",
+      "keyword frequency alone determines ranking",
+      "resume match score equals hiring decision",
+      "the underlying ATS or employer scoring configuration is known"
+    ],
+    "public_logic": "Internal heuristic profile; actual employer configuration is unknown.",
+    "feature_state": "unknown",
+    "confidence": "heuristic"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "schema_version": "careerops-cover-letter-rules-v1",
+  "status": "PUBLIC_CONFIG_EXAMPLE",
+  "architecture": {
+    "reuse_existing_jd_analysis": true,
+    "reuse_existing_role_routing": true,
+    "reuse_existing_requirement_evidence_mapping": true,
+    "reuse_existing_candidate_evidence": true,
+    "reuse_existing_market_prior": true,
+    "do_not_embed_duplicate_evidence_inventory": true,
+    "do_not_embed_duplicate_market_inventory": true,
+    "do_not_run_second_full_analysis_pipeline": true,
+    "reuse_existing_candidate_attestations": true
+  },
+  "authority": {
+    "candidate_authority_source": "Configured candidate source directory",
+    "direct_user_correction_is_highest_authority": true,
+    "direct_user_confirmed_capabilities_are_real_skills": true,
+    "artifact_not_required_to_establish_skill_possession": true,
+    "historical_employer_or_project_placement_still_requires_support_or_direct_correction": true,
+    "target_jd_is_employer_requirement_authority_not_candidate_evidence": true,
+    "market_inventory_is_prior_only": true
+  },
+  "purpose": {
+    "paragraphs": 3,
+    "target_body_words_min": 190,
+    "target_body_words_max": 240,
+    "primary_goal": "prove exact-role fit through concrete candidate evidence rather than adjectives",
+    "technical_depth": "high_but_recruiter_readable"
+  },
+  "evidence_selection": {
+    "primary_evidence_story_count": 1,
+    "secondary_evidence_story_max": 1,
+    "secondary_allowed_only_when": [
+      "it proves a critical or high requirement the primary story cannot prove",
+      "it provides a materially stronger second numerical anchor"
+    ],
+    "ranking_order": [
+      "principal_output_similarity",
+      "responsibility_similarity",
+      "business_problem_similarity",
+      "domain_or_operating_context_similarity",
+      "method_overlap",
+      "tool_overlap",
+      "stakeholder_similarity",
+      "numerical_strength",
+      "evidence_confidence",
+      "ownership_clarity",
+      "claim_boundary_safety"
+    ],
+    "relevance_over_prestige": true,
+    "relevance_over_recency": true,
+    "relevance_over_metric_size": true
+  },
+  "numerical_evidence": {
+    "minimum_meaningful_candidate_anchors": 2,
+    "minimum_anchors_in_paragraph_2": 1,
+    "must_be_verified_or_direct_user_confirmed": true,
+    "must_have_context_or_unit": true,
+    "must_belong_to_correct_entity": true,
+    "do_not_count": [
+      "dates",
+      "gpa",
+      "experience_year_count",
+      "software_versions",
+      "paragraph_count",
+      "numbers_copied_from_jd"
+    ],
+    "do_not_describe_scale_as_outcome": true,
+    "do_not_describe_forecast_as_realized_result": true
+  },
+  "jd_terminology": {
+    "supported_exact_terms_min": 3,
+    "supported_exact_terms_max": 6,
+    "market_terms_max": 2,
+    "target_jd_controls_priority": true,
+    "terms_must_be_natural": true,
+    "no_keyword_stacking": true,
+    "unsupported_terms_must_not_be_presented_as_candidate_experience": true
+  },
+  "paragraph_contract": {
+    "paragraph_1": {
+      "purpose": "specific opening plus exact-role connection",
+      "approx_sentences": "2-3",
+      "must_include_candidate_specific_evidence": true,
+      "must_name_exact_company_and_position_by_end": true,
+      "must_connect_to_central_jd_responsibility_or_output": true,
+      "must_not_be_writable_from_jd_alone": true
+    },
+    "paragraph_2": {
+      "purpose": "developed primary evidence story",
+      "longest_paragraph": true,
+      "must_explain": [
+        "real problem dataset process product or business question",
+        "actual work context",
+        "what the candidate personally did",
+        "two to four relevant tools methods or business processes in context",
+        "technical or operational complexity",
+        "quality validation reconciliation governance evaluation or QA when supported",
+        "at least one qualifying numerical anchor",
+        "verified output or result",
+        "why the work is analogous to the employer's central responsibility"
+      ],
+      "must_not_copy_resume_bullets_sentence_by_sentence": true,
+      "must_not_be_software_inventory": true
+    },
+    "paragraph_3": {
+      "purpose": "exact employer and role connection",
+      "approx_sentences": "2-3",
+      "must_connect_to": [
+        "employer_output",
+        "stakeholder",
+        "customer",
+        "dataset",
+        "process",
+        "product",
+        "responsibility",
+        "decision"
+      ],
+      "must_be_company_and_role_specific": true,
+      "must_become_materially_inaccurate_if_company_is_swapped": true,
+      "required_final_sentence": "Thank you for your consideration."
+    }
+  },
+  "resume_complement": {
+    "current_tailored_resume_is_consistency_layer": true,
+    "do_not_rewrite_resume_bullets_as_prose": true,
+    "deepen_selected_evidence": true,
+    "preferred_additional_context": [
+      "why the problem mattered",
+      "how the workflow worked",
+      "why a method was selected",
+      "constraint or tradeoff handled",
+      "how quality was checked",
+      "what the output supported",
+      "why the work is analogous to the employer need"
+    ],
+    "must_not_contradict_resume": true
+  },
+  "writing": {
+    "language": "natural American English",
+    "style": "direct concrete technically credible",
+    "vary_sentence_length_and_syntax": true,
+    "prefer_concrete_verbs_and_nouns": true,
+    "never_use_em_dash": true,
+    "preferred_verbs": [
+      "built",
+      "analyzed",
+      "tested",
+      "reconciled",
+      "modeled",
+      "validated",
+      "compared",
+      "traced",
+      "reduced",
+      "presented",
+      "reviewed",
+      "mapped",
+      "measured"
+    ],
+    "banned_generic_phrases": [
+      "I am excited to apply",
+      "I am thrilled to apply",
+      "I am writing to express my interest",
+      "I was drawn to this role",
+      "what excites me",
+      "passionate about",
+      "proven track record",
+      "unique blend",
+      "results-driven",
+      "data-driven professional",
+      "strong candidate",
+      "perfect fit",
+      "aligns closely",
+      "resonates with me",
+      "leverage my skills",
+      "bring to the table",
+      "actionable insights",
+      "meaningful contribution",
+      "contribute meaningfully",
+      "make an immediate impact",
+      "hit the ground running",
+      "move the needle",
+      "drive innovation",
+      "robust solution",
+      "cutting-edge",
+      "seamless",
+      "synergy",
+      "dynamic environment",
+      "fast-paced environment",
+      "I would welcome the opportunity",
+      "I look forward to discussing",
+      "I believe my background",
+      "I believe my experience",
+      "well suited for this role",
+      "valuable addition to your team"
+    ],
+    "generic_company_praise_forbidden": true
+  },
+  "truth_rules": {
+    "never_invent": [
+      "employer",
+      "employment_date",
+      "metric",
+      "scale",
+      "business_outcome",
+      "model_result",
+      "product",
+      "certification",
+      "deployment",
+      "customer",
+      "historical_tool_placement"
+    ],
+    "direct_user_confirmed_capabilities_may_be_used_as_real_capabilities": true,
+    "do_not_back_project_capability_into_specific_history_without_support": true,
+    "preserve_employment_project_and_metric_boundaries": true,
+    "preserve_modeled_vs_realized_boundary": true
+  },
+  "output": {
+    "salutation": "Dear Hiring Manager,",
+    "body_paragraphs": 3,
+    "closing": "Sincerely,",
+    "signature": "Morgan Vale",
+    "return_analysis_to_candidate": false
+  },
+  "release_gate": {
+    "truth_pass_required": true,
+    "exact_company_required": true,
+    "exact_position_required": true,
+    "primary_evidence_story_required": true,
+    "minimum_numerical_anchors": 2,
+    "paragraph_count_exact": 3,
+    "specificity_pass_required": true,
+    "technical_depth_pass_required": true,
+    "resume_duplication_check_required": true,
+    "banned_language_check_required": true,
+    "em_dash_check_required": true
+  }
+}

@@ -1,0 +1,2697 @@
+{
+  "schema_version": "technical-skills-plan-v1",
+  "routed_role": "Data Analyst",
+  "policy": {
+    "skills_built_after_experience_and_project_selection": true,
+    "exact_jd_terms_prioritized": true,
+    "direct_user_confirmed_capabilities_are_actual_skills": true,
+    "artifact_not_required_for_skill_possession": true,
+    "historical_placement_still_requires_support": true,
+    "no_keyword_dumping": true,
+    "deep_capability_terms_eligible_for_visible_skills": true
+  },
+  "exact_jd_tools": [
+    "SQL",
+    "Python",
+    "Power BI",
+    "Power Query",
+    "DAX",
+    "DuckDB",
+    "Parquet"
+  ],
+  "protected_exact_p0_p1_terms": [
+    "SQL",
+    "Python",
+    "reporting",
+    "data pipelines",
+    "pipelines",
+    "Power BI",
+    "Power Query",
+    "DAX",
+    "dashboards",
+    "analytics"
+  ],
+  "selected_evidence_tools": [
+    "Confidence Intervals",
+    "Data Visualization",
+    "GitHub Actions",
+    "Hypothesis Testing",
+    "Python",
+    "Ruff",
+    "DAX",
+    "Excel",
+    "PostgreSQL",
+    "Power BI",
+    "Power Query",
+    "SQL",
+    "DuckDB",
+    "ETL/ELT",
+    "Parquet",
+    "dbt",
+    "pandas",
+    "pytest",
+    "Classification",
+    "Cross-validation",
+    "Feature Engineering",
+    "Git",
+    "Model Evaluation",
+    "NumPy"
+  ],
+  "visible_skill_lines": [
+    {
+      "category": "Programming & Data Analysis",
+      "terms": [
+        "SQL",
+        "Python",
+        "pandas",
+        "NumPy",
+        "Window Functions",
+        "SQL Joins"
+      ]
+    },
+    {
+      "category": "BI, Reporting & Spreadsheet Analytics",
+      "terms": [
+        "Power BI",
+        "Power Query",
+        "DAX",
+        "dashboards",
+        "Excel"
+      ]
+    },
+    {
+      "category": "Data Engineering & Platforms",
+      "terms": [
+        "Parquet",
+        "DuckDB",
+        "dbt",
+        "PostgreSQL",
+        "ETL/ELT"
+      ]
+    },
+    {
+      "category": "Statistical Modeling & Machine Learning",
+      "terms": [
+        "Classification",
+        "Model Evaluation",
+        "Feature Engineering",
+        "Cross-validation",
+        "Hypothesis Testing",
+        "Confidence Intervals"
+      ]
+    },
+    {
+      "category": "Development & Delivery",
+      "terms": [
+        "Git",
+        "pytest",
+        "Ruff",
+        "GitHub Actions",
+        "Docker"
+      ]
+    }
+  ],
+  "skills_stack_contract": {
+    "schema_version": "skills-stack-contract-v1",
+    "visible_skill_lines": [
+      {
+        "category": "Programming & Data Analysis",
+        "terms": [
+          "SQL",
+          "Python",
+          "pandas",
+          "NumPy",
+          "Window Functions",
+          "SQL Joins"
+        ]
+      },
+      {
+        "category": "BI, Reporting & Spreadsheet Analytics",
+        "terms": [
+          "Power BI",
+          "Power Query",
+          "DAX",
+          "dashboards",
+          "Excel"
+        ]
+      },
+      {
+        "category": "Data Engineering & Platforms",
+        "terms": [
+          "Parquet",
+          "DuckDB",
+          "dbt",
+          "PostgreSQL",
+          "ETL/ELT"
+        ]
+      },
+      {
+        "category": "Statistical Modeling & Machine Learning",
+        "terms": [
+          "Classification",
+          "Model Evaluation",
+          "Feature Engineering",
+          "Cross-validation",
+          "Hypothesis Testing",
+          "Confidence Intervals"
+        ]
+      },
+      {
+        "category": "Development & Delivery",
+        "terms": [
+          "Git",
+          "pytest",
+          "Ruff",
+          "GitHub Actions",
+          "Docker"
+        ]
+      }
+    ],
+    "ranked_skill_candidates": [
+      {
+        "term": "SQL",
+        "concept_id": "sql",
+        "category": "Programming & Data Analysis",
+        "score": 349.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "ROUTED_ROLE_MARKET_PRIOR",
+          "DIRECT_USER_CONFIRMED_PROFICIENCY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "SQL"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101",
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "SQL"
+        ],
+        "protected_terms": [
+          "SQL"
+        ],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Python",
+        "concept_id": "python",
+        "category": "Programming & Data Analysis",
+        "score": 349.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "ROUTED_ROLE_MARKET_PRIOR",
+          "DIRECT_USER_CONFIRMED_PROFICIENCY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Python"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101",
+          "PRJ-101",
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "Python"
+        ],
+        "protected_terms": [
+          "Python"
+        ],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Power BI",
+        "concept_id": "power bi",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 349.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "ROUTED_ROLE_MARKET_PRIOR",
+          "DIRECT_USER_CONFIRMED_PROFICIENCY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Power BI"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "Power BI"
+        ],
+        "protected_terms": [
+          "Power BI"
+        ],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Power Query",
+        "concept_id": "power query",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 315.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Power Query"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "Power Query"
+        ],
+        "protected_terms": [
+          "Power Query"
+        ],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "DAX",
+        "concept_id": "dax",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 315.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "DAX"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "DAX"
+        ],
+        "protected_terms": [
+          "DAX"
+        ],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Dashboard Development",
+        "concept_id": "dashboard development",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 135.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+        ],
+        "source_labels": [
+          "Dashboard Development"
+        ],
+        "historical_evidence_owner_ids": [],
+        "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "dashboards"
+        ],
+        "protected_terms": [
+          "dashboards"
+        ],
+        "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+      },
+      {
+        "term": "Parquet",
+        "concept_id": "parquet",
+        "category": "Data Engineering & Platforms",
+        "score": 315.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Parquet"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "Parquet"
+        ],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "DuckDB",
+        "concept_id": "duckdb",
+        "category": "Data Engineering & Platforms",
+        "score": 315.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "DuckDB"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "DuckDB"
+        ],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Classification",
+        "concept_id": "classification",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 231.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Classification"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "classification"
+        ],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Model Evaluation",
+        "concept_id": "model evaluation",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 115.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Model Evaluation"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Excel",
+        "concept_id": "excel",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 114.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "ROUTED_ROLE_MARKET_PRIOR",
+          "DIRECT_USER_CONFIRMED_PROFICIENCY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Excel"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Git",
+        "concept_id": "git",
+        "category": "Development & Delivery",
+        "score": 104.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_GLOBAL_CAPABILITY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Git"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Feature Engineering",
+        "concept_id": "feature engineering",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 98.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Feature Engineering"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Cross-validation",
+        "concept_id": "cross-validation",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 98.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Cross-validation"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Hypothesis Testing",
+        "concept_id": "hypothesis testing",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 97.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Hypothesis Testing"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Confidence Intervals",
+        "concept_id": "confidence intervals",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 95.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Confidence Intervals"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "pytest",
+        "concept_id": "pytest",
+        "category": "Development & Delivery",
+        "score": 90.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "pytest"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Ruff",
+        "concept_id": "ruff",
+        "category": "Development & Delivery",
+        "score": 88.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Ruff"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "GitHub Actions",
+        "concept_id": "github actions",
+        "category": "Development & Delivery",
+        "score": 88.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "GitHub Actions"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "pandas",
+        "concept_id": "pandas",
+        "category": "Programming & Data Analysis",
+        "score": 80.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "pandas"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101",
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "dbt",
+        "concept_id": "dbt",
+        "category": "Data Engineering & Platforms",
+        "score": 80.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "dbt"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "PostgreSQL",
+        "concept_id": "postgresql",
+        "category": "Data Engineering & Platforms",
+        "score": 80.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "PostgreSQL"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "NumPy",
+        "concept_id": "numpy",
+        "category": "Programming & Data Analysis",
+        "score": 80.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "NumPy"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "ETL/ELT",
+        "concept_id": "etl/elt",
+        "category": "Data Engineering & Platforms",
+        "score": 80.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "ETL/ELT"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      {
+        "term": "Window Functions",
+        "concept_id": "window functions",
+        "category": "Programming & Data Analysis",
+        "score": 53.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+        ],
+        "source_labels": [
+          "Window Functions"
+        ],
+        "historical_evidence_owner_ids": [],
+        "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+      },
+      {
+        "term": "SQL Joins",
+        "concept_id": "sql joins",
+        "category": "Programming & Data Analysis",
+        "score": 35.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+        ],
+        "source_labels": [
+          "SQL Joins"
+        ],
+        "historical_evidence_owner_ids": [],
+        "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+      },
+      {
+        "term": "Docker",
+        "concept_id": "docker",
+        "category": "Development & Delivery",
+        "score": 35.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+        ],
+        "source_labels": [
+          "Docker"
+        ],
+        "historical_evidence_owner_ids": [],
+        "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+      }
+    ],
+    "eligible_concepts": {
+      "sql": {
+        "term": "SQL",
+        "concept_id": "sql",
+        "category": "Programming & Data Analysis",
+        "score": 349.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "ROUTED_ROLE_MARKET_PRIOR",
+          "DIRECT_USER_CONFIRMED_PROFICIENCY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "SQL"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101",
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "SQL"
+        ],
+        "protected_terms": [
+          "SQL"
+        ],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "python": {
+        "term": "Python",
+        "concept_id": "python",
+        "category": "Programming & Data Analysis",
+        "score": 349.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "ROUTED_ROLE_MARKET_PRIOR",
+          "DIRECT_USER_CONFIRMED_PROFICIENCY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Python"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101",
+          "PRJ-101",
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "Python"
+        ],
+        "protected_terms": [
+          "Python"
+        ],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "pandas": {
+        "term": "pandas",
+        "concept_id": "pandas",
+        "category": "Programming & Data Analysis",
+        "score": 80.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "pandas"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101",
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "numpy": {
+        "term": "NumPy",
+        "concept_id": "numpy",
+        "category": "Programming & Data Analysis",
+        "score": 80.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "NumPy"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "sql joins": {
+        "term": "SQL Joins",
+        "concept_id": "sql joins",
+        "category": "Programming & Data Analysis",
+        "score": 35.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+        ],
+        "source_labels": [
+          "SQL Joins"
+        ],
+        "historical_evidence_owner_ids": [],
+        "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+      },
+      "window functions": {
+        "term": "Window Functions",
+        "concept_id": "window functions",
+        "category": "Programming & Data Analysis",
+        "score": 53.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+        ],
+        "source_labels": [
+          "Window Functions"
+        ],
+        "historical_evidence_owner_ids": [],
+        "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+      },
+      "power bi": {
+        "term": "Power BI",
+        "concept_id": "power bi",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 349.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "ROUTED_ROLE_MARKET_PRIOR",
+          "DIRECT_USER_CONFIRMED_PROFICIENCY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Power BI"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "Power BI"
+        ],
+        "protected_terms": [
+          "Power BI"
+        ],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "dax": {
+        "term": "DAX",
+        "concept_id": "dax",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 315.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "DAX"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "DAX"
+        ],
+        "protected_terms": [
+          "DAX"
+        ],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "power query": {
+        "term": "Power Query",
+        "concept_id": "power query",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 315.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Power Query"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "Power Query"
+        ],
+        "protected_terms": [
+          "Power Query"
+        ],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "excel": {
+        "term": "Excel",
+        "concept_id": "excel",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 114.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "ROUTED_ROLE_MARKET_PRIOR",
+          "DIRECT_USER_CONFIRMED_PROFICIENCY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Excel"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "dashboard development": {
+        "term": "Dashboard Development",
+        "concept_id": "dashboard development",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 135.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+        ],
+        "source_labels": [
+          "Dashboard Development"
+        ],
+        "historical_evidence_owner_ids": [],
+        "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "dashboards"
+        ],
+        "protected_terms": [
+          "dashboards"
+        ],
+        "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+      },
+      "data visualization": {
+        "term": "Data Visualization",
+        "concept_id": "data visualization",
+        "category": "BI & Spreadsheet Analytics",
+        "score": 105.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "JD_SEMANTIC_CONFIRMED_CAPABILITY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Data Visualization"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "duckdb": {
+        "term": "DuckDB",
+        "concept_id": "duckdb",
+        "category": "Data Engineering & Platforms",
+        "score": 315.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "DuckDB"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "DuckDB"
+        ],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "parquet": {
+        "term": "Parquet",
+        "concept_id": "parquet",
+        "category": "Data Engineering & Platforms",
+        "score": 315.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "EXACT_JD_TOOL",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Parquet"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "Parquet"
+        ],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "etl/elt": {
+        "term": "ETL/ELT",
+        "concept_id": "etl/elt",
+        "category": "Data Engineering & Platforms",
+        "score": 80.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "ETL/ELT"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "dbt": {
+        "term": "dbt",
+        "concept_id": "dbt",
+        "category": "Data Engineering & Platforms",
+        "score": 80.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "dbt"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "postgresql": {
+        "term": "PostgreSQL",
+        "concept_id": "postgresql",
+        "category": "Data Engineering & Platforms",
+        "score": 80.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "PostgreSQL"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "docker": {
+        "term": "Docker",
+        "concept_id": "docker",
+        "category": "Development & Delivery",
+        "score": 35.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+        ],
+        "source_labels": [
+          "Docker"
+        ],
+        "historical_evidence_owner_ids": [],
+        "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+      },
+      "hypothesis testing": {
+        "term": "Hypothesis Testing",
+        "concept_id": "hypothesis testing",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 97.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Hypothesis Testing"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "confidence intervals": {
+        "term": "Confidence Intervals",
+        "concept_id": "confidence intervals",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 95.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Confidence Intervals"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "classification": {
+        "term": "Classification",
+        "concept_id": "classification",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 231.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Classification"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [
+          "classification"
+        ],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "feature engineering": {
+        "term": "Feature Engineering",
+        "concept_id": "feature engineering",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 98.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Feature Engineering"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "model evaluation": {
+        "term": "Model Evaluation",
+        "concept_id": "model evaluation",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 115.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Model Evaluation"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "cross-validation": {
+        "term": "Cross-validation",
+        "concept_id": "cross-validation",
+        "category": "Statistical Modeling & Machine Learning",
+        "score": 98.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Cross-validation"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "git": {
+        "term": "Git",
+        "concept_id": "git",
+        "category": "Development & Delivery",
+        "score": 104.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_GLOBAL_CAPABILITY",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Git"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "github actions": {
+        "term": "GitHub Actions",
+        "concept_id": "github actions",
+        "category": "Development & Delivery",
+        "score": 88.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "GitHub Actions"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "pytest": {
+        "term": "pytest",
+        "concept_id": "pytest",
+        "category": "Development & Delivery",
+        "score": 90.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "pytest"
+        ],
+        "historical_evidence_owner_ids": [
+          "EXP-101"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      },
+      "ruff": {
+        "term": "Ruff",
+        "concept_id": "ruff",
+        "category": "Development & Delivery",
+        "score": 88.0,
+        "provenance": [
+          "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+          "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+          "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+          "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+          "SELECTED_VERIFIED_EVIDENCE",
+          "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+          "GLOBAL_VERIFIED_EVIDENCE"
+        ],
+        "source_labels": [
+          "Ruff"
+        ],
+        "historical_evidence_owner_ids": [
+          "PRJ-102"
+        ],
+        "claim_class": "ARTIFACT_VERIFIED",
+        "current_capability_confirmed": true,
+        "historical_placement_requires_owner": true,
+        "jd_requested_terms": [],
+        "protected_terms": [],
+        "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+      }
+    },
+    "protected_term_locations": [
+      {
+        "term": "SQL",
+        "concept_id": "sql",
+        "supported": true,
+        "locations": [
+          {
+            "surface": "SKILL",
+            "text": "SQL"
+          },
+          {
+            "surface": "SKILL",
+            "text": "SQL Joins"
+          }
+        ],
+        "requirement": "FINAL_RESUME_VISIBILITY"
+      },
+      {
+        "term": "Python",
+        "concept_id": "python",
+        "supported": true,
+        "locations": [
+          {
+            "surface": "SKILL",
+            "text": "Python"
+          }
+        ],
+        "requirement": "FINAL_RESUME_VISIBILITY"
+      },
+      {
+        "term": "reporting",
+        "concept_id": "reporting",
+        "supported": false,
+        "locations": [
+          {
+            "surface": "CATEGORY",
+            "text": "BI, Reporting & Spreadsheet Analytics"
+          }
+        ],
+        "requirement": "NO_CANDIDATE_AUTHORITY"
+      },
+      {
+        "term": "data pipelines",
+        "concept_id": "data pipelines",
+        "supported": false,
+        "locations": [],
+        "requirement": "NO_CANDIDATE_AUTHORITY"
+      },
+      {
+        "term": "pipelines",
+        "concept_id": "data pipelines",
+        "supported": false,
+        "locations": [],
+        "requirement": "NO_CANDIDATE_AUTHORITY"
+      },
+      {
+        "term": "Power BI",
+        "concept_id": "power bi",
+        "supported": true,
+        "locations": [
+          {
+            "surface": "SKILL",
+            "text": "Power BI"
+          }
+        ],
+        "requirement": "FINAL_RESUME_VISIBILITY"
+      },
+      {
+        "term": "Power Query",
+        "concept_id": "power query",
+        "supported": true,
+        "locations": [
+          {
+            "surface": "SKILL",
+            "text": "Power Query"
+          }
+        ],
+        "requirement": "FINAL_RESUME_VISIBILITY"
+      },
+      {
+        "term": "DAX",
+        "concept_id": "dax",
+        "supported": true,
+        "locations": [
+          {
+            "surface": "SKILL",
+            "text": "DAX"
+          }
+        ],
+        "requirement": "FINAL_RESUME_VISIBILITY"
+      },
+      {
+        "term": "dashboards",
+        "concept_id": "dashboard development",
+        "supported": true,
+        "locations": [
+          {
+            "surface": "SKILL",
+            "text": "dashboards"
+          }
+        ],
+        "requirement": "FINAL_RESUME_VISIBILITY"
+      },
+      {
+        "term": "analytics",
+        "concept_id": "analytics",
+        "supported": false,
+        "locations": [
+          {
+            "surface": "CATEGORY",
+            "text": "BI, Reporting & Spreadsheet Analytics"
+          }
+        ],
+        "requirement": "NO_CANDIDATE_AUTHORITY"
+      }
+    ],
+    "selection_decisions": [
+      {
+        "term": "Data Visualization",
+        "reason": "BROAD_CONCEPT_CONTEXT_ONLY"
+      }
+    ],
+    "policy": {
+      "minimum_categories_target": 4,
+      "maximum_categories": 6,
+      "items_per_category_target": [
+        5,
+        9
+      ],
+      "count_targets_are_not_filler_quotas": true,
+      "deep_registry_is_visible_candidate_source": true,
+      "historical_backfill_forbidden": true
+    },
+    "model_calls": 0,
+    "audit": {
+      "gate": "PASS",
+      "findings": [],
+      "warnings": [],
+      "unique_concept_count": 27,
+      "displayed_item_count": 27,
+      "category_count": 5
+    }
+  },
+  "semantic_redundancy_removed": [
+    {
+      "term": "Data Visualization",
+      "reason": "BROAD_CONCEPT_CONTEXT_ONLY"
+    }
+  ],
+  "authority_partitions": {
+    "historical_by_entity": {
+      "PRJ-101": [
+        "Classification",
+        "Cross-validation",
+        "Feature Engineering",
+        "Git",
+        "Model Evaluation",
+        "NumPy",
+        "Python",
+        "pandas"
+      ],
+      "PRJ-102": [
+        "Confidence Intervals",
+        "Data Visualization",
+        "GitHub Actions",
+        "Hypothesis Testing",
+        "Python",
+        "Ruff"
+      ],
+      "EXP-102": [
+        "DAX",
+        "Excel",
+        "PostgreSQL",
+        "Power BI",
+        "Power Query",
+        "SQL"
+      ],
+      "EXP-101": [
+        "DuckDB",
+        "ETL/ELT",
+        "Parquet",
+        "Python",
+        "SQL",
+        "dbt",
+        "pandas",
+        "pytest"
+      ]
+    },
+    "direct_confirmed_current_capabilities": [
+      "SQL",
+      "Python",
+      "Power BI",
+      "Power Query",
+      "DAX",
+      "Dashboard Development",
+      "Parquet",
+      "DuckDB",
+      "Classification",
+      "Model Evaluation",
+      "Excel",
+      "Git",
+      "Feature Engineering",
+      "Cross-validation",
+      "Hypothesis Testing",
+      "Confidence Intervals",
+      "pytest",
+      "Ruff",
+      "GitHub Actions",
+      "pandas",
+      "dbt",
+      "PostgreSQL",
+      "NumPy",
+      "ETL/ELT",
+      "Window Functions",
+      "SQL Joins",
+      "Docker"
+    ],
+    "jd_requests_without_candidate_authority": [],
+    "market_only_advisory": [],
+    "historical_backfill_from_current_capability_forbidden": true
+  },
+  "ranked_skill_candidates": [
+    {
+      "term": "SQL",
+      "concept_id": "sql",
+      "category": "Programming & Data Analysis",
+      "score": 349.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "EXACT_JD_TOOL",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "ROUTED_ROLE_MARKET_PRIOR",
+        "DIRECT_USER_CONFIRMED_PROFICIENCY",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "SQL"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-101",
+        "EXP-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [
+        "SQL"
+      ],
+      "protected_terms": [
+        "SQL"
+      ],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Python",
+      "concept_id": "python",
+      "category": "Programming & Data Analysis",
+      "score": 349.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "EXACT_JD_TOOL",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "ROUTED_ROLE_MARKET_PRIOR",
+        "DIRECT_USER_CONFIRMED_PROFICIENCY",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Python"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-101",
+        "PRJ-101",
+        "PRJ-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [
+        "Python"
+      ],
+      "protected_terms": [
+        "Python"
+      ],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Power BI",
+      "concept_id": "power bi",
+      "category": "BI & Spreadsheet Analytics",
+      "score": 349.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "EXACT_JD_TOOL",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "ROUTED_ROLE_MARKET_PRIOR",
+        "DIRECT_USER_CONFIRMED_PROFICIENCY",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Power BI"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [
+        "Power BI"
+      ],
+      "protected_terms": [
+        "Power BI"
+      ],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Power Query",
+      "concept_id": "power query",
+      "category": "BI & Spreadsheet Analytics",
+      "score": 315.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "EXACT_JD_TOOL",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Power Query"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [
+        "Power Query"
+      ],
+      "protected_terms": [
+        "Power Query"
+      ],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "DAX",
+      "concept_id": "dax",
+      "category": "BI & Spreadsheet Analytics",
+      "score": 315.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "EXACT_JD_TOOL",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "DAX"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [
+        "DAX"
+      ],
+      "protected_terms": [
+        "DAX"
+      ],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Dashboard Development",
+      "concept_id": "dashboard development",
+      "category": "BI & Spreadsheet Analytics",
+      "score": 135.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+      ],
+      "source_labels": [
+        "Dashboard Development"
+      ],
+      "historical_evidence_owner_ids": [],
+      "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [
+        "dashboards"
+      ],
+      "protected_terms": [
+        "dashboards"
+      ],
+      "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+    },
+    {
+      "term": "Parquet",
+      "concept_id": "parquet",
+      "category": "Data Engineering & Platforms",
+      "score": 315.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "EXACT_JD_TOOL",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Parquet"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [
+        "Parquet"
+      ],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "DuckDB",
+      "concept_id": "duckdb",
+      "category": "Data Engineering & Platforms",
+      "score": 315.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "EXACT_JD_TOOL",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "DuckDB"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [
+        "DuckDB"
+      ],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Classification",
+      "concept_id": "classification",
+      "category": "Statistical Modeling & Machine Learning",
+      "score": 231.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Classification"
+      ],
+      "historical_evidence_owner_ids": [
+        "PRJ-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [
+        "classification"
+      ],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Model Evaluation",
+      "concept_id": "model evaluation",
+      "category": "Statistical Modeling & Machine Learning",
+      "score": 115.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Model Evaluation"
+      ],
+      "historical_evidence_owner_ids": [
+        "PRJ-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Excel",
+      "concept_id": "excel",
+      "category": "BI & Spreadsheet Analytics",
+      "score": 114.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "ROUTED_ROLE_MARKET_PRIOR",
+        "DIRECT_USER_CONFIRMED_PROFICIENCY",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Excel"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Git",
+      "concept_id": "git",
+      "category": "Development & Delivery",
+      "score": 104.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_GLOBAL_CAPABILITY",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Git"
+      ],
+      "historical_evidence_owner_ids": [
+        "PRJ-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Feature Engineering",
+      "concept_id": "feature engineering",
+      "category": "Statistical Modeling & Machine Learning",
+      "score": 98.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Feature Engineering"
+      ],
+      "historical_evidence_owner_ids": [
+        "PRJ-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Cross-validation",
+      "concept_id": "cross-validation",
+      "category": "Statistical Modeling & Machine Learning",
+      "score": 98.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Cross-validation"
+      ],
+      "historical_evidence_owner_ids": [
+        "PRJ-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Hypothesis Testing",
+      "concept_id": "hypothesis testing",
+      "category": "Statistical Modeling & Machine Learning",
+      "score": 97.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Hypothesis Testing"
+      ],
+      "historical_evidence_owner_ids": [
+        "PRJ-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Confidence Intervals",
+      "concept_id": "confidence intervals",
+      "category": "Statistical Modeling & Machine Learning",
+      "score": 95.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Confidence Intervals"
+      ],
+      "historical_evidence_owner_ids": [
+        "PRJ-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "pytest",
+      "concept_id": "pytest",
+      "category": "Development & Delivery",
+      "score": 90.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "pytest"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Ruff",
+      "concept_id": "ruff",
+      "category": "Development & Delivery",
+      "score": 88.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "Ruff"
+      ],
+      "historical_evidence_owner_ids": [
+        "PRJ-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "GitHub Actions",
+      "concept_id": "github actions",
+      "category": "Development & Delivery",
+      "score": 88.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "GitHub Actions"
+      ],
+      "historical_evidence_owner_ids": [
+        "PRJ-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "pandas",
+      "concept_id": "pandas",
+      "category": "Programming & Data Analysis",
+      "score": 80.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "pandas"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-101",
+        "PRJ-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "dbt",
+      "concept_id": "dbt",
+      "category": "Data Engineering & Platforms",
+      "score": 80.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "dbt"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "PostgreSQL",
+      "concept_id": "postgresql",
+      "category": "Data Engineering & Platforms",
+      "score": 80.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "PostgreSQL"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-102"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "NumPy",
+      "concept_id": "numpy",
+      "category": "Programming & Data Analysis",
+      "score": 80.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "NumPy"
+      ],
+      "historical_evidence_owner_ids": [
+        "PRJ-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "ETL/ELT",
+      "concept_id": "etl/elt",
+      "category": "Data Engineering & Platforms",
+      "score": 80.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY",
+        "EXISTING_AUTHORITY_BOUND_CANDIDATE",
+        "SELECTED_VERIFIED_EVIDENCE",
+        "DIRECT_USER_CONFIRMED_CAPABILITY_REGISTRY",
+        "GLOBAL_VERIFIED_EVIDENCE"
+      ],
+      "source_labels": [
+        "ETL/ELT"
+      ],
+      "historical_evidence_owner_ids": [
+        "EXP-101"
+      ],
+      "claim_class": "ARTIFACT_VERIFIED",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "HISTORICAL_EVIDENCE_WITH_OWNER"
+    },
+    {
+      "term": "Window Functions",
+      "concept_id": "window functions",
+      "category": "Programming & Data Analysis",
+      "score": 53.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+      ],
+      "source_labels": [
+        "Window Functions"
+      ],
+      "historical_evidence_owner_ids": [],
+      "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+    },
+    {
+      "term": "SQL Joins",
+      "concept_id": "sql joins",
+      "category": "Programming & Data Analysis",
+      "score": 35.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+      ],
+      "source_labels": [
+        "SQL Joins"
+      ],
+      "historical_evidence_owner_ids": [],
+      "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+    },
+    {
+      "term": "Docker",
+      "concept_id": "docker",
+      "category": "Development & Delivery",
+      "score": 35.0,
+      "provenance": [
+        "DIRECT_USER_CONFIRMED_EXPLICIT_REGISTRY",
+        "DIRECT_USER_CONFIRMED_DEEP_REGISTRY",
+        "DIRECT_USER_CONFIRMED_ROLE_CAPABILITY"
+      ],
+      "source_labels": [
+        "Docker"
+      ],
+      "historical_evidence_owner_ids": [],
+      "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "current_capability_confirmed": true,
+      "historical_placement_requires_owner": true,
+      "jd_requested_terms": [],
+      "protected_terms": [],
+      "authority_partition": "DIRECT_CONFIRMED_CURRENT_CAPABILITY"
+    }
+  ],
+  "requirement_authority": {
+    "schema": "canonical-requirement-authority-v1",
+    "intake_sha256": "6126c2cf034ebbbaeb7ab3ea81f3ac74e1e9f722f66125869d66380fd5ec0520",
+    "ledger_sha256": "db2b4a5dac16718f1ce024a8ca05d01dfdbd09fa79f4644558b0665e2d50a853",
+    "application_title": "Data Analyst",
+    "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+  }
+}

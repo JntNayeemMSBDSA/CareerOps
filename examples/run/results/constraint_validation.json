@@ -1,0 +1,134 @@
+{
+  "schema_version": "constraint-validation-v2",
+  "candidate_fact_layers": {
+    "artifact_verified": "Specific historical/project evidence.",
+    "direct_user_confirmed": "Authoritative candidate facts explicitly provided by CareerOps, including skill duration and proficiency.",
+    "assumed_market_coverage": "Authorized contextual capability layer; not silently relabelled as artifact verified."
+  },
+  "assumed_market_inventory_loaded": true,
+  "source": {
+    "constraint_source": "jd_semantic_map.json",
+    "requirements_fingerprint": "8dcaff5356cc4921f706f87f8805ee26c4515b73c3d0b1e7814ed74374afa900",
+    "current_job_match": true,
+    "evidence_map_dependency": false
+  },
+  "validation_count": 2,
+  "requirements": [
+    {
+      "requirement_id": "REQ-004",
+      "priority": "P0",
+      "exact_jd_quote": "Bachelor degree in mathematics or a related field required.",
+      "overall_status": "REVIEW_REQUIRED",
+      "checks": [
+        {
+          "constraint_type": "education",
+          "status": "PASS",
+          "claim_class": "DIRECT_USER_CONFIRMED",
+          "required_phrases": [
+            "Bachelor degree",
+            "degree"
+          ],
+          "candidate_degree": {
+            "degree_level": "bachelor",
+            "degree": "B.S. Applied Mathematics",
+            "resume_degree": "B.S. Applied Mathematics",
+            "institution": "Fictional Alderbridge College",
+            "completion": "Jun 2016",
+            "graduation": "Jun 2016",
+            "gpa": "3.74/4.00",
+            "claim_class": "DIRECT_USER_CONFIRMED"
+          },
+          "reason": "Candidate degree exceeds or satisfies the requested degree level."
+        },
+        {
+          "constraint_type": "education_field",
+          "status": "REVIEW_REQUIRED",
+          "required_source_scope": "mathematics or a related field required",
+          "required_fields": [
+            "mathematics"
+          ],
+          "explicit_related_field_allowed": true,
+          "same_record_meets_degree_level": true,
+          "support": [],
+          "reason_code": "EDUCATION_FIELD_UNVERIFIED"
+        }
+      ],
+      "canonical_reference": {
+        "requirement_id": "REQ-004",
+        "priority": "P0",
+        "section": "required",
+        "exact_quote_sha256": "642bfe1b41de9cbe3f15070e00ccbb625a5a8a9d981edd08317f54557dfb5869",
+        "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+      }
+    },
+    {
+      "requirement_id": "REQ-005",
+      "priority": "P0",
+      "exact_jd_quote": "Two years of SQL analytics experience required.",
+      "overall_status": "PASS",
+      "checks": [
+        {
+          "constraint_type": "experience_years",
+          "status": "PASS",
+          "required_years": 2,
+          "required_phrases": [
+            "Two years of"
+          ],
+          "skill_duration_checks": [
+            {
+              "skill": "sql",
+              "status": "PASS",
+              "years": 2.5,
+              "required_years": 2,
+              "claim_class": "DIRECT_USER_CONFIRMED",
+              "basis": "DIRECT_USER_CONFIRMED_DURATION"
+            }
+          ],
+          "tool_tenure_logic": {
+            "mandatory_skills": [
+              "sql"
+            ],
+            "alternatives": [
+              [
+                "sql"
+              ]
+            ],
+            "ambiguous": false,
+            "example_or_optional_terms": [],
+            "basis": "LITERAL_SCOPED_TOOL_TENURE_LOGIC"
+          },
+          "tool_tenure_status": "PASS",
+          "analytics_duration_check": {
+            "status": "PASS",
+            "basis": "VERIFIED_PROFESSIONAL_CHRONOLOGY",
+            "years": 6.33,
+            "evidence_entities": [
+              "EXP-101",
+              "EXP-102"
+            ],
+            "chronology": "2017-02 through 2019-11 (EXP-101); 2020-03 through 2023-08 (EXP-102)",
+            "reason": "Verified professional data-analytics chronology supports 6.33 years against the 2-year minimum."
+          },
+          "general_experience_check": null,
+          "analyst_duration_check": null,
+          "related_field_duration_check": null,
+          "policy": "Direct user-confirmed duration is authoritative candidate fact. Artifact evidence is not required for a direct user-confirmed duration."
+        }
+      ],
+      "canonical_reference": {
+        "requirement_id": "REQ-005",
+        "priority": "P0",
+        "section": "required",
+        "exact_quote_sha256": "b9572ca5206f0139c50ec04c50423437d139a9f2c9d48f03ab1a9261dc49b011",
+        "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+      }
+    }
+  ],
+  "requirement_authority": {
+    "schema": "canonical-requirement-authority-v1",
+    "intake_sha256": "6126c2cf034ebbbaeb7ab3ea81f3ac74e1e9f722f66125869d66380fd5ec0520",
+    "ledger_sha256": "db2b4a5dac16718f1ce024a8ca05d01dfdbd09fa79f4644558b0665e2d50a853",
+    "application_title": "Data Analyst",
+    "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+  }
+}

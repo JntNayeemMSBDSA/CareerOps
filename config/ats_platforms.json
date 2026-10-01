@@ -1,0 +1,206 @@
+{
+  "purpose": "Supported ATS detector roster",
+  "platform_count": 50,
+  "platforms": [
+    {
+      "rank": 1,
+      "platform": "Workday Recruiting"
+    },
+    {
+      "rank": 2,
+      "platform": "Greenhouse"
+    },
+    {
+      "rank": 3,
+      "platform": "SAP SuccessFactors Recruiting"
+    },
+    {
+      "rank": 4,
+      "platform": "Oracle Cloud HCM Recruiting"
+    },
+    {
+      "rank": 5,
+      "platform": "iCIMS"
+    },
+    {
+      "rank": 6,
+      "platform": "Avature"
+    },
+    {
+      "rank": 7,
+      "platform": "Eightfold AI"
+    },
+    {
+      "rank": 8,
+      "platform": "SmartRecruiters"
+    },
+    {
+      "rank": 9,
+      "platform": "Oracle Taleo"
+    },
+    {
+      "rank": 10,
+      "platform": "Ashby"
+    },
+    {
+      "rank": 11,
+      "platform": "Lever"
+    },
+    {
+      "rank": 12,
+      "platform": "USAJobs / USA Staffing"
+    },
+    {
+      "rank": 13,
+      "platform": "Phenom"
+    },
+    {
+      "rank": 14,
+      "platform": "UKG Pro Recruiting / UltiPro"
+    },
+    {
+      "rank": 15,
+      "platform": "PageUp"
+    },
+    {
+      "rank": 16,
+      "platform": "Cornerstone Recruiting"
+    },
+    {
+      "rank": 17,
+      "platform": "Workable"
+    },
+    {
+      "rank": 18,
+      "platform": "BambooHR Recruiting"
+    },
+    {
+      "rank": 19,
+      "platform": "Jobvite"
+    },
+    {
+      "rank": 20,
+      "platform": "ADP Recruiting / Recruiting Management"
+    },
+    {
+      "rank": 21,
+      "platform": "Dayforce Recruiting"
+    },
+    {
+      "rank": 22,
+      "platform": "Paylocity Recruiting"
+    },
+    {
+      "rank": 23,
+      "platform": "Paycom Recruiting"
+    },
+    {
+      "rank": 24,
+      "platform": "PeopleAdmin / TalentEd"
+    },
+    {
+      "rank": 25,
+      "platform": "NEOGOV"
+    },
+    {
+      "rank": 26,
+      "platform": "IBM Kenexa / BrassRing"
+    },
+    {
+      "rank": 27,
+      "platform": "JazzHR"
+    },
+    {
+      "rank": 28,
+      "platform": "Teamtailor"
+    },
+    {
+      "rank": 29,
+      "platform": "Recruitee"
+    },
+    {
+      "rank": 30,
+      "platform": "Personio Recruiting"
+    },
+    {
+      "rank": 31,
+      "platform": "ClearCompany"
+    },
+    {
+      "rank": 32,
+      "platform": "Paycor Recruiting"
+    },
+    {
+      "rank": 33,
+      "platform": "Rippling Recruiting"
+    },
+    {
+      "rank": 34,
+      "platform": "ApplicantPro"
+    },
+    {
+      "rank": 35,
+      "platform": "ApplicantStack"
+    },
+    {
+      "rank": 36,
+      "platform": "Breezy HR"
+    },
+    {
+      "rank": 37,
+      "platform": "Pinpoint"
+    },
+    {
+      "rank": 38,
+      "platform": "Comeet"
+    },
+    {
+      "rank": 39,
+      "platform": "Zoho Recruit"
+    },
+    {
+      "rank": 40,
+      "platform": "Bullhorn ATS"
+    },
+    {
+      "rank": 41,
+      "platform": "CEIPAL"
+    },
+    {
+      "rank": 42,
+      "platform": "Recruit CRM"
+    },
+    {
+      "rank": 43,
+      "platform": "CATS ATS"
+    },
+    {
+      "rank": 44,
+      "platform": "PCRecruiter"
+    },
+    {
+      "rank": 45,
+      "platform": "JobScore"
+    },
+    {
+      "rank": 46,
+      "platform": "Hireology"
+    },
+    {
+      "rank": 47,
+      "platform": "TalentReef"
+    },
+    {
+      "rank": 48,
+      "platform": "Fountain"
+    },
+    {
+      "rank": 49,
+      "platform": "Paradox"
+    },
+    {
+      "rank": 50,
+      "platform": "Radancy / Symphony Talent"
+    }
+  ]
+}

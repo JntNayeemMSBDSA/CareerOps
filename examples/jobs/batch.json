@@ -1,0 +1,10 @@
+{
+  "jobs": [
+    {
+      "company": "Glasswing Civic Archive",
+      "position": "Data Analyst",
+      "jd_file": "examples/jobs/data-analyst.txt",
+      "run_id": "example_data_analyst"
+    }
+  ]
+}

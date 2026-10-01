@@ -1,0 +1,15 @@
+Fictional job posting for offline testing only.
+Employer: Glasswing Civic Archive
+Position: Data Analyst
+Requisition ID: DEMO-DA-701
+Location: Example City, USA
+Responsibilities
+Build SQL queries and Python data pipelines for public collection reporting.
+Create Power BI dashboards using DAX and Power Query.
+Validate data quality, reconcile missing records, and explain results to coordinators.
+Qualifications
+Bachelor degree in mathematics or a related field required.
+Two years of SQL analytics experience required.
+Python and Power BI experience required.
+Preferred
+Experience with DuckDB, Parquet, and classification model evaluation.

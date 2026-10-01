@@ -1,0 +1,2215 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<title>{{NAME}}</title>
+
+<style>
+@page {
+  size: Letter;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+  color: #000;
+  font-weight: 400;
+}
+
+/*
+  We intentionally use slightly narrower side margins than the old
+  1-inch master because we are preserving the FULL technical content.
+*/
+.resume-page {
+  width: 8.5in;
+  min-height: 11in;
+
+  padding:
+    0.46in
+    0.75in
+    0.46in
+    0.75in;
+
+  margin: 0 auto;
+}
+
+/* --------------------------------------------------------------
+   HEADER
+   -------------------------------------------------------------- */
+
+.resume-header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.candidate-name {
+  margin: 0;
+  padding: 0;
+
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 11.5pt;
+  line-height: 12pt;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-row {
+  margin: 0;
+  padding: 0;
+
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+  font-weight: 400;
+  text-align: center;
+
+  white-space: nowrap;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000 !important;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* --------------------------------------------------------------
+   MAJOR SECTIONS
+
+   User-authoritative spacing:
+   approximately 0.05 of one body line.
+   -------------------------------------------------------------- */
+
+.resume-section {
+  margin: 0;
+  margin-top: 0.57pt;
+  padding: 0;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 10pt;
+  line-height: 11.4pt;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-bottom:
+    0.55pt solid #000;
+}
+
+/* --------------------------------------------------------------
+   PROFESSIONAL SUMMARY
+   -------------------------------------------------------------- */
+
+.summary-line {
+  margin: 0;
+  padding: 0;
+
+  font-size: 10pt;
+  line-height: 11.4pt;
+  font-weight: 400;
+
+  text-align: justify;
+  text-align-last: left;
+  hyphens: none;
+}
+
+/* --------------------------------------------------------------
+   EXPERIENCE + PROJECT HEADERS
+   -------------------------------------------------------------- */
+
+.job,
+.project,
+.edu-item {
+  margin: 0;
+  padding: 0;
+}
+
+.entry-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  gap: 8pt;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 10pt;
+  line-height: 11.4pt;
+}
+
+.entry-main {
+  min-width: 0;
+  flex: 1 1 auto;
+
+  font-size: 10pt;
+  font-weight: 700;
+}
+
+.job-company,
+.job-role,
+.project-name {
+  font-size: 10pt;
+  font-weight: 700;
+  font-style: normal !important;
+}
+
+.job-period,
+.project-date {
+  flex: 0 0 auto;
+
+  font-size: 10pt;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.entry-separator {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: normal !important;
+}
+
+.job-location {
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------------
+   WORD-LIKE BULLETS
+
+   Master document uses 10 pt Calibri with a 7.2 pt hanging indent.
+   -------------------------------------------------------------- */
+
+.bullet-list {
+  list-style-type: disc;
+  list-style-position: outside;
+
+  margin:
+    0
+    0
+    0
+    7.2pt;
+
+  padding:
+    0
+    0
+    0
+    7.2pt;
+}
+
+.bullet-list li {
+  display: list-item !important;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+  font-weight: 400;
+
+  text-align: justify;
+  text-align-last: left;
+
+  hyphens: none;
+}
+
+.bullet-list li::before {
+  content: none !important;
+}
+
+.bullet-list li::marker {
+  font-size: 10pt;
+}
+
+/* --------------------------------------------------------------
+   SKILLS + CERTIFICATIONS
+   -------------------------------------------------------------- */
+
+.skills-grid {
+  margin: 0;
+  padding: 0;
+}
+
+.skill-item,
+.certifications-inline {
+  margin: 0;
+  padding: 0;
+
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+
+  text-align: justify;
+  text-align-last: left;
+}
+
+.skill-item::before,
+.certifications-inline::before {
+  font-size: 10.5pt !important;
+}
+
+.skill-category {
+  font-weight: 700;
+}
+
+.certifications-inline a,
+.cert-title a,
+.cert-item a {
+  text-decoration: none !important;
+}
+
+/* --------------------------------------------------------------
+   EDUCATION
+   -------------------------------------------------------------- */
+
+.education-section .entry-header {
+  font-size: 10pt;
+  line-height: 11.4pt;
+}
+
+.edu-org,
+.edu-title {
+  font-weight: 700;
+}
+
+.edu-year {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ATS-safe normal flow only. */
+.resume-page,
+.resume-header,
+.resume-section,
+.job,
+.project,
+.edu-item,
+.entry-header {
+  position: static;
+}
+
+/* CAREEROPS_PREVIEW_V4_OVERRIDES_START */
+
+/* --------------------------------------------------------------
+   PAGE GEOMETRY
+   -------------------------------------------------------------- */
+
+.resume-page {
+  padding-top: 0.46in;
+  padding-right: 0.75in;
+  padding-bottom: 0.75in;
+  padding-left: 0.75in;
+}
+
+
+/* --------------------------------------------------------------
+   HEADER
+
+   One full 10pt-Calibri body line after the contact row.
+   -------------------------------------------------------------- */
+
+.resume-header {
+  margin: 0 0 11.4pt 0;
+  padding: 0;
+}
+
+
+/* --------------------------------------------------------------
+   MAJOR SECTION RHYTHM
+
+   0.5 body line = 5.7pt.
+   Summary does not add another gap because the header already
+   provides the requested full-line separation.
+   -------------------------------------------------------------- */
+
+.resume-section {
+  margin-top: 5.7pt;
+  margin-bottom: 0;
+}
+
+.summary-section {
+  margin-top: 0;
+}
+
+
+/* --------------------------------------------------------------
+   BULLETS
+
+   Keep semantic UL/LI structure for ATS.
+   Visually remove the Word-style hanging indent so bullets sit
+   directly with the body content.
+   -------------------------------------------------------------- */
+
+.bullet-list {
+  list-style-type: disc;
+  list-style-position: inside;
+
+  margin: 0;
+  padding: 0;
+}
+
+.bullet-list li {
+  display: list-item !important;
+
+  margin: 0;
+  padding: 0;
+
+  text-indent: 0;
+
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+
+  text-align: justify;
+  text-align-last: left;
+}
+
+.bullet-list li::marker {
+  font-size: 10pt;
+}
+
+
+/* No extra paragraph spacing within experience/project blocks. */
+
+.job,
+.project,
+.skill-item,
+.certifications-inline,
+.edu-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* CAREEROPS_PREVIEW_V4_OVERRIDES_END */
+
+
+/* CAREEROPS_PREVIEW_V5_OVERRIDES_START */
+
+/* ==============================================================
+   EXACT LOCAL FONTS
+   ============================================================== */
+
+
+
+
+
+
+
+
+
+
+/* ==============================================================
+   PAGE
+   ============================================================== */
+
+.resume-page {
+  padding:
+    0.46in
+    0.75in
+    0.75in
+    0.75in;
+}
+
+
+/* ==============================================================
+   HEADER
+   MASTER WORD FILE:
+   Times New Roman name/contact.
+   ============================================================== */
+
+.resume-header {
+  margin: 0 0 11.4pt 0;
+  padding: 0;
+  text-align: center;
+}
+
+.candidate-name {
+  font-family: "Times New Roman", serif;
+  font-size: 11.5pt;
+  line-height: 12pt;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contact-row {
+  font-family: "Times New Roman", serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-row a,
+.contact-row a:link,
+.contact-row a:visited {
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+
+
+/* ==============================================================
+   BODY
+   ============================================================== */
+
+body,
+.resume-page,
+.resume-section,
+.job,
+.project,
+.skill-item,
+.certification-row,
+.edu-item {
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+}
+
+
+/* ==============================================================
+   SECTION SPACING
+
+   Major sections:
+   exactly ~0.5 line.
+
+   Individual experience/project entries:
+   approximately 0.05 line, matching the tiny Word spacer.
+   ============================================================== */
+
+.resume-section {
+  margin: 0;
+  padding: 0;
+}
+
+.resume-section + .resume-section {
+  margin-top: 5pt;
+}
+
+.summary-section {
+  margin-top: 0;
+}
+
+.job + .job,
+.project + .project {
+  margin-top: 0.6pt;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+  font-weight: 700;
+}
+
+
+/* ==============================================================
+   SUMMARY
+   ============================================================== */
+
+.summary-line {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+
+  text-align: justify;
+  text-align-last: left;
+}
+
+
+/* ==============================================================
+   EXPERIENCE / PROJECT HEADERS
+   ============================================================== */
+
+.entry-header,
+.entry-main,
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+  font-style: normal !important;
+}
+
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: normal !important;
+}
+
+
+/* ==============================================================
+   EXPERIENCE + PROJECT BULLETS
+
+   Semantic <ul><li> is preserved for ATS.
+
+   Visually:
+       • one small gap then text
+
+   The marker occupies its own 7.2pt column.
+   Wrapped lines align with the text, not underneath the bullet.
+   ============================================================== */
+
+.bullet-list {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.bullet-list li {
+  display: flex !important;
+  align-items: flex-start;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+
+  text-align: justify;
+  text-align-last: left;
+}
+
+.bullet-list li::before {
+  content: "•";
+
+  position: static !important;
+
+  display: block;
+  flex: 0 0 7.2pt;
+
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+
+  text-align: left;
+}
+
+.bullet-list li::marker {
+  content: none;
+}
+
+
+/* ==============================================================
+   TECHNICAL SKILLS
+
+   Same bullet geometry.
+   No more "•BI & Reporting" collision.
+   ============================================================== */
+
+.skills-grid {
+  margin: 0;
+  padding: 0;
+}
+
+.skill-item,
+.certification-row {
+  display: flex;
+  align-items: flex-start;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 10pt;
+  line-height: 11.4pt;
+
+  text-align: justify;
+  text-align-last: left;
+}
+
+.bullet-glyph {
+  flex: 0 0 7.2pt;
+
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 11.4pt;
+
+  font-weight: 400;
+}
+
+.skill-copy,
+.certification-copy {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.skill-category,
+.cert-label {
+  font-weight: 700;
+}
+
+
+/* ==============================================================
+   CERTIFICATIONS
+
+   One clean Word-style row:
+   • Certifications and Training: (1) ...; (2) ...; (3) ...
+   ============================================================== */
+
+.certification-copy {
+  counter-reset: cert-number;
+}
+
+.cert-item {
+  display: inline;
+  counter-increment: cert-number;
+}
+
+.cert-item::before {
+  content: "(" counter(cert-number) ") ";
+}
+
+.cert-item:not(:last-child)::after {
+  content: "; ";
+}
+
+.cert-title,
+.cert-title a,
+.cert-item a {
+  color: #000 !important;
+  text-decoration: none !important;
+  border-bottom: 0 !important;
+}
+
+
+/* ==============================================================
+   EDUCATION
+   ============================================================== */
+
+.education-section,
+.education-section * {
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 10pt;
+  font-style: normal;
+}
+
+/* CAREEROPS_PREVIEW_V5_OVERRIDES_END */
+
+
+/* CAREEROPS_PREVIEW_V6_BULLET_FIX_START */
+
+/* ==============================================================
+   MASTER PAGE WIDTH
+   ============================================================== */
+
+.resume-page {
+  padding-left: 0.40in !important;
+  padding-right: 0.40in !important;
+}
+
+
+/* ==============================================================
+   EXPERIENCE + PROJECT BULLETS
+
+   Real UL/LI semantics remain for ATS.
+
+   Visual geometry:
+
+   body margin
+   ● + small gap + text
+
+   No font glyph is used for the bullet itself.
+   ============================================================== */
+
+.bullet-list {
+  list-style: none !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.bullet-list li {
+  display: flex !important;
+  align-items: flex-start !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  text-indent: 0 !important;
+
+  font-family: "Calibri", Arial, sans-serif !important;
+  font-size: 10.5pt !important;
+  line-height: 11.4pt !important;
+
+  text-align: justify !important;
+  text-align-last: left !important;
+}
+
+.bullet-list li::before {
+  content: "" !important;
+
+  display: block !important;
+
+  flex: 0 0 3.2pt !important;
+
+  width: 3.2pt !important;
+  height: 3.2pt !important;
+
+  margin-top: 4.0pt !important;
+  margin-right: 4.0pt !important;
+
+  padding: 0 !important;
+
+  background: #000 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+
+  position: static !important;
+}
+
+.bullet-list li::marker {
+  content: "" !important;
+}
+
+
+/* ==============================================================
+   TECHNICAL SKILLS + CERTIFICATION BULLETS
+
+   Exactly the same visual geometry as experience bullets.
+   ============================================================== */
+
+.skill-item,
+.certification-row {
+  display: flex !important;
+  align-items: flex-start !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "Calibri", Arial, sans-serif !important;
+  font-size: 10.5pt !important;
+  line-height: 11.4pt !important;
+
+  text-align: justify !important;
+  text-align-last: left !important;
+}
+
+.bullet-dot {
+  display: block !important;
+
+  flex: 0 0 3.2pt !important;
+
+  width: 3.2pt !important;
+  height: 3.2pt !important;
+
+  margin-top: 4.0pt !important;
+  margin-right: 4.0pt !important;
+
+  padding: 0 !important;
+
+  background: #000 !important;
+  border-radius: 50% !important;
+}
+
+.skill-copy,
+.certification-copy {
+  display: block !important;
+
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+
+/* Kill any remnants of the broken V5 glyph. */
+
+.bullet-glyph {
+  display: none !important;
+}
+
+/* CAREEROPS_PREVIEW_V6_BULLET_FIX_END */
+
+
+/* CAREEROPS_MARGIN_OVERRIDE_START */
+
+.resume-page {
+  padding-top: 0.40in !important;
+  padding-right: 0.40in !important;
+  padding-bottom: 0.40in !important;
+  padding-left: 0.40in !important;
+}
+
+/* CAREEROPS_MARGIN_OVERRIDE_END */
+
+
+/* CAREEROPS_PREVIEW_V7_DENSITY_START */
+
+/* PAGE GEOMETRY */
+.resume-page {
+  padding-top: 0.40in !important;
+  padding-right: 0.40in !important;
+  padding-bottom: 0.40in !important;
+  padding-left: 0.40in !important;
+}
+
+
+/* CORE BODY RHYTHM */
+body,
+.resume-page,
+.resume-section,
+.job,
+.project,
+.skill-item,
+.certification-row,
+.edu-item {
+  font-size: 10.5pt !important;
+  line-height: 10.5pt !important;
+}
+
+
+/* HEADER */
+.candidate-name {
+  line-height: 11pt !important;
+}
+
+.contact-row {
+  line-height: 10.5pt !important;
+}
+
+/* 0.5 line after header */
+.resume-header {
+  margin-bottom: 5.25pt !important;
+}
+
+
+/* MAJOR SECTIONS */
+/* exactly 0.5 of the 10.5pt body line */
+.resume-section + .resume-section {
+  margin-top: 5.25pt !important;
+}
+
+.summary-section {
+  margin-top: 0 !important;
+}
+
+
+/* SECTION HEADINGS */
+.section-title {
+  line-height: 10.5pt !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* EXPERIENCE / PROJECT HEADERS */
+.entry-header,
+.entry-main,
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+  font-size: 10.5pt !important;
+  line-height: 10.5pt !important;
+}
+
+
+/* NO EXTRA SPACE BETWEEN JOBS OR PROJECTS */
+.job + .job,
+.project + .project {
+  margin-top: 0 !important;
+}
+
+
+/* BODY BULLETS */
+.bullet-list li {
+  font-size: 10.5pt !important;
+  line-height: 10.5pt !important;
+}
+
+.bullet-list li::before {
+  margin-top: 3.65pt !important;
+}
+
+
+/* SKILLS / CERTIFICATIONS */
+.skill-item,
+.certification-row {
+  font-size: 10.5pt !important;
+  line-height: 10.5pt !important;
+}
+
+.bullet-dot {
+  margin-top: 3.65pt !important;
+}
+
+
+/* SUMMARY */
+.summary-line {
+  font-size: 10.5pt !important;
+  line-height: 10.5pt !important;
+}
+
+
+/* EDUCATION */
+.education-section,
+.education-section * {
+  font-size: 10.5pt !important;
+  line-height: 10.5pt !important;
+}
+
+/* CAREEROPS_PREVIEW_V7_DENSITY_END */
+
+
+/* CAREEROPS_FINAL_MARGIN_OVERRIDE_START */
+
+.resume-page {
+  padding-top: 0.40in !important;
+  padding-right: 0.40in !important;
+  padding-bottom: 0.40in !important;
+  padding-left: 0.40in !important;
+}
+
+/* CAREEROPS_FINAL_MARGIN_OVERRIDE_END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================
+   CAREEROPS V11 CLEAN
+   Visual target: uploaded master-resume reference
+   ============================================================ */
+
+
+/* ---------------- PAGE ---------------- */
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.resume-page {
+    box-sizing: border-box !important;
+
+    width: 8.5in !important;
+    min-height: 11in !important;
+
+    margin: 0 auto !important;
+
+    /* Narrow professional text block similar to reference */
+    padding-top: 0.40in !important;
+    padding-right: 0.40in !important;
+    padding-bottom: 0.40in !important;
+    padding-left: 0.40in !important;
+}
+
+
+/* ---------------- BODY ---------------- */
+
+body,
+.resume-page,
+.resume-section,
+.summary-line,
+.job,
+.project,
+.skill-item,
+.certification-row,
+.education-section {
+    font-family: Calibri, Arial, sans-serif !important;
+
+    font-size: 10.5pt !important;
+    line-height: 10.85pt !important;
+
+    font-style: normal !important;
+    color: #000 !important;
+}
+
+
+/* ---------------- HEADER ---------------- */
+
+.resume-header {
+    margin: 0 0 5pt 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    text-align: center !important;
+}
+
+.candidate-name {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: "Times New Roman", Times, serif !important;
+
+    font-size: 11.5pt !important;
+    line-height: 12pt !important;
+
+    font-weight: 700 !important;
+    font-style: normal !important;
+
+    border: 0 !important;
+}
+
+.contact-row {
+    display: inline-block !important;
+
+    width: auto !important;
+
+    margin: 0 auto !important;
+    padding: 0 0 0.4pt 0 !important;
+
+    font-family: "Times New Roman", Times, serif !important;
+
+    font-size: 9.8pt !important;
+    line-height: 10.4pt !important;
+
+    font-weight: 400 !important;
+
+    white-space: nowrap !important;
+
+    border: 0 !important;
+    border-bottom: 0.45pt solid #000 !important;
+}
+
+
+/* ---------------- LINKS ---------------- */
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+
+/* ---------------- MAJOR SECTIONS ---------------- */
+
+.resume-section {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.resume-section + .resume-section {
+    margin-top: 4.2pt !important;
+}
+
+
+/* ---------------- SECTION TITLES ---------------- */
+
+.section-title {
+    margin: 0 0 1.2pt 0 !important;
+    padding: 0 !important;
+
+    font-family: Calibri, Arial, sans-serif !important;
+
+    font-size: 10.5pt !important;
+    line-height: 10.8pt !important;
+
+    font-weight: 700 !important;
+
+    border: 0 !important;
+    border-bottom: 0.45pt solid #000 !important;
+}
+
+
+/* ---------------- SUMMARY ---------------- */
+
+.summary-line {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 10.5pt !important;
+    line-height: 10.85pt !important;
+
+    text-align: justify !important;
+    text-align-last: left !important;
+
+    hyphens: none !important;
+}
+
+
+/* ---------------- EXPERIENCE HEADERS ---------------- */
+
+.entry-header {
+    display: flex !important;
+
+    align-items: baseline !important;
+    justify-content: space-between !important;
+
+    gap: 8pt !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: Calibri, Arial, sans-serif !important;
+
+    font-size: 10.5pt !important;
+    line-height: 10.8pt !important;
+}
+
+.entry-main {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+    font-size: 10.5pt !important;
+    line-height: 10.8pt !important;
+
+    font-weight: 700 !important;
+}
+
+.job-role {
+    font-style: italic !important;
+}
+
+.job-period,
+.project-date {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+}
+
+
+/* ---------------- EXPERIENCE SPACING ---------------- */
+
+.job {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.job:not(:last-child) {
+    margin-bottom: 2.4pt !important;
+}
+
+
+/* ---------------- PROJECT SPACING ---------------- */
+
+.project {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.project:not(:last-child) {
+    margin-bottom: 2.4pt !important;
+}
+
+
+/* ---------------- BULLETS ---------------- */
+
+.bullet-list {
+    list-style: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.bullet-list li {
+    display: flex !important;
+    align-items: flex-start !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: Calibri, Arial, sans-serif !important;
+
+    font-size: 10.5pt !important;
+    line-height: 10.85pt !important;
+
+    text-align: justify !important;
+    text-align-last: left !important;
+
+    hyphens: none !important;
+}
+
+.bullet-list li::before {
+    content: "" !important;
+
+    display: block !important;
+
+    flex: 0 0 2.5pt !important;
+
+    width: 2.5pt !important;
+    height: 2.5pt !important;
+
+    margin-top: 3.8pt !important;
+    margin-right: 3.7pt !important;
+
+    background: #000 !important;
+
+    border-radius: 50% !important;
+}
+
+.bullet-list li::marker {
+    content: "" !important;
+}
+
+
+/* ---------------- TECHNICAL SKILLS ---------------- */
+
+.skills-grid {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.skill-item {
+    display: flex !important;
+    align-items: flex-start !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 10.5pt !important;
+    line-height: 10.85pt !important;
+}
+
+.skill-item:not(:last-child) {
+    margin-bottom: 0.7pt !important;
+}
+
+.skill-category {
+    font-weight: 700 !important;
+}
+
+.skill-copy {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
+.bullet-dot {
+    display: block !important;
+
+    flex: 0 0 2.5pt !important;
+
+    width: 2.5pt !important;
+    height: 2.5pt !important;
+
+    margin-top: 3.8pt !important;
+    margin-right: 3.7pt !important;
+
+    background: #000 !important;
+
+    border-radius: 50% !important;
+}
+
+
+/* ---------------- CERTIFICATIONS ---------------- */
+
+.certification-row {
+    display: flex !important;
+    align-items: flex-start !important;
+
+    margin: 0.7pt 0 0 0 !important;
+    padding: 0 !important;
+
+    font-size: 10.5pt !important;
+    line-height: 10.85pt !important;
+}
+
+.cert-label {
+    font-weight: 700 !important;
+}
+
+.certification-copy {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+
+.cert-item a,
+.cert-title,
+.cert-title a {
+    color: #000 !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 0.35pt !important;
+    text-underline-offset: 1pt !important;
+}
+
+
+/* ---------------- EDUCATION ---------------- */
+
+.education-section,
+.education-section * {
+    font-family: Calibri, Arial, sans-serif !important;
+
+    font-size: 10.5pt !important;
+    line-height: 10.85pt !important;
+}
+
+
+/* Keep education compact like reference */
+
+.edu-item {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* ============================================================
+   END V11 CLEAN
+   ============================================================ */
+
+
+/* V11_ALL_HEADERS_11_START */
+
+/* Name */
+.candidate-name {
+    font-size: 11pt !important;
+    line-height: 11.8pt !important;
+}
+
+/* Major section headings */
+.section-title {
+    font-size: 11pt !important;
+    line-height: 11.8pt !important;
+}
+
+/* Experience + project header rows */
+.entry-header,
+.entry-main,
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+    font-size: 11pt !important;
+    line-height: 11.8pt !important;
+}
+
+/* Body remains 10.5 pt */
+.summary-line,
+.bullet-list li,
+.skill-item,
+.certification-row,
+.education-section,
+.education-section * {
+    font-size: 10.5pt !important;
+}
+
+/* V11_ALL_HEADERS_11_END */
+
+
+/* V11_NAME14_BULLET025_START */
+
+/* ============================================================
+   NAME
+   ============================================================ */
+
+.candidate-name {
+    font-size: 14pt !important;
+    line-height: 14.5pt !important;
+}
+
+
+/* ============================================================
+   BULLET SPACING
+   0.25 × 10.85pt line height ≈ 2.7pt
+   ============================================================ */
+
+/* Experience + project bullets */
+.bullet-list li:not(:last-child) {
+    margin-bottom: 2.7pt !important;
+}
+
+/* Technical Skills bullet rows */
+.skill-item:not(:last-child) {
+    margin-bottom: 2.7pt !important;
+}
+
+
+/* V11_NAME14_BULLET025_END */
+
+
+/* FORMAT_PREVIEW_CURRENT_START */
+
+/* PAGE */
+.resume-page {
+    padding-top: 0.15in !important;
+    padding-bottom: 0.15in !important;
+    padding-left: 0.40in !important;
+    padding-right: 0.40in !important;
+}
+
+/* BODY */
+body,
+.resume-page,
+.summary-line,
+.bullet-list li,
+.skill-item,
+.skill-copy,
+.skill-category,
+.certification-row,
+.certification-copy,
+.cert-label,
+.cert-item,
+.cert-title,
+.education-section,
+.education-section * {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 11.5pt !important;
+    line-height: 12.5pt !important;
+}
+
+/* NAME */
+.candidate-name {
+    font-size: 14pt !important;
+    line-height: 14.5pt !important;
+}
+
+/* CONTACT / CONTACT LINE */
+.contact-row {
+    font-size: 11.5pt !important;
+    line-height: 12.5pt !important;
+}
+
+/* SECTION TITLES */
+.section-title {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 12.5pt !important;
+    line-height: 13pt !important;
+    font-weight: 700 !important;
+}
+
+/* EXPERIENCE + PROJECT HEADERS */
+.entry-header,
+.entry-main,
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 12pt !important;
+    line-height: 12.75pt !important;
+    font-weight: 700 !important;
+}
+
+/* 0.20-LINE SPACING BETWEEN BULLETS
+   0.20 × 12.5pt = 2.5pt */
+.bullet-list li:not(:last-child) {
+    margin-bottom: 2.5pt !important;
+}
+
+/* Same spacing for hanging skill rows */
+.skill-item:not(:last-child) {
+    margin-bottom: 2.5pt !important;
+}
+
+/* FORMAT_PREVIEW_CURRENT_END */
+
+
+/* FORMAT_PREVIEW_LATEST_START */
+
+
+/* PAGE */
+.resume-page {
+    padding-top: 0.15in !important;
+    padding-bottom: 0.15in !important;
+    padding-left: 0.40in !important;
+    padding-right: 0.40in !important;
+}
+
+
+/* BODY
+   11.5 pt font
+   0.10-line internal spacing:
+   11.5 × 1.10 = 12.65 pt line height
+*/
+body,
+.resume-page,
+.summary-line,
+.bullet-list li,
+.skill-item,
+.skill-copy,
+.skill-category,
+.certification-row,
+.certification-copy,
+.cert-label,
+.cert-item,
+.cert-title,
+.education-section,
+.education-section * {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 11.5pt !important;
+    line-height: 12.65pt !important;
+}
+
+
+/* NAME */
+.candidate-name {
+    font-size: 14pt !important;
+    line-height: 14.5pt !important;
+    font-weight: 700 !important;
+}
+
+
+/* CONTACT / ADDRESS / PHONE / EMAIL / LINKS */
+.contact-row {
+    font-size: 11.5pt !important;
+    line-height: 12.65pt !important;
+}
+
+
+/* SECTION TITLES */
+.section-title {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 12.5pt !important;
+    line-height: 13.25pt !important;
+    font-weight: 700 !important;
+}
+
+
+/* EXPERIENCE + PROJECT HEADERS */
+.entry-header,
+.entry-main,
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 12pt !important;
+    line-height: 12.75pt !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+}
+
+
+/* BULLET PARAGRAPHS
+   Internal wrapped-line spacing = 0.10 line
+   Between separate bullets = 0.20 line
+
+   0.20 × 12.65 = 2.53 pt
+*/
+.bullet-list li {
+    font-size: 11.5pt !important;
+    line-height: 12.65pt !important;
+}
+
+.bullet-list li:not(:last-child) {
+    margin-bottom: 2.53pt !important;
+}
+
+
+/* TECHNICAL-SKILL ROWS */
+.skill-item {
+    font-size: 11.5pt !important;
+    line-height: 12.65pt !important;
+}
+
+.skill-item:not(:last-child) {
+    margin-bottom: 2.53pt !important;
+}
+
+
+/* FORMAT_PREVIEW_LATEST_END */
+
+
+/* FORMAT_PREVIEW_ADJUSTED_START */
+
+/* PAGE */
+.resume-page {
+    padding-top: 0.15in !important;
+    padding-bottom: 0.15in !important;
+    padding-left: 0.40in !important;
+    padding-right: 0.40in !important;
+}
+
+
+/* BODY
+   Calibri 11.5 pt
+   0.10 line spacing between wrapped lines
+   11.5 × 1.10 = 12.65 pt
+*/
+body,
+.resume-page,
+.summary-line,
+.bullet-list li,
+.skill-item,
+.skill-copy,
+.skill-category,
+.certification-row,
+.certification-copy,
+.cert-label,
+.cert-item,
+.cert-title,
+.education-section,
+.education-section * {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 11.5pt !important;
+    line-height: 12.65pt !important;
+}
+
+
+/* NAME */
+.candidate-name {
+    font-size: 14pt !important;
+    line-height: 14.5pt !important;
+    font-weight: 700 !important;
+}
+
+
+/* CONTACT / CONTACT LINE */
+.contact-row {
+    font-size: 11.5pt !important;
+    line-height: 12.65pt !important;
+}
+
+
+/* ALL SECTION TITLES = 12 PT */
+.section-title {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 12pt !important;
+    line-height: 12.75pt !important;
+    font-weight: 700 !important;
+}
+
+
+/* EXPERIENCE + PROJECT HEADERS = 11.5 PT BOLD */
+.entry-header,
+.entry-main,
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 11.5pt !important;
+    line-height: 12.25pt !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+}
+
+
+/* BULLETS
+   Wrapped-line spacing = 0.10 line
+   Between bullets = 0.15 line
+   12.65 × 0.15 = 1.8975 pt
+*/
+.bullet-list li {
+    font-size: 11.5pt !important;
+    line-height: 12.65pt !important;
+}
+
+.bullet-list li:not(:last-child) {
+    margin-bottom: 1.90pt !important;
+}
+
+
+/* TECHNICAL SKILL ROWS */
+.skill-item {
+    font-size: 11.5pt !important;
+    line-height: 12.65pt !important;
+}
+
+.skill-item:not(:last-child) {
+    margin-bottom: 1.90pt !important;
+}
+
+
+/* FORMAT_PREVIEW_ADJUSTED_END */
+
+
+/* FORMAT_PREVIEW_BODY11_START */
+
+/* BODY / BULLET WRITING = CALIBRI 11 PT */
+body,
+.resume-page,
+.summary-line,
+.bullet-list li,
+.skill-item,
+.skill-copy,
+.skill-category,
+.certification-row,
+.certification-copy,
+.cert-label,
+.cert-item,
+.cert-title,
+.education-section,
+.education-section * {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 12.1pt !important;
+}
+
+
+/* SECTION HEADERS = 11 PT */
+.section-title {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 11pt !important;
+    line-height: 11.75pt !important;
+    font-weight: 700 !important;
+}
+
+
+/* EXPERIENCE + PROJECT HEADERS REMAIN 11.5 PT BOLD */
+.entry-header,
+.entry-main,
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+    font-family: Calibri, Arial, sans-serif !important;
+    font-size: 11.5pt !important;
+    line-height: 12.25pt !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+}
+
+
+/* NAME REMAINS 14 PT */
+.candidate-name {
+    font-size: 14pt !important;
+    line-height: 14.5pt !important;
+    font-weight: 700 !important;
+}
+
+
+/* CONTACT LINE REMAINS 11.5 PT */
+.contact-row {
+    font-size: 11.5pt !important;
+    line-height: 12.65pt !important;
+}
+
+
+/* WRAPPED-LINE SPACING ≈ 0.10 LINE */
+.bullet-list li {
+    font-size: 11pt !important;
+    line-height: 12.1pt !important;
+}
+
+
+/* BETWEEN BULLETS = 0.15 LINE
+   12.1 × 0.15 ≈ 1.82 PT */
+.bullet-list li:not(:last-child) {
+    margin-bottom: 1.82pt !important;
+}
+
+.skill-item:not(:last-child) {
+    margin-bottom: 1.82pt !important;
+}
+
+/* FORMAT_PREVIEW_BODY11_END */
+
+
+/* CALIBRI_INK_FIX_START */
+
+/* Use the actual Microsoft Windows Calibri files */
+
+
+
+
+
+
+
+
+
+/* BODY TEXT */
+body,
+.resume-page,
+.summary-line,
+.bullet-list li,
+.skill-item,
+.skill-copy,
+.skill-category,
+.certification-row,
+.certification-copy,
+.cert-label,
+.cert-item,
+.cert-title,
+.education-section,
+.education-section * {
+    font-family: "Calibri Resume", Calibri, Arial, sans-serif !important;
+    font-weight: 400;
+}
+
+
+/* BOLD BODY LABELS */
+.skill-category,
+.cert-label {
+    font-family: "Calibri Resume", Calibri, Arial, sans-serif !important;
+    font-weight: 700 !important;
+}
+
+
+/* SECTION HEADERS */
+.section-title {
+    font-family: "Calibri Resume", Calibri, Arial, sans-serif !important;
+    font-weight: 700 !important;
+}
+
+
+/* EXPERIENCE + PROJECT HEADERS */
+.entry-header,
+.entry-main,
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+    font-family: "Calibri Resume", Calibri, Arial, sans-serif !important;
+    font-weight: 700 !important;
+}
+
+
+/* NAME + CONTACT */
+.candidate-name {
+    font-family: "Times Resume", "Times New Roman", serif !important;
+    font-weight: 700 !important;
+}
+
+.contact-row {
+    font-family: "Times Resume", "Times New Roman", serif !important;
+    font-weight: 400 !important;
+}
+
+
+/* Prevent browser-created fake bold/thin variants */
+.resume-page {
+    font-synthesis: none !important;
+}
+
+/* CALIBRI_INK_FIX_END */
+
+
+/* FORMAT_PREVIEW_MARGIN010_START */
+
+.resume-page {
+    padding-top: 0.10in !important;
+    padding-bottom: 0.10in !important;
+}
+
+/* FORMAT_PREVIEW_MARGIN010_END */
+
+
+
+
+
+/* FORMAT_PREVIEW_SIDE040_START */
+
+.resume-page {
+    padding-left: 0.40in !important;
+    padding-right: 0.40in !important;
+}
+
+/* FORMAT_PREVIEW_SIDE040_END */
+
+</style>
+
+<style id="CAREEROPS_LOCKED_FORMAT_V1">
+/* ============================================================
+   CAREEROPS PRODUCTION RESUME FORMAT
+   Final approved geometry and typography.
+   ============================================================ */
+
+/* PAGE GEOMETRY */
+.resume-page {
+    padding-top: 0.50in !important;
+    padding-bottom: 0.50in !important;
+    padding-left: 0.65in !important;
+    padding-right: 0.65in !important;
+    font-synthesis: none !important;
+}
+
+
+/* BODY: Word-like 11 pt, 1.10 line */
+body,
+.resume-page,
+.summary-line,
+.bullet-list li,
+.skill-item,
+.skill-copy,
+.certification-row,
+.certification-copy,
+.cert-item,
+.education-section,
+.education-section * {
+    font-family:
+        "Carlito",
+        "Calibri",
+        Arial,
+        sans-serif !important;
+
+    font-size: 14.6667px !important;
+    line-height: 16.133px !important;
+
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0 !important;
+
+    text-rendering: optimizeLegibility;
+    font-synthesis: none !important;
+}
+
+
+/* BOLD BODY LABELS */
+.skill-category,
+.cert-label,
+.education-institution-force,
+.edu-org,
+.edu-school,
+.education-school,
+.education-institution,
+.institution-name,
+.school-name,
+.education-section .entry-main > span:first-child {
+    font-family:
+        "Carlito",
+        "Calibri",
+        Arial,
+        sans-serif !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* SECTION TITLES: 11 pt */
+.section-title {
+    font-family:
+        "Carlito",
+        "Calibri",
+        Arial,
+        sans-serif !important;
+
+    font-size: 14.6667px !important;
+    line-height: 15.667px !important;
+    font-weight: 700 !important;
+}
+
+
+/* EXPERIENCE + PROJECT HEADERS: 11.5 pt */
+.entry-header,
+.entry-main,
+.job-company,
+.job-role,
+.job-period,
+.project-name,
+.project-date {
+    font-family:
+        "Carlito",
+        "Calibri",
+        Arial,
+        sans-serif !important;
+
+    font-size: 15.3333px !important;
+    line-height: 16.333px !important;
+
+    font-weight: 700 !important;
+    font-style: normal !important;
+}
+
+
+/* NAME: preserve Times-family base, final 14 pt geometry */
+.candidate-name {
+    font-size: 18.6667px !important;
+    line-height: 19.333px !important;
+    font-weight: 700 !important;
+}
+
+
+/* CONTACT: same size as body */
+.contact-row,
+.contact-row *,
+.contact-row a {
+    font-family:
+        "Carlito",
+        "Calibri",
+        Arial,
+        sans-serif !important;
+
+    font-size: 14.6667px !important;
+    line-height: 16.133px !important;
+    font-weight: 400 !important;
+}
+
+
+/* BULLET RHYTHM */
+.bullet-list li {
+    font-size: 14.6667px !important;
+    line-height: 16.133px !important;
+}
+
+.bullet-list li:not(:last-child) {
+    margin-bottom: 1.61px !important;
+}
+
+
+/* TECHNICAL SKILLS RHYTHM */
+.skill-item {
+    margin-top: 0 !important;
+    font-size: 14.6667px !important;
+    line-height: 16.133px !important;
+}
+
+.skill-item:not(:last-child) {
+    margin-bottom: 1.61px !important;
+}
+
+.skill-item:last-child {
+    margin-bottom: 0 !important;
+}
+
+.certification-row {
+    margin-top: 1.61px !important;
+    margin-bottom: 0 !important;
+}
+
+
+/* STRUCTURAL SPACING */
+.resume-section + .resume-section {
+    margin-top: 2.0pt !important;
+}
+
+.job:not(:last-child) {
+    margin-bottom: 1.0pt !important;
+}
+
+.project:not(:last-child) {
+    margin-bottom: 1.0pt !important;
+}
+
+
+/* EDUCATION */
+.edu-title,
+.edu-org,
+.edu-year,
+.edu-degree,
+.edu-school,
+.edu-date,
+.education-title,
+.education-degree,
+.education-institution,
+.education-school,
+.education-date,
+.education-section .edu-title,
+.education-section .edu-org,
+.education-section .edu-year {
+    font-family:
+        "Carlito",
+        "Calibri",
+        Arial,
+        sans-serif !important;
+
+    font-weight: 700 !important;
+}
+
+.education-section,
+.resume-section:last-of-type {
+    margin-top: 2.0pt !important;
+
+    break-before: auto !important;
+    page-break-before: auto !important;
+
+    break-after: auto !important;
+    page-break-after: auto !important;
+
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+}
+
+.edu-item,
+.education-item,
+.education-section .entry-header {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+.education-section p,
+.education-section div {
+    orphans: 1 !important;
+    widows: 1 !important;
+}
+</style>
+
+</head>
+
+<body>
+<div class="resume-page">
+
+  <div class="resume-header">
+    <div class="candidate-name">{{NAME}}</div>
+    <div class="contact-row"></div>
+  </div>
+
+  <section class="resume-section summary-section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary-line">{{SUMMARY_TEXT}}</div>
+  </section>
+
+  <section class="resume-section experience-section">
+    <div class="section-title">Professional Experience</div>
+    {{EXPERIENCE}}
+  </section>
+
+  <section class="resume-section projects-section">
+    <div class="section-title">Selected Projects</div>
+    {{PROJECTS}}
+  </section>
+
+  <section class="resume-section skills-section">
+    <div class="section-title">Technical Skills and Certifications</div>
+    {{SKILLS}}
+    <div class="certification-row">
+      <span class="bullet-dot" aria-hidden="true"></span>
+      <span class="certification-copy"><span class="cert-label">Certifications and Training:</span> {{CERTIFICATIONS}}</span>
+    </div>
+  </section>
+
+  <section class="resume-section education-section">
+    <div class="section-title">Education</div>
+    {{EDUCATION}}
+  </section>
+
+</div>
+</body>
+</html>

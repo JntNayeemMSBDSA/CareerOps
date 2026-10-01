@@ -1,0 +1,398 @@
+{
+  "schema_version": "careerops-run-manifest-v1",
+  "run_id": "example_run",
+  "created_at_utc": "2026-10-01T23:20:59+00:00",
+  "updated_at_utc": "2026-10-01T23:21:25+00:00",
+  "lifecycle_status": "IN_PROGRESS",
+  "resumable_from": "writer",
+  "paths": {
+    "run": "examples/run",
+    "runtime": "examples/run/results",
+    "output": "examples/run/output",
+    "manifest": "examples/run/manifest.json"
+  },
+  "job": {
+    "company": "Glasswing Civic Archive",
+    "position": "Data Analyst",
+    "source_type": "file",
+    "source_name": "examples/run/input_jd.txt",
+    "source_url": null,
+    "jd_sha256": "9b3799864d9a1a7e2cd9dfe684791dbf1de4f0fe60f010673b8e13e1e0cb03fc",
+    "requirements_fingerprint": "8dcaff5356cc4921f706f87f8805ee26c4515b73c3d0b1e7814ed74374afa900"
+  },
+  "execution": {
+    "target_model": "gpt-6.1-sol",
+    "model_calls": 0,
+    "writer_calls": 0,
+    "truth_audit_calls": 0,
+    "writer_model_call_recorded": false
+  },
+  "stages": {
+    "ingest": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/jd_intake.json",
+        "sha256": "6126c2cf034ebbbaeb7ab3ea81f3ac74e1e9f722f66125869d66380fd5ec0520",
+        "size_bytes": 5330
+      }
+    },
+    "requirements": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/jd_requirements.json",
+        "sha256": "db2b4a5dac16718f1ce024a8ca05d01dfdbd09fa79f4644558b0665e2d50a853",
+        "size_bytes": 10324
+      }
+    },
+    "requirement_integrity": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/requirement_integrity_gate.json",
+        "sha256": "dccd17af82aba4d5aaa3a96e7ec870d25158d8d2028b4e4f5b8c9e972b57196b",
+        "size_bytes": 2834
+      }
+    },
+    "routing": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/role_routing.json",
+        "sha256": "bc8e3ce12fa231c79e586488e380c847b84b1aad8acf7cacef50258baaf4e4f4",
+        "size_bytes": 6344
+      }
+    },
+    "semantics": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/jd_semantic_map.json",
+        "sha256": "de40983651434d51cda9c03a14fe0a900d48058f80bf9a4f6388b6bbcab2e4b9",
+        "size_bytes": 19363
+      }
+    },
+    "entities": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/candidate_entities.json",
+        "sha256": "6156bd4dfe2acca269f768d05ced389099c215c0f03356574dd4879929834445",
+        "size_bytes": 5654
+      }
+    },
+    "evidence_map": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/requirement_evidence_map.json",
+        "sha256": "789840c638a7372c6fb7bad6d13311301dcb85c28de26963c2e6d965606eaab8",
+        "size_bytes": 37685
+      }
+    },
+    "constraints": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/constraint_validation.json",
+        "sha256": "a0300e4dfed651e310e22705791f626c5f9d0ad176b313c9de3ec48358ae8978",
+        "size_bytes": 5087
+      }
+    },
+    "experience_selection": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/experience_selection.json",
+        "sha256": "db57ba3813709de0fdb7a67476697226a40280e622b55b9a4a5793380d20bf8d",
+        "size_bytes": 17090
+      }
+    },
+    "project_selection": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/project_selection.json",
+        "sha256": "2c991094bdec2deb29df7bd4df43bf8d6fe391a257a69d9a3e20b1d21901bc32",
+        "size_bytes": 8632
+      }
+    },
+    "skills": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/technical_skills_plan.json",
+        "sha256": "3bfe09c6f7cbf1cf8c11ce13e1355f22bcb76ef387cd6add205583bdc47dab1d",
+        "size_bytes": 85643
+      }
+    },
+    "summary": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/summary_route.json",
+        "sha256": "6139cbf87ccca95f133adfc9711950340a6980ca8fa014b658060700da76dc08",
+        "size_bytes": 658
+      }
+    },
+    "resume_spec": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/resume_generation_spec.json",
+        "sha256": "9098c5127f8b1c426da306f19199cce017639fa826641fd2e23041be7587c8eb",
+        "size_bytes": 17132
+      }
+    },
+    "cover_plan": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/cover_plan.json",
+        "sha256": "30eb33b4befee47db625819d4a2c6a94e62007c35629776a2765a3792ac4c245",
+        "size_bytes": 33453
+      }
+    },
+    "compact_packet": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/compact_generation_packet.json",
+        "sha256": "d06ec1124faa00254a7777317f046bd3b38d610afb02eafdd8479f6c586fb1af",
+        "size_bytes": 62103
+      }
+    },
+    "pair_packet": {
+      "status": "PASS",
+      "artifact": {
+        "exists": true,
+        "path": "examples/run/results/pair_generation_packet.json",
+        "sha256": "546624fbbc940c4e080c483b50da92fb9d089eda4963bfff39448da075b10b73",
+        "size_bytes": 175936
+      }
+    },
+    "writer": {
+      "status": "PENDING",
+      "artifacts": {
+        "resume_candidate": {
+          "exists": false,
+          "path": "examples/run/results/generated_resume_content_pair_candidate.json",
+          "sha256": null,
+          "size_bytes": null
+        },
+        "cover_candidate": {
+          "exists": false,
+          "path": "examples/run/results/generated_cover_letter_pair_candidate.json",
+          "sha256": null,
+          "size_bytes": null
+        }
+      }
+    },
+    "deep_truth_gate": {
+      "status": "PENDING",
+      "artifact": {
+        "exists": false,
+        "path": "examples/run/results/truth_gate.json",
+        "sha256": null,
+        "size_bytes": null
+      }
+    },
+    "local_truth_gate": {
+      "status": "PENDING",
+      "artifact": {
+        "exists": false,
+        "path": "examples/run/results/local_truth_gate.json",
+        "sha256": null,
+        "size_bytes": null
+      }
+    },
+    "ats_gate": {
+      "status": "PENDING",
+      "artifact": {
+        "exists": false,
+        "path": "examples/run/results/ats_gate.json",
+        "sha256": null,
+        "size_bytes": null
+      }
+    },
+    "human_gate": {
+      "status": "PENDING",
+      "artifact": {
+        "exists": false,
+        "path": "examples/run/results/human_gate.json",
+        "sha256": null,
+        "size_bytes": null
+      }
+    },
+    "cover_gate": {
+      "status": "PENDING",
+      "artifact": {
+        "exists": false,
+        "path": "examples/run/results/cover_gate_v2_report.json",
+        "sha256": null,
+        "size_bytes": null
+      }
+    },
+    "interview_defensibility": {
+      "status": "PENDING",
+      "artifact": {
+        "exists": false,
+        "path": "examples/run/results/interview_defensibility_report.json",
+        "sha256": null,
+        "size_bytes": null
+      }
+    },
+    "cover_roundtrip": {
+      "status": "PENDING",
+      "artifact": {
+        "exists": false,
+        "path": "examples/run/results/cover_roundtrip_report.json",
+        "sha256": null,
+        "size_bytes": null
+      }
+    },
+    "final_application_audit": {
+      "status": "PENDING",
+      "artifact": {
+        "exists": false,
+        "path": "examples/run/results/final_application_audit_report.json",
+        "sha256": null,
+        "size_bytes": null
+      }
+    },
+    "resume_payload": {
+      "status": "PENDING",
+      "artifact": {
+        "exists": false,
+        "path": "examples/run/results/career_ops_cv_payload.json",
+        "sha256": null,
+        "size_bytes": null
+      }
+    },
+    "resume_render": {
+      "status": "PENDING",
+      "artifacts": {
+        "pdf": {
+          "exists": false,
+          "path": "examples/run/output/__missing_resume.pdf",
+          "sha256": null,
+          "size_bytes": null
+        },
+        "docx": {
+          "exists": false,
+          "path": "examples/run/output/__missing_resume.docx",
+          "sha256": null,
+          "size_bytes": null
+        }
+      }
+    },
+    "cover_render": {
+      "status": "PENDING",
+      "artifacts": {
+        "pdf": {
+          "exists": false,
+          "path": "examples/run/output/__missing_cover.pdf",
+          "sha256": null,
+          "size_bytes": null
+        },
+        "docx": {
+          "exists": false,
+          "path": "examples/run/output/__missing_cover.docx",
+          "sha256": null,
+          "size_bytes": null
+        }
+      }
+    },
+    "release": {
+      "status": "PENDING",
+      "artifact": {
+        "exists": false,
+        "path": "examples/run/results/pair_release_gate_report.json",
+        "sha256": null,
+        "size_bytes": null
+      }
+    }
+  },
+  "artifacts": {
+    "resume_candidate_json": {
+      "exists": false,
+      "path": "examples/run/results/generated_resume_content_pair_candidate.json",
+      "sha256": null,
+      "size_bytes": null
+    },
+    "cover_candidate_json": {
+      "exists": false,
+      "path": "examples/run/results/generated_cover_letter_pair_candidate.json",
+      "sha256": null,
+      "size_bytes": null
+    },
+    "career_ops_cv_payload": {
+      "exists": false,
+      "path": "examples/run/results/career_ops_cv_payload.json",
+      "sha256": null,
+      "size_bytes": null
+    },
+    "local_truth_gate": {
+      "exists": false,
+      "path": "examples/run/results/local_truth_gate.json",
+      "sha256": null,
+      "size_bytes": null
+    },
+    "ats_gate": {
+      "exists": false,
+      "path": "examples/run/results/ats_gate.json",
+      "sha256": null,
+      "size_bytes": null
+    },
+    "human_gate": {
+      "exists": false,
+      "path": "examples/run/results/human_gate.json",
+      "sha256": null,
+      "size_bytes": null
+    },
+    "cover_gate": {
+      "exists": false,
+      "path": "examples/run/results/cover_gate_v2_report.json",
+      "sha256": null,
+      "size_bytes": null
+    },
+    "cover_roundtrip": {
+      "exists": false,
+      "path": "examples/run/results/cover_roundtrip_report.json",
+      "sha256": null,
+      "size_bytes": null
+    },
+    "release_report": {
+      "exists": false,
+      "path": "examples/run/results/pair_release_gate_report.json",
+      "sha256": null,
+      "size_bytes": null
+    },
+    "resume_pdf": {
+      "exists": false,
+      "path": null,
+      "sha256": null,
+      "size_bytes": null
+    },
+    "resume_docx": {
+      "exists": false,
+      "path": null,
+      "sha256": null,
+      "size_bytes": null
+    },
+    "cover_pdf": {
+      "exists": false,
+      "path": null,
+      "sha256": null,
+      "size_bytes": null
+    },
+    "cover_docx": {
+      "exists": false,
+      "path": null,
+      "sha256": null,
+      "size_bytes": null
+    }
+  },
+  "events": []
+}

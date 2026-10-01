@@ -1,0 +1,25 @@
+Tool / Technology,Evidence IDs,Evidence Names
+Classification,PRJ-101,Library return-risk classifier
+Confidence Intervals,PRJ-102,Community garden measurement study
+Cross-validation,PRJ-101,Library return-risk classifier
+DAX,EXP-102,Parcel service monitoring
+Data Visualization,PRJ-102,Community garden measurement study
+DuckDB,EXP-101,Museum attendance analytics
+ETL/ELT,EXP-101,Museum attendance analytics
+Excel,EXP-102,Parcel service monitoring
+Feature Engineering,PRJ-101,Library return-risk classifier
+Git,PRJ-101,Library return-risk classifier
+GitHub Actions,PRJ-102,Community garden measurement study
+Hypothesis Testing,PRJ-102,Community garden measurement study
+Model Evaluation,PRJ-101,Library return-risk classifier
+NumPy,PRJ-101,Library return-risk classifier
+Parquet,EXP-101,Museum attendance analytics
+PostgreSQL,EXP-102,Parcel service monitoring
+Power BI,EXP-102,Parcel service monitoring
+Power Query,EXP-102,Parcel service monitoring
+Python,EXP-101; PRJ-101; PRJ-102,Museum attendance analytics; Library return-risk classifier; Community garden measurement study
+Ruff,PRJ-102,Community garden measurement study
+SQL,EXP-101; EXP-102,Museum attendance analytics; Parcel service monitoring
+dbt,EXP-101,Museum attendance analytics
+pandas,EXP-101; PRJ-101,Museum attendance analytics; Library return-risk classifier
+pytest,EXP-101,Museum attendance analytics

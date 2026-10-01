@@ -1,0 +1,15 @@
+{
+  "schema_version": "application-role-universe-v1",
+  "synthetic": true,
+  "role_count": 2,
+  "roles": [
+    {
+      "rank": 1,
+      "search_title": "Data Analyst"
+    },
+    {
+      "rank": 2,
+      "search_title": "Data Engineer"
+    }
+  ]
+}

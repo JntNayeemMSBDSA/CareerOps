@@ -1,0 +1,757 @@
+{
+  "metadata": {
+    "synthetic": true,
+    "inventory_name": "Fictional technical inventory",
+    "canonical_role_count": 2,
+    "policy": "Only this example attestation establishes possession; no historical placement is inferred."
+  },
+  "coverage_policy": {
+    "resume_claim_rule": "Source and owner required for historical claims."
+  },
+  "explicit_skill_registry": [
+    {
+      "canonical_term": "SQL",
+      "category": "Programming / Query / Web",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Python",
+      "category": "Programming / Query / Web",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "pandas",
+      "category": "Programming / Query / Web",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "NumPy",
+      "category": "Programming / Query / Web",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "SQL Joins",
+      "category": "Programming / Query / Web",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Window Functions",
+      "category": "Programming / Query / Web",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Power BI",
+      "category": "BI / Reporting / Visualization",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "DAX",
+      "category": "BI / Reporting / Visualization",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Power Query",
+      "category": "BI / Reporting / Visualization",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Excel",
+      "category": "BI / Reporting / Visualization",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Dashboard Development",
+      "category": "BI / Reporting / Visualization",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Data Visualization",
+      "category": "BI / Reporting / Visualization",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "DuckDB",
+      "category": "Cloud / Data Platform / DevOps",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Parquet",
+      "category": "Cloud / Data Platform / DevOps",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "ETL/ELT",
+      "category": "Cloud / Data Platform / DevOps",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "dbt",
+      "category": "Cloud / Data Platform / DevOps",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "PostgreSQL",
+      "category": "Cloud / Data Platform / DevOps",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Docker",
+      "category": "Cloud / Data Platform / DevOps",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Hypothesis Testing",
+      "category": "Statistics / Research / Quantitative Methods",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Confidence Intervals",
+      "category": "Statistics / Research / Quantitative Methods",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Classification",
+      "category": "Statistics / Research / Quantitative Methods",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Feature Engineering",
+      "category": "Statistics / Research / Quantitative Methods",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Model Evaluation",
+      "category": "Statistics / Research / Quantitative Methods",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Cross-validation",
+      "category": "Statistics / Research / Quantitative Methods",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Git",
+      "category": "Development",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "GitHub Actions",
+      "category": "Development",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "pytest",
+      "category": "Development",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    },
+    {
+      "canonical_term": "Ruff",
+      "category": "Development",
+      "coverage_status": "ASSUMED_MARKET_COVERAGE",
+      "verification_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "allowed_for_market_matching": true,
+      "allowed_as_factual_resume_claim_by_default": false,
+      "roles": [
+        "Data Analyst"
+      ],
+      "verified_evidence_ids": [],
+      "market_observations": []
+    }
+  ],
+  "deep_capability_registry": [
+    {
+      "term": "SQL",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Programming / Query / Web"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Python",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Programming / Query / Web"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "pandas",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Programming / Query / Web"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "NumPy",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Programming / Query / Web"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "SQL Joins",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Programming / Query / Web"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Window Functions",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Programming / Query / Web"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Power BI",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "BI / Reporting / Visualization"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "DAX",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "BI / Reporting / Visualization"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Power Query",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "BI / Reporting / Visualization"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Excel",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "BI / Reporting / Visualization"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Dashboard Development",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "BI / Reporting / Visualization"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Data Visualization",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "BI / Reporting / Visualization"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "DuckDB",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Cloud / Data Platform / DevOps"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Parquet",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Cloud / Data Platform / DevOps"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "ETL/ELT",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Cloud / Data Platform / DevOps"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "dbt",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Cloud / Data Platform / DevOps"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "PostgreSQL",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Cloud / Data Platform / DevOps"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Docker",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Cloud / Data Platform / DevOps"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Hypothesis Testing",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Statistics / Research / Quantitative Methods"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Confidence Intervals",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Statistics / Research / Quantitative Methods"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Classification",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Statistics / Research / Quantitative Methods"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Feature Engineering",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Statistics / Research / Quantitative Methods"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Model Evaluation",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Statistics / Research / Quantitative Methods"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Cross-validation",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Statistics / Research / Quantitative Methods"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Git",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Development"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "GitHub Actions",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Development"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "pytest",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Development"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    },
+    {
+      "term": "Ruff",
+      "roles": [
+        "Data Analyst"
+      ],
+      "sections": [
+        "Development"
+      ],
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY"
+    }
+  ],
+  "skill_family_registry": [],
+  "role_coverage_profiles": [
+    {
+      "canonical_number": 1,
+      "role": "Data Analyst",
+      "technical_center": "SQL Python data quality dashboards statistics",
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "explicit_market_skills": [
+        "SQL",
+        "Python",
+        "Power BI",
+        "Excel"
+      ],
+      "deep_capability_sections": [
+        {
+          "section": "Programming / Query / Web",
+          "items": [
+            "SQL",
+            "Python",
+            "pandas",
+            "NumPy",
+            "SQL Joins",
+            "Window Functions"
+          ]
+        },
+        {
+          "section": "BI / Reporting / Visualization",
+          "items": [
+            "Power BI",
+            "DAX",
+            "Power Query",
+            "Excel",
+            "Dashboard Development",
+            "Data Visualization"
+          ]
+        },
+        {
+          "section": "Cloud / Data Platform / DevOps",
+          "items": [
+            "DuckDB",
+            "Parquet",
+            "ETL/ELT",
+            "dbt",
+            "PostgreSQL",
+            "Docker"
+          ]
+        },
+        {
+          "section": "Statistics / Research / Quantitative Methods",
+          "items": [
+            "Hypothesis Testing",
+            "Confidence Intervals",
+            "Classification",
+            "Feature Engineering",
+            "Model Evaluation",
+            "Cross-validation"
+          ]
+        },
+        {
+          "section": "Development",
+          "items": [
+            "Git",
+            "GitHub Actions",
+            "pytest",
+            "Ruff"
+          ]
+        }
+      ],
+      "exact_posting_signals": [],
+      "distinctions": [],
+      "caveats": [
+        "Fictional demonstration prior; not live market research."
+      ]
+    },
+    {
+      "canonical_number": 2,
+      "role": "Data Engineer",
+      "technical_center": "SQL pipelines ETL dbt Parquet data warehouses",
+      "coverage_status": "DIRECT_USER_CONFIRMED_CAPABILITY",
+      "explicit_market_skills": [
+        "SQL",
+        "Python",
+        "DuckDB",
+        "Parquet"
+      ],
+      "deep_capability_sections": [
+        {
+          "section": "Data Engineering",
+          "items": [
+            "ETL/ELT",
+            "DuckDB",
+            "Parquet",
+            "dbt"
+          ]
+        }
+      ]
+    }
+  ]
+}

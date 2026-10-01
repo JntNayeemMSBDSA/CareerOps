@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "name": "isolation",
+      "return_code": 0
+    },
+    {
+      "name": "unit-tests",
+      "return_code": 0
+    },
+    {
+      "name": "cli-self-test",
+      "return_code": 0
+    },
+    {
+      "name": "orchestrator-self-test",
+      "return_code": 0
+    },
+    {
+      "name": "fictional-jd-pipeline",
+      "return_code": 0
+    },
+    {
+      "name": "node-tests",
+      "return_code": 0
+    },
+    {
+      "name": "synthetic-rendering",
+      "return_code": 0
+    }
+  ],
+  "network": "disabled",
+  "private_home": "not mounted",
+  "model_calls": 0,
+  "writer_calls": 0,
+  "pass": true,
+  "python_tests": 37,
+  "node_tests": 2,
+  "node_syntax_files": 16,
+  "json_validation": "PASS",
+  "dependency_check": "No broken requirements found.",
+  "html_payload_validation": "PASS",
+  "docx_layout": "one page; all critical headers fit; no clipping",
+  "visual_review": "PASS",
+  "live_inference": "not run",
+  "browser_pdf_generation": "not run",
+  "secret_scanner": "trusted local pattern and literal-context checks; Gitleaks unavailable"
+}

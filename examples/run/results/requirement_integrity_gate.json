@@ -1,0 +1,98 @@
+{
+  "schema_version": "requirement-integrity-gate-v1",
+  "gate": "UNIVERSAL_JD_REQUIREMENT_INTEGRITY",
+  "status": "PASS",
+  "failure_class": null,
+  "model_calls": 0,
+  "source": {
+    "source_type": "file",
+    "source_url": null,
+    "word_count": 87,
+    "line_count": 15
+  },
+  "ledger": {
+    "schema_version": "jd-requirements-v1",
+    "requirement_count": 7,
+    "priority_counts": {
+      "P1": 3,
+      "P0": 3,
+      "P3": 1
+    }
+  },
+  "checks": {
+    "all_requirement_text_grounded": true,
+    "no_structural_headings_as_requirements": true,
+    "no_page_chrome_as_requirements": true,
+    "no_post_boundary_requirements": true,
+    "substantive_sections_preserved": true,
+    "p0_p1_concepts_preserved": true,
+    "no_large_jd_collapse": true,
+    "priority_distribution_plausible": true,
+    "compound_requirements_complete": true
+  },
+  "diagnostics": {
+    "ungrounded_requirement_count": 0,
+    "heading_requirement_count": 0,
+    "hard_end_boundary_line": null,
+    "post_boundary_requirement_count": 0,
+    "page_chrome_requirement_count": 0,
+    "independent_duplicate_source_requirement_count": 0,
+    "independent_duplicate_source_requirement_examples": [],
+    "independent_source_requirement_count": 7,
+    "independent_section_counts": {
+      "responsibilities": 3,
+      "qualifications": 3,
+      "preferred": 1
+    },
+    "section_coverage": {
+      "responsibilities": {
+        "source_candidates": 3,
+        "covered": 3,
+        "coverage_ratio": 1.0
+      },
+      "qualifications": {
+        "source_candidates": 3,
+        "covered": 3,
+        "coverage_ratio": 1.0
+      },
+      "preferred": {
+        "source_candidates": 1,
+        "covered": 1,
+        "coverage_ratio": 1.0
+      }
+    },
+    "independent_p0_p1_source_count": 6,
+    "p0_p1_integrity_miss_count": 0,
+    "large_jd_collapse": false,
+    "priority_counts": {
+      "P1": 3,
+      "P0": 3,
+      "P3": 1
+    },
+    "dominant_priority": "P1",
+    "dominant_priority_share": 0.4286,
+    "partial_compound_count": 0,
+    "semantic_sidecar": {
+      "status": "DEFERRED_UNTIL_AFTER_REQUIREMENT_INTEGRITY",
+      "source_requirement_count": 7,
+      "effective_requirement_count": null,
+      "unresolved_source_anchor_count": null,
+      "ambiguous_source_anchor_count": null,
+      "document_constraint_count": null
+    }
+  },
+  "findings": [],
+  "blocking_findings": [],
+  "policy": {
+    "independent_of_extractor_section_labels": true,
+    "independent_original_jd_comparison": true,
+    "deterministic_only": true,
+    "candidate_evidence_used": false,
+    "market_prior_used": false,
+    "semantic_model_used": false,
+    "fail_closed_on_integrity_defect": true,
+    "semantic_authority": "IMMUTABLE_SOURCE_REQUIREMENT_LEDGER",
+    "raw_source_ledger_mutated": false,
+    "semantic_sidecar_stage": "DOWNSTREAM_ONLY"
+  }
+}

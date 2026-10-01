@@ -1,0 +1,64 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+**/auth.json
+**/credentials*
+**/token*.json
+*.pem
+*.key
+*.p12
+*.pfx
+config/runtime.json
+candidate/
+private/
+# Runtime output and production state
+data/
+runs/
+runtime/
+output/
+Daily Output/
+reports/
+logs/
+*.log
+*.pdf
+*.docx
+*.xlsx
+*.xls
+*.pptx
+*.sqlite*
+*.db
+*.parquet
+*.arrow
+*.zip
+*.tar*
+*.gz
+*.7z
+*.bak
+*.backup
+*.pre_*
+*HANDOFF*
+*CONTINUITY*
+*MIGRATION*
+*SYSTEM_STATE_CURRENT*
+*freeze*
+# Environments, models and caches
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+.local-checks/
+*.gguf
+*.safetensors
+*.bin
+# Temporary / OS metadata
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+Desktop.ini
+*Zone.Identifier*
+**

@@ -1,0 +1,144 @@
+{
+  "schema_version": "candidate-facts-v1",
+  "synthetic": true,
+  "source_authority": {
+    "direct_user_confirmed": true,
+    "artifact_verification_required_for_direct_user_fact": false,
+    "assumed_market_coverage_is_separate": true
+  },
+  "candidate_identity": {
+    "name": "Morgan Vale",
+    "email": "morgan@example.invalid",
+    "phone": "+1 (202) 555-0148",
+    "location": "Example City, USA",
+    "linkedin": {
+      "url": "https://example.invalid/profile/morgan",
+      "display": "LinkedIn"
+    },
+    "github": {
+      "url": "https://example.invalid/portfolio/morgan",
+      "display": "GitHub"
+    }
+  },
+  "identity_authority": {
+    "github_url": "https://example.invalid/portfolio/morgan",
+    "provenance": "Fictional example identity"
+  },
+  "education": [
+    {
+      "degree_level": "bachelor",
+      "degree": "B.S. Applied Mathematics",
+      "resume_degree": "B.S. Applied Mathematics",
+      "institution": "Fictional Alderbridge College",
+      "completion": "Jun 2016",
+      "graduation": "Jun 2016",
+      "gpa": "3.74/4.00",
+      "claim_class": "DIRECT_USER_CONFIRMED"
+    }
+  ],
+  "experience_blocks": [
+    {
+      "block_id": "EXPBLOCK-101",
+      "organization": "Harborlight Museum Cooperative",
+      "title": "Analytics Engineer",
+      "period": "Feb 2017 - Nov 2019",
+      "evidence_ids": [
+        "EXP-101"
+      ],
+      "default_selected": true
+    },
+    {
+      "block_id": "EXPBLOCK-102",
+      "organization": "Maple Lantern Logistics",
+      "title": "Data Analyst",
+      "period": "Mar 2020 - Aug 2023",
+      "evidence_ids": [
+        "EXP-102"
+      ],
+      "default_selected": true
+    }
+  ],
+  "professional_chronology": [
+    {
+      "evidence_id": "EXP-101",
+      "organization": "Harborlight Museum Cooperative",
+      "role": "Analytics Engineer",
+      "start_month": "2017-02",
+      "end_month": "2019-11",
+      "capability_families": [
+        "data analytics",
+        "data engineering",
+        "business intelligence"
+      ],
+      "claim_class": "DIRECT_USER_CONFIRMED"
+    },
+    {
+      "evidence_id": "EXP-102",
+      "organization": "Maple Lantern Logistics",
+      "role": "Data Analyst",
+      "start_month": "2020-03",
+      "end_month": "2023-08",
+      "capability_families": [
+        "data analytics",
+        "data engineering",
+        "business intelligence"
+      ],
+      "claim_class": "DIRECT_USER_CONFIRMED"
+    }
+  ],
+  "skill_duration_years": {
+    "SQL": {
+      "years": 2.5,
+      "claim_class": "DIRECT_USER_CONFIRMED"
+    },
+    "Python": {
+      "years": 2.5,
+      "claim_class": "DIRECT_USER_CONFIRMED"
+    },
+    "Power BI": {
+      "years": 2.5,
+      "claim_class": "DIRECT_USER_CONFIRMED"
+    },
+    "Excel": {
+      "years": 2.5,
+      "claim_class": "DIRECT_USER_CONFIRMED"
+    }
+  },
+  "core_proficiency": {
+    "SQL": "proficient",
+    "Python": "proficient",
+    "Power BI": "proficient",
+    "Excel": "proficient"
+  },
+  "policy": {
+    "direct_user_fact_is_valid_candidate_evidence": true,
+    "project_count_does_not_create_duration": true,
+    "tool_presence_does_not_create_duration": true,
+    "proficiency_and_duration_are_separate_dimensions": true,
+    "related_field_duration_must_be_chronology_derived": true
+  },
+  "certifications": [],
+  "project_date_overrides": {},
+  "deliverable_state_authority": {},
+  "work_authorization": {
+    "status": "FICTIONAL_AUTHORIZED_EXAMPLE",
+    "requires_future_sponsorship": false,
+    "citizenship_verified": false
+  },
+  "entity_claim_boundaries": {
+    "PRJ-101": {
+      "not_employment_at": [
+        "Example Vendor"
+      ],
+      "threshold_models": [
+        "logistic regression",
+        "random forest"
+      ],
+      "forbidden_model_thresholds": {
+        "random forest": [
+          0.61
+        ]
+      }
+    }
+  }
+}

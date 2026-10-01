@@ -1,0 +1,959 @@
+{
+  "schema_version": "requirement-evidence-map-v1",
+  "routed_role": "Data Analyst",
+  "policy": {
+    "entity_resolution_precedes_mapping": true,
+    "canonical_entities_may_not_be_auto_merged": true,
+    "role_tags_are_affinity_not_proof": true,
+    "tool_matrix_is_verified_tool_provenance": true,
+    "semantic_match_requires_term_in_verified_evidence": true,
+    "direct_user_confirmed_capability_is_not_artifact_verified": true,
+    "candidate_selection_performed": false,
+    "resume_generation_performed": false,
+    "final_fit_scoring_performed": false
+  },
+  "summary": {
+    "requirement_count": 7,
+    "verified_evidence_available": 5,
+    "contextual_capability_only": 0,
+    "unmapped": 0
+  },
+  "requirements": [
+    {
+      "mandatory_qualifiers": [],
+      "qualification_coverage": "SUPPORTED",
+      "requirement_id": "REQ-001",
+      "priority": "P1",
+      "exact_jd_quote": "Build SQL queries and Python data pipelines for public collection reporting.",
+      "coverage_state": "VERIFIED_EVIDENCE_AVAILABLE",
+      "verified_evidence_candidates": [
+        {
+          "entity_id": "EXP-101",
+          "canonical_name": "Museum attendance analytics",
+          "entity_type": "Employment",
+          "organization": "Harborlight Museum Cooperative",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "SQL",
+            "Python"
+          ],
+          "verified_exact_term_matches": [
+            "SQL",
+            "Python",
+            "reporting"
+          ],
+          "verified_semantic_term_matches": [
+            "ETL",
+            "ELT"
+          ],
+          "verified_technical_depth_matches": [
+            "joins",
+            "reconciliation"
+          ],
+          "role_affinity": true,
+          "score": 24.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-101",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "EXP-102",
+          "canonical_name": "Parcel service monitoring",
+          "entity_type": "Employment",
+          "organization": "Maple Lantern Logistics",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "SQL"
+          ],
+          "verified_exact_term_matches": [
+            "SQL",
+            "reporting"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [
+            "reconciliation"
+          ],
+          "role_affinity": true,
+          "score": 12.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-102",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "PRJ-102",
+          "canonical_name": "Community garden measurement study",
+          "entity_type": "Project",
+          "organization": "Independent fictional project",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "Python"
+          ],
+          "verified_exact_term_matches": [
+            "Python"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 8.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "PRJ-102",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "PRJ-101",
+          "canonical_name": "Library return-risk classifier",
+          "entity_type": "Project",
+          "organization": "Independent fictional project",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "Python"
+          ],
+          "verified_exact_term_matches": [
+            "Python"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 8.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "PRJ-101",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        }
+      ],
+      "contextual_capability_candidates": [
+        {
+          "term": "SQL",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "Python",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "SQL Joins",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "Window Functions",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        }
+      ],
+      "residual_gap": false,
+      "constraint_validation_required": false,
+      "constraints": {
+        "experience_years": [],
+        "education": []
+      },
+      "canonical_reference": {
+        "requirement_id": "REQ-001",
+        "priority": "P1",
+        "section": "responsibilities",
+        "exact_quote_sha256": "641305c8ffe425e7ca8164b3e06ed94d35da58117c445b193b5fdb11115f8e73",
+        "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+      }
+    },
+    {
+      "mandatory_qualifiers": [],
+      "qualification_coverage": "SUPPORTED",
+      "requirement_id": "REQ-002",
+      "priority": "P1",
+      "exact_jd_quote": "Create Power BI dashboards using DAX and Power Query.",
+      "coverage_state": "VERIFIED_EVIDENCE_AVAILABLE",
+      "verified_evidence_candidates": [
+        {
+          "entity_id": "EXP-102",
+          "canonical_name": "Parcel service monitoring",
+          "entity_type": "Employment",
+          "organization": "Maple Lantern Logistics",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "Power BI",
+            "Power Query",
+            "DAX"
+          ],
+          "verified_exact_term_matches": [
+            "Power BI",
+            "Power Query",
+            "DAX"
+          ],
+          "verified_semantic_term_matches": [
+            "BI reporting"
+          ],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 26.0,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-102",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "PRJ-102",
+          "canonical_name": "Community garden measurement study",
+          "entity_type": "Project",
+          "organization": "Independent fictional project",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [],
+          "verified_exact_term_matches": [],
+          "verified_semantic_term_matches": [
+            "data visualization"
+          ],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 2.0,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "PRJ-102",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": false
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        }
+      ],
+      "contextual_capability_candidates": [
+        {
+          "term": "Power BI",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "DAX",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "Power Query",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "Data Visualization",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        }
+      ],
+      "residual_gap": false,
+      "constraint_validation_required": false,
+      "constraints": {
+        "experience_years": [],
+        "education": []
+      },
+      "canonical_reference": {
+        "requirement_id": "REQ-002",
+        "priority": "P1",
+        "section": "responsibilities",
+        "exact_quote_sha256": "f67f5f0af3932e18032867ac2e7c38a50e6ba90f7dc1b873ac94218933746651",
+        "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+      }
+    },
+    {
+      "mandatory_qualifiers": [],
+      "qualification_coverage": "SUPPORTED",
+      "requirement_id": "REQ-003",
+      "priority": "P1",
+      "exact_jd_quote": "Validate data quality, reconcile missing records, and explain results to coordinators.",
+      "coverage_state": "VERIFIED_EVIDENCE_AVAILABLE",
+      "verified_evidence_candidates": [
+        {
+          "entity_id": "EXP-102",
+          "canonical_name": "Parcel service monitoring",
+          "entity_type": "Employment",
+          "organization": "Maple Lantern Logistics",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [],
+          "verified_exact_term_matches": [],
+          "verified_semantic_term_matches": [
+            "reconciliation",
+            "data quality"
+          ],
+          "verified_technical_depth_matches": [
+            "reconciliation"
+          ],
+          "role_affinity": true,
+          "score": 4.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-102",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": false
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "EXP-101",
+          "canonical_name": "Museum attendance analytics",
+          "entity_type": "Employment",
+          "organization": "Harborlight Museum Cooperative",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [],
+          "verified_exact_term_matches": [],
+          "verified_semantic_term_matches": [
+            "reconciliation"
+          ],
+          "verified_technical_depth_matches": [
+            "reconciliation"
+          ],
+          "role_affinity": true,
+          "score": 3.0,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-101",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": false
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        }
+      ],
+      "contextual_capability_candidates": [],
+      "residual_gap": false,
+      "constraint_validation_required": false,
+      "constraints": {
+        "experience_years": [],
+        "education": []
+      },
+      "canonical_reference": {
+        "requirement_id": "REQ-003",
+        "priority": "P1",
+        "section": "responsibilities",
+        "exact_quote_sha256": "605e6a0c6afa5b5b5de7445b330d0d94049a6f1b5ce7d6266032f5a35e6e9e16",
+        "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+      }
+    },
+    {
+      "mandatory_qualifiers": [],
+      "qualification_coverage": "SUPPORTED",
+      "requirement_id": "REQ-004",
+      "priority": "P0",
+      "exact_jd_quote": "Bachelor degree in mathematics or a related field required.",
+      "coverage_state": "CONSTRAINT_VALIDATION_REQUIRED",
+      "verified_evidence_candidates": [],
+      "contextual_capability_candidates": [],
+      "residual_gap": true,
+      "constraint_validation_required": true,
+      "constraints": {
+        "experience_years": [],
+        "education": [
+          "Bachelor degree",
+          "degree"
+        ]
+      },
+      "canonical_reference": {
+        "requirement_id": "REQ-004",
+        "priority": "P0",
+        "section": "required",
+        "exact_quote_sha256": "642bfe1b41de9cbe3f15070e00ccbb625a5a8a9d981edd08317f54557dfb5869",
+        "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+      }
+    },
+    {
+      "mandatory_qualifiers": [],
+      "qualification_coverage": "SUPPORTED",
+      "requirement_id": "REQ-005",
+      "priority": "P0",
+      "exact_jd_quote": "Two years of SQL analytics experience required.",
+      "coverage_state": "EVIDENCE_MATCH_CONSTRAINT_VALIDATION_REQUIRED",
+      "verified_evidence_candidates": [
+        {
+          "entity_id": "EXP-101",
+          "canonical_name": "Museum attendance analytics",
+          "entity_type": "Employment",
+          "organization": "Harborlight Museum Cooperative",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "SQL"
+          ],
+          "verified_exact_term_matches": [
+            "SQL",
+            "analytics"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [
+            "joins"
+          ],
+          "role_affinity": true,
+          "score": 12.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-101",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "EXP-102",
+          "canonical_name": "Parcel service monitoring",
+          "entity_type": "Employment",
+          "organization": "Maple Lantern Logistics",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "SQL"
+          ],
+          "verified_exact_term_matches": [
+            "SQL"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 8.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-102",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        }
+      ],
+      "contextual_capability_candidates": [
+        {
+          "term": "SQL",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "SQL Joins",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "Window Functions",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        }
+      ],
+      "residual_gap": true,
+      "constraint_validation_required": true,
+      "constraints": {
+        "experience_years": [
+          "Two years of"
+        ],
+        "education": []
+      },
+      "canonical_reference": {
+        "requirement_id": "REQ-005",
+        "priority": "P0",
+        "section": "required",
+        "exact_quote_sha256": "b9572ca5206f0139c50ec04c50423437d139a9f2c9d48f03ab1a9261dc49b011",
+        "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+      }
+    },
+    {
+      "mandatory_qualifiers": [],
+      "qualification_coverage": "SUPPORTED",
+      "requirement_id": "REQ-006",
+      "priority": "P0",
+      "exact_jd_quote": "Python and Power BI experience required.",
+      "coverage_state": "VERIFIED_EVIDENCE_AVAILABLE",
+      "verified_evidence_candidates": [
+        {
+          "entity_id": "EXP-102",
+          "canonical_name": "Parcel service monitoring",
+          "entity_type": "Employment",
+          "organization": "Maple Lantern Logistics",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "Power BI"
+          ],
+          "verified_exact_term_matches": [
+            "Power BI"
+          ],
+          "verified_semantic_term_matches": [
+            "BI reporting"
+          ],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 10.0,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-102",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "PRJ-102",
+          "canonical_name": "Community garden measurement study",
+          "entity_type": "Project",
+          "organization": "Independent fictional project",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "Python"
+          ],
+          "verified_exact_term_matches": [
+            "Python"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 8.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "PRJ-102",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "PRJ-101",
+          "canonical_name": "Library return-risk classifier",
+          "entity_type": "Project",
+          "organization": "Independent fictional project",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "Python"
+          ],
+          "verified_exact_term_matches": [
+            "Python"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 8.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "PRJ-101",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "EXP-101",
+          "canonical_name": "Museum attendance analytics",
+          "entity_type": "Employment",
+          "organization": "Harborlight Museum Cooperative",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "Python"
+          ],
+          "verified_exact_term_matches": [
+            "Python"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 8.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-101",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        }
+      ],
+      "contextual_capability_candidates": [
+        {
+          "term": "Python",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "Power BI",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        }
+      ],
+      "residual_gap": false,
+      "constraint_validation_required": false,
+      "constraints": {
+        "experience_years": [],
+        "education": []
+      },
+      "canonical_reference": {
+        "requirement_id": "REQ-006",
+        "priority": "P0",
+        "section": "required",
+        "exact_quote_sha256": "eae94203e46697cbe49192bb5ead171f14268c6c34647e9800adafb3f4bb77ff",
+        "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+      }
+    },
+    {
+      "mandatory_qualifiers": [],
+      "qualification_coverage": "SUPPORTED",
+      "requirement_id": "REQ-007",
+      "priority": "P3",
+      "exact_jd_quote": "Experience with DuckDB, Parquet, and classification model evaluation.",
+      "coverage_state": "VERIFIED_EVIDENCE_AVAILABLE",
+      "verified_evidence_candidates": [
+        {
+          "entity_id": "EXP-101",
+          "canonical_name": "Museum attendance analytics",
+          "entity_type": "Employment",
+          "organization": "Harborlight Museum Cooperative",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [
+            "DuckDB",
+            "Parquet"
+          ],
+          "verified_exact_term_matches": [
+            "DuckDB",
+            "Parquet"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 16.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-101",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": true
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "PRJ-101",
+          "canonical_name": "Library return-risk classifier",
+          "entity_type": "Project",
+          "organization": "Independent fictional project",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [],
+          "verified_exact_term_matches": [
+            "model",
+            "classification"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 6.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "PRJ-101",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": false
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        },
+        {
+          "entity_id": "EXP-102",
+          "canonical_name": "Parcel service monitoring",
+          "entity_type": "Employment",
+          "organization": "Maple Lantern Logistics",
+          "ownership_status": "Owned by fictional candidate",
+          "evidence_status": "ARTIFACT_VERIFIED",
+          "merge_status": "KEEP_SEPARATE",
+          "verified_exact_tool_matches": [],
+          "verified_exact_term_matches": [
+            "model"
+          ],
+          "verified_semantic_term_matches": [],
+          "verified_technical_depth_matches": [],
+          "role_affinity": true,
+          "score": 3.5,
+          "claim_boundaries": "- Fictional measurements are for tests only. Do not attribute work to an employer other than this entity.\n- Modeled predictions are not realized business results.",
+          "provenance": {
+            "claim_class": "ARTIFACT_VERIFIED",
+            "evidence_id": "EXP-102",
+            "source": "verified_evidence_inventory",
+            "tool_matrix_used": false
+          },
+          "qualification_support": {
+            "status": "SUPPORTED",
+            "required_qualifiers": [],
+            "unsupported_qualifiers": [],
+            "core_match_is_full_coverage": true
+          },
+          "requirement_coverage": "SUPPORTED"
+        }
+      ],
+      "contextual_capability_candidates": [
+        {
+          "term": "DuckDB",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "Parquet",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "Classification",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        },
+        {
+          "term": "Model Evaluation",
+          "type": "explicit_skill",
+          "claim_class": "DIRECT_USER_CONFIRMED_CAPABILITY",
+          "source_status": "ASSUMED_MARKET_COVERAGE",
+          "artifact_verified_overlay": false,
+          "verified_evidence_ids": [],
+          "may_be_relabelled_as_artifact_verified": false,
+          "requires_generation_policy_checks": true
+        }
+      ],
+      "residual_gap": false,
+      "constraint_validation_required": false,
+      "constraints": {
+        "experience_years": [],
+        "education": []
+      },
+      "canonical_reference": {
+        "requirement_id": "REQ-007",
+        "priority": "P3",
+        "section": "preferred",
+        "exact_quote_sha256": "0d5aed55b9376fccb3d12d85aa52e1e589a140605fb5e49e9b6530f9e45ce455",
+        "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+      }
+    }
+  ],
+  "requirement_authority": {
+    "schema": "canonical-requirement-authority-v1",
+    "intake_sha256": "6126c2cf034ebbbaeb7ab3ea81f3ac74e1e9f722f66125869d66380fd5ec0520",
+    "ledger_sha256": "db2b4a5dac16718f1ce024a8ca05d01dfdbd09fa79f4644558b0665e2d50a853",
+    "application_title": "Data Analyst",
+    "current_job_fingerprint": "377c440e116d1553f878aad51774f467b9584fd995e7552b5105387170935a89"
+  }
+}

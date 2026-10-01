@@ -1,0 +1,5 @@
+ID,Name,Entity Type,Organization,Role,Period,Ownership Status,Evidence Status,Source Artifacts,Role Tags
+EXP-101,Museum attendance analytics,Employment,Harborlight Museum Cooperative,Analytics Engineer,Feb 2017 - Nov 2019,Owned by fictional candidate,ARTIFACT_VERIFIED,examples/source/verified_evidence_inventory.md,Data Analyst; Data Engineer
+EXP-102,Parcel service monitoring,Employment,Maple Lantern Logistics,Data Analyst,Mar 2020 - Aug 2023,Owned by fictional candidate,ARTIFACT_VERIFIED,examples/source/verified_evidence_inventory.md,Data Analyst; Data Engineer
+PRJ-101,Library return-risk classifier,Project,Independent fictional project,Project Owner,Jan 2024 - Apr 2024,Owned by fictional candidate,ARTIFACT_VERIFIED,examples/source/verified_evidence_inventory.md,Data Analyst; Data Engineer
+PRJ-102,Community garden measurement study,Project,Independent fictional project,Project Owner,Jun 2024 - Sep 2024,Owned by fictional candidate,ARTIFACT_VERIFIED,examples/source/verified_evidence_inventory.md,Data Analyst; Data Engineer

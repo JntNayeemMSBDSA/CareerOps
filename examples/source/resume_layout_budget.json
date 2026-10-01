@@ -1,0 +1,13 @@
+{
+  "page_format": "Letter",
+  "one_page_required": true,
+  "body_font": "Calibri",
+  "body_size_pt": 10.5,
+  "preferred_margin_in": 0.5,
+  "hard_minimum_margin_in": 0.4,
+  "max_summary_lines": 2,
+  "max_bullet_words": 34,
+  "default_max_bullet_lines": 2,
+  "physical_geometry_gate_is_authoritative": true,
+  "bullet_counts": "CURRENT_CONTENT_BUDGET"
+}

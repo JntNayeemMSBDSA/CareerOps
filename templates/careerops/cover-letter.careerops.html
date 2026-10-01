@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cover Letter | {{NAME}}</title>
+
+<style>
+  @page {
+    size: Letter;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #000000;
+  }
+
+  body {
+    font-family: Calibri, Arial, sans-serif;
+  }
+
+  .cover-page {
+    width: 8.5in;
+    min-height: 11in;
+
+    padding:
+      0.60in
+      0.65in
+      0.60in
+      0.65in;
+
+    margin: 0 auto;
+  }
+
+  /* ============================================================
+     CAREEROPS IDENTITY HEADER
+     Mirrors the approved resume visual identity.
+     ============================================================ */
+
+  .cover-header {
+    text-align: center;
+    margin: 0 0 14pt 0;
+    padding: 0;
+  }
+
+  .candidate-name {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Times New Roman", serif;
+    font-size: 14pt;
+    line-height: 14.5pt;
+    font-weight: 700;
+  }
+
+  .contact-row {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Times New Roman", serif;
+    font-size: 9.8pt;
+    line-height: 10.4pt;
+    font-weight: 400;
+
+    white-space: nowrap;
+  }
+
+  .contact-row a,
+  .contact-row a:link,
+  .contact-row a:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  /* ============================================================
+     CORRESPONDENCE BLOCK
+     No generic "Cover Letter: <role>" heading.
+     ============================================================ */
+
+  .correspondence {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 13.3pt;
+
+    margin: 0 0 13pt 0;
+  }
+
+  .date-line {
+    margin: 0 0 8pt 0;
+  }
+
+  .recipient-line {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .role-line {
+    margin: 0;
+  }
+
+  /* ============================================================
+     LETTER BODY
+     ============================================================ */
+
+  .letter-body {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 13.3pt;
+  }
+
+  .salutation {
+    margin: 0 0 10pt 0;
+  }
+
+  .body-paragraph {
+    margin: 0 0 10pt 0;
+    text-align: justify;
+  }
+
+  .closing {
+    margin: 18pt 0 0 0;
+  }
+
+  .signature-image-wrap {
+    margin: 16pt 0 10pt 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .signature-image {
+    display: block;
+    width: 1.20in;
+    height: auto;
+    margin: 0;
+  }
+
+  .signature-name {
+    margin: 6pt 0 0 0;
+    font-weight: 400;
+    text-align: left;
+  }
+</style>
+</head>
+
+<body>
+<div class="cover-page">
+
+  <header class="cover-header">
+    <div class="candidate-name">{{NAME}}</div>
+    <div class="contact-row">{{CONTACT_ROW}}</div>
+  </header>
+
+  <main>
+    <div class="correspondence">
+      <p class="date-line">{{DATE}}</p>
+      <p class="recipient-line">{{COMPANY}}</p>
+      <p class="role-line">{{POSITION}}</p>
+    </div>
+
+    <div class="letter-body">
+      <p class="salutation">{{SALUTATION}}</p>
+
+      {{PARAGRAPHS}}
+
+      <p class="closing">{{CLOSING}}</p>
+      {{SIGNATURE_IMAGE}}
+      <p class="signature-name">{{SIGNATURE}}</p>
+    </div>
+  </main>
+
+</div>
+</body>
+</html>

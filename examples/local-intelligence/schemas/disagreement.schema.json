@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "career-ops-li-disagreement-v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "authority",
+    "may_override",
+    "review_required",
+    "disagreements"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "career-ops-li-disagreement-v1"
+    },
+    "authority": {
+      "const": "DIAGNOSTIC_ONLY"
+    },
+    "may_override": {
+      "const": false
+    },
+    "review_required": {
+      "type": "boolean"
+    },
+    "disagreements": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

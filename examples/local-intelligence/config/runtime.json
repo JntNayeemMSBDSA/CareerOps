@@ -1,0 +1,10 @@
+{
+  "normal_production": {
+    "semantic_challenger": false,
+    "shared_sol_semantic": false,
+    "li_advisory": false,
+    "interview_defensibility": true
+  },
+  "endpoint": "http://127.0.0.1:11434",
+  "model": "qwen3:8b"
+}

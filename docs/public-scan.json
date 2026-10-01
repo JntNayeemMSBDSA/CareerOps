@@ -1,0 +1,56 @@
+{
+  "schema_version": "public-scan-v1",
+  "scope": "All distributed text files, including hidden files, templates, configuration, tests and fictional snapshots. Local test artifacts were also inspected before removal.",
+  "private_identifiers": {
+    "private_remove": 0,
+    "candidate_facts": "fictional examples only",
+    "immigration_terms": "FUNCTIONAL_ARCHITECTURE: generic posting detection and eligibility rules, not personal status"
+  },
+  "secrets": {
+    "confirmed_secrets": 0,
+    "scanner": "Trusted standard-library patterns and high-entropy/literal-context review",
+    "gitleaks_available": false,
+    "high_entropy_findings": "SAFE_PUBLIC: four npm package integrity hashes"
+  },
+  "development_process_traces": {
+    "unresolved": 0
+  },
+  "absolute_paths": {
+    "private_paths": 0,
+    "retained": "FUNCTIONAL_ARCHITECTURE: generic Windows path examples in lib/is-main-module.mjs and system paths in the isolation harness"
+  },
+  "symlinks": 0,
+  "unintended_binaries": 0,
+  "active_github_workflows": 0,
+  "remaining_runtime_references": [
+    {
+      "reference": "OpenAI credential names",
+      "reason": "Inert .env.example and credential filtering for explicit model transports; no values distributed"
+    },
+    {
+      "reference": "Codex executable and exec protocol",
+      "reason": "Actual optional model transport in pair generation, truth checks, overrides and shared semantic adjudication"
+    },
+    {
+      "reference": "CODEX_HOME and model catalog",
+      "reason": "Explicit runtime model availability preflight; no local catalog or auth copied"
+    },
+    {
+      "reference": "GPT model identifiers and budgets",
+      "reason": "Generation and semantic escalation policy, accounting and capability traces"
+    },
+    {
+      "reference": "Qwen and Ollama",
+      "reason": "Optional local intelligence probe, retrieval and challenger interfaces; fictional local endpoint config"
+    },
+    {
+      "reference": "Model invocation labels and example counters",
+      "reason": "Real stage contracts and audit fields, with zero actual inference during public verification"
+    }
+  ],
+  "required_attribution": "LICENSE preserves the upstream MIT copyright; docs/NOTICE.md gives factual upstream provenance",
+  "limitations": [
+    "Gitleaks is not installed; trusted local scanning was used.",
+    "Live inference and browser PDF generation were intentionally not exercised."
+  ]
+}
