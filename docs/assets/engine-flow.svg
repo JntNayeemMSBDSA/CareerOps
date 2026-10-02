@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="790" viewBox="0 0 1100 790" role="img" aria-labelledby="flow-title flow-description">
+  <title id="flow-title">CareerOps: source-grounded applications, from exact job to authenticated delivery</title>
+  <desc id="flow-description">Exact source authority feeds intake, requirements, evidence and eligibility, selection, pair planning, isolated writing, independent content gates, document rendering and roundtrips, final audit and release, and authenticated delivery. Conditional recovery and continuous accounting preserve the boundaries.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101722"/><stop offset="1" stop-color="#1b2736"/></linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#83d5ff"/><stop offset="1" stop-color="#8de4bb"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#5a7590"/></marker>
+  </defs>
+  <style>
+    text{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;fill:#ebf2fc}
+    .title{font-size:38px;font-weight:600}.sub{font-size:16px;fill:#acbfd5}.label{font-size:18px;font-weight:500}.caption{font-size:13px;fill:#b3c5d9}.num{font-size:12px;fill:#83d5ff}
+    .node{fill:#202f41;stroke:#3b5068;stroke-width:1}.route{fill:none;stroke:#5a7590;stroke-width:2;marker-end:url(#arrow)}.conditional{stroke-dasharray:6 6}.pill{fill:#192a3b;stroke:#40647f;stroke-width:1}.accent{fill:#83d5ff}.gate{fill:#f3c77b}
+  </style>
+  <rect width="1100" height="790" rx="20" fill="url(#bg)"/>
+  <rect x="40" y="36" width="6" height="54" rx="3" fill="url(#ink)"/>
+  <text x="62" y="69" class="title">CareerOps</text>
+  <text x="62" y="99" class="sub">Exact job. Verified evidence. Defensible application.</text>
+  <text x="1060" y="63" text-anchor="end" class="caption">75 components in the interactive map</text>
+  <text x="1060" y="86" text-anchor="end" class="caption">Animated schematic · not a live run</text>
+  <rect class="pill" x="42" y="123" width="1016" height="50" rx="10"/>
+  <text x="61" y="144" class="num">SOURCE AUTHORITY</text>
+  <text x="61" y="162" class="caption">Target JD · ATS guidance · market priors · candidate facts · canonical evidence · document rules</text>
+  <g class="route">
+    <path id="p0" d="M195 173V201"/>
+    <path id="p1" d="M347 246H393"/>
+    <path id="p2" d="M704 246H750"/>
+    <path id="p3" d="M905 289V321"/>
+    <path id="p4" d="M750 366H704"/>
+    <path id="p5" d="M393 366H347"/>
+    <path id="p6" d="M195 409V441"/>
+    <path id="p7" d="M347 486H393"/>
+    <path id="p8" d="M704 486H750"/>
+    <path id="p9" d="M905 529V558H550V579"/>
+    <path id="p10" class="conditional" d="M195 529V670H550V692"/>
+    <path id="p11" class="conditional" d="M380 718H21V486H41"/>
+  </g>
+  <g>
+    <rect class="node" x="42" y="202" width="305" height="87" rx="12"/><text x="61" y="226" class="num">01</text><text x="61" y="248" class="label">Enter &amp; identify</text><text x="61" y="271" class="caption">URL / JD / batch · exact job identity</text>
+    <rect class="node" x="394" y="202" width="310" height="87" rx="12"/><text x="413" y="226" class="num">02</text><text x="413" y="248" class="label">Understand requirements</text><text x="413" y="271" class="caption">ATS · P0–P3 · integrity · role · semantics</text>
+    <rect class="node" x="751" y="202" width="307" height="87" rx="12"/><text x="770" y="226" class="num">03</text><text x="770" y="248" class="label">Evidence &amp; eligibility</text><text x="770" y="271" class="caption">Entity IDs · provenance · constraints</text>
+    <rect class="node" x="751" y="322" width="307" height="87" rx="12"/><text x="770" y="346" class="num">04</text><text x="770" y="368" class="label">Select for coverage</text><text x="770" y="391" class="caption">Experience → residual projects → skills</text>
+    <rect class="node" x="394" y="322" width="310" height="87" rx="12"/><text x="413" y="346" class="num">05</text><text x="413" y="368" class="label">Compile the pair plan</text><text x="413" y="391" class="caption">Résumé spec · cover plan · compact packet</text>
+    <rect class="node" x="42" y="322" width="305" height="87" rx="12"/><text x="61" y="346" class="num">06</text><text x="61" y="368" class="label">Stage one writer attempt</text><text x="61" y="391" class="caption">Preflight · durable budget · isolated pair</text>
+    <rect class="node" x="42" y="442" width="305" height="87" rx="12"/><text x="61" y="466" class="num">07</text><text x="61" y="488" class="label">Independent content gates</text><text x="61" y="511" class="caption">Truth · ATS · human · cover · interview</text>
+    <rect class="node" x="394" y="442" width="310" height="87" rx="12"/><text x="413" y="466" class="num">08</text><text x="413" y="488" class="label">Render &amp; roundtrip</text><text x="413" y="511" class="caption">PDF / DOCX · parser · links · page geometry</text>
+    <rect class="node" x="751" y="442" width="307" height="87" rx="12"/><text x="770" y="466" class="num">09</text><text x="770" y="488" class="label">Final audit &amp; release</text><text x="770" y="511" class="caption">Current-run checks · hashes · all gates pass</text>
+    <rect class="node" x="350" y="580" width="400" height="85" rx="12"/><text x="370" y="604" class="num">10</text><text x="370" y="626" class="label">Authenticated delivery</text><text x="370" y="649" class="caption">2 PDFs + 2 Word files · unique names · clean folder</text>
+    <rect class="pill" x="380" y="693" width="330" height="50" rx="10"/><text x="399" y="714" class="num">CONDITIONAL RECOVERY</text><text x="399" y="733" class="caption">Owner repair / eligible semantics → retest</text>
+  </g>
+  <text x="43" y="614" class="caption">Fail closed</text><text x="43" y="635" class="caption">Unrepaired defects block release.</text><text x="43" y="656" class="caption">Overrides stay UNRELEASED.</text>
+  <text x="1060" y="709" text-anchor="end" class="caption">Continuous infrastructure</text><text x="1060" y="731" text-anchor="end" class="caption">Manifest · contracts · accounting · trace</text>
+  <text x="550" y="771" text-anchor="middle" class="caption">ATS ≥ 85 · human ≥ 85 · truth, interview, parser, geometry and release checks must pass</text>
+</svg>

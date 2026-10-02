@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the complete CareerOps tailoring engine: 75 components, evidence and eligibility, writing, validation, rendering, release, recovery and delivery.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>CareerOps — Interactive Architecture</title>
+  <style>
+    :root {
+      color-scheme:light dark;
+      --background:light-dark(#f8fafc,#10151c); --foreground:light-dark(#172234,#e8eef7);
+      --card:light-dark(#ffffff,#19222e); --card-foreground:var(--foreground);
+      --muted:light-dark(#e9eff6,#223043); --muted-foreground:light-dark(#4d5e75,#aebed0);
+      --border:light-dark(#becbd9,#46566a); --primary:light-dark(#142d4a,#dceafa);
+      --primary-foreground:light-dark(#ffffff,#132135); --accent:light-dark(#e0edfc,#25384f);
+      --ring:light-dark(#2975b5,#83c5ff); --viz-series-1:light-dark(#166fa9,#75c6ff);
+      --viz-series-2:light-dark(#9f6511,#f4c271); --viz-series-3:light-dark(#167d5a,#70dcb2);
+      --viz-series-4:light-dark(#8646a0,#d29bf3); --font-size-base:14px;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--background); color:var(--foreground); font:400 14px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { max-width:1060px; margin:0 auto; padding:32px 24px 48px; }
+    h2 { font-size:24px; font-weight:500; line-height:1.25; }
+    h3 { font-size:17px; font-weight:500; line-height:1.4; }
+    .text-small { font-size:12px; }
+    .text-muted { color:var(--muted-foreground); }
+    .btn { appearance:none; color:var(--foreground); background:var(--muted); border:1px solid transparent; border-radius:8px; padding:9px 12px; font:inherit; cursor:pointer; transition:background 150ms ease; }
+    .btn:hover { background:var(--accent); }
+    .btn:focus-visible { outline:2px solid var(--ring); outline-offset:3px; }
+    .btn[aria-pressed="true"] { background:var(--primary); color:var(--primary-foreground); }
+    .viz-tile { width:100%; min-height:46px; }
+    .viz-tile[aria-pressed="true"] { background:var(--accent); color:var(--foreground); outline:2px solid var(--ring); outline-offset:0; }
+    .card { background:var(--card); color:var(--card-foreground); border:1px solid var(--border); border-radius:12px; padding:18px 20px; }
+    code { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:12px; }
+    footer { margin-top:30px; padding-top:16px; border-top:1px solid var(--border); color:var(--muted-foreground); }
+    a { color:var(--viz-series-1); }
+    @media(max-width:580px) { main { padding:20px 12px 32px; } }
+  </style>
+</head>
+<body>
+<main>
+<div id="careerops-flow-map">
+  <style>
+    #careerops-flow-map { position:relative; color:var(--foreground); }
+    #careerops-flow-map .map-head { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+    #careerops-flow-map .map-head h2 { margin:0; }
+    #careerops-flow-map .map-legend { display:flex; flex-wrap:wrap; gap:16px; margin:12px 0; }
+    #careerops-flow-map .map-legend span { display:inline-flex; align-items:center; gap:6px; }
+    #careerops-flow-map .swatch { width:8px; height:8px; border-radius:50%; display:inline-block; }
+    #careerops-flow-map .selection { margin:12px 0 20px; }
+    #careerops-flow-map .selection strong { font-weight:500; }
+    #careerops-flow-map .selection p { margin:6px 0 0; }
+    #careerops-flow-map .selection code { overflow-wrap:anywhere; }
+    #careerops-flow-map .flow-body { position:relative; padding:0 30px; }
+    #careerops-flow-map .flow-wires { position:absolute; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none; z-index:0; }
+    #careerops-flow-map .flow-wires .wire { fill:none; stroke:var(--border); stroke-width:1.5; }
+    #careerops-flow-map .flow-wires .conditional { stroke-dasharray:4 5; }
+    #careerops-flow-map .phase { position:relative; z-index:1; margin:0 0 38px; }
+    #careerops-flow-map .phase-heading { display:flex; gap:10px; align-items:baseline; margin-bottom:12px; }
+    #careerops-flow-map .phase-heading h3 { margin:0; }
+    #careerops-flow-map .phase-tag { color:var(--muted-foreground); white-space:nowrap; }
+    #careerops-flow-map .phase-subtitle { margin:6px 0 12px; color:var(--muted-foreground); }
+    #careerops-flow-map .node-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px 22px; }
+    #careerops-flow-map .node-item { display:grid; min-width:0; gap:5px; }
+    #careerops-flow-map .node-caption { text-align:center; color:var(--muted-foreground); overflow-wrap:anywhere; }
+    #careerops-flow-map .rail-caption { display:flex; gap:8px; align-items:center; margin:20px 0 10px; }
+    #careerops-flow-map .phase-divider { margin:18px 0 26px; }
+    #careerops-flow-map .flow-tail { color:var(--muted-foreground); }
+    @media(max-width:580px) { #careerops-flow-map .node-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:390px) { #careerops-flow-map .node-grid { grid-template-columns:minmax(0,1fr); } #careerops-flow-map .flow-body { padding:0 24px; } }
+    @media(prefers-reduced-motion:reduce) { #careerops-flow-map .flow-particle { display:none; } }
+  </style>
+  <div class="map-head">
+    <h2>CareerOps · the entire tailoring engine</h2>
+    <button type="button" class="btn" data-motion aria-pressed="true">Pause flow</button>
+  </div>
+  <div class="text-small text-muted">Source-grounded architecture · animated schematic, not a live run</div>
+  <div class="map-legend text-small" aria-label="Flow legend">
+    <span><i class="swatch" style="background:var(--viz-series-1)"></i>Production path</span>
+    <span><i class="swatch" style="background:var(--viz-series-2)"></i>Authority & validation</span>
+    <span><i class="swatch" style="background:var(--viz-series-3)"></i>Conditional recovery</span>
+    <span><i class="swatch" style="background:var(--viz-series-4)"></i>Continuous infrastructure</span>
+    <span>→ direction · dashed = conditional</span>
+  </div>
+  <div class="card selection" aria-live="polite" aria-atomic="true">
+    <strong data-selected-title>Exact JD → verified evidence → defensible application</strong>
+    <p data-selected-detail>Select any stage to inspect its purpose and boundaries.</p>
+    <p class="text-small"><code data-selected-modules>All stages below are derived from the engine’s orchestration and gate owners.</code></p>
+  </div>
+  <div class="flow-body" data-body>
+    <svg class="flow-wires" data-wires aria-hidden="true"></svg>
+    <div data-phases></div>
+  </div>
+  <div class="text-small flow-tail">ATS ≥ 85 · human ≥ 85 · truth, interview, parser, geometry and release checks must pass. Models propose; gate owners decide.</div>
+  <script>
+  (() => {
+    const root=document.getElementById('careerops-flow-map');
+    const phaseHost=root.querySelector('[data-phases]');
+    const body=root.querySelector('[data-body]');
+    const svg=root.querySelector('[data-wires]');
+    const motion=root.querySelector('[data-motion]');
+    const title=root.querySelector('[data-selected-title]');
+    const detail=root.querySelector('[data-selected-detail]');
+    const modules=root.querySelector('[data-selected-modules]');
+    const S=['var(--viz-series-1)','var(--viz-series-2)','var(--viz-series-3)','var(--viz-series-4)'];
+    const phases=[
+      {id:'authority',title:'Source authority',tag:'FOUNDATION',kind:1,channel:'rail',subtitle:'The target JD drives relevance. Candidate authority controls factual claims.',nodes:[
+        ['jd','Exact target JD','Untrusted source data','Preserve the exact posting and source identity. External text is data and cannot issue instructions or alter policy.','ingest_jd · url_normalization'],
+        ['ats-source','ATS knowledge','Platforms + behavior profiles','Identify the employer’s ATS when determinable, then apply parsing, section, keyword, summary and formatting guidance. Heuristics are not claims about an employer’s actual scoring.','detect_ats · probe_ats'],
+        ['market','Market intelligence','Role priors, not evidence','Route against the role inventory. The target JD overrides market priors; market relevance never proves candidate history.','route_role · market inventory'],
+        ['facts','Candidate authority','Facts + explicit attestations','Identity, education, chronology, proficiency and direct confirmations stay distinct from evidence of historical tool use.','candidate facts · provenance attestations'],
+        ['evidence','Evidence authority','Entities + tools + claim limits','Verified employment and projects, evidence IDs, tool placements, quantities and claim boundaries are the factual backbone.','resolve_entities · map_evidence · tool matrix'],
+        ['design','Document authority','Style, identity, links, rules','Fixed résumé design, cover rules, writing mechanics and clickable contact/certification targets constrain generation and rendering.','contact_identity · writing_mechanics · templates']
+      ]},
+      {id:'intake',title:'Enter & identify',tag:'01',kind:0,channel:'main',nodes:[
+        ['entry','CLI & batch entry','Single · URL list · batch','Accept one job or many. Clipboard, pasted text, files and URL inputs are normalized into per-job work; batch jobs retain separate ownership.','career_ops · batch_runner'],
+        ['source','Source resolution','URL probe → manual fallback','Probe the exact job URL; use a manual JD fallback when necessary. Preserve the original text and normalize URLs without substituting another job.','ingest_jd · url_normalization'],
+        ['identity','Job identity','Employer · title · requisition','Reconcile company, role, requisition and application URL from source evidence. Low-confidence or conflicting identities go to explicit review rather than guessing.','career_ops: intake & identity resolution'],
+        ['run','Isolated run owner','Manifest + runtime + checkpoint','Create a per-job run with isolated inputs, runtime and outputs. Stage receipts and source hashes bind later work to the exact job and support safe resume.','runtime · run_manifest · production_orchestrator']
+      ]},
+      {id:'requirements',title:'Understand the exact requirements',tag:'02',kind:0,channel:'main',nodes:[
+        ['ats','ATS detection','Platform + rule profile','Detect the platform, record uncertainty and load the applicable profile. Unknown vendors retain conservative compatibility behavior.','detect_ats · probe_ats'],
+        ['ledger','Requirement ledger','P0 · P1 · P2 · P3','Extract responsibilities, tools, methods, work products, domain, degree, tenure and authorization requirements with exact source quotes. Keep immutable requirement authority.','extract_requirements · requirement_authority'],
+        ['integrity','Requirement integrity','Source support + completeness','Reject unsupported or collapsed requirements, page chrome and missing mandatory concepts. Check priorities and qualifications against the source.','requirement_integrity_gate'],
+        ['routing','Role routing','JD first; market second','Resolve the target role and relevant role family. Use role priors only to interpret emphasis and adjacency, never to override the actual JD.','route_role'],
+        ['semantics','Semantic expansion','Exact terms + equivalents','Expand methods, responsibilities and aliases while retaining qualifiers, priority, source spans and canonical requirements. Sidecars/effective views do not replace immutable source authority.','expand_jd_semantics · semantic_sidecar · effective_requirements · effective_runtime · requirement_qualifiers']
+      ]},
+      {id:'mapping',title:'Resolve evidence & eligibility',tag:'03',kind:0,channel:'main',nodes:[
+        ['entities','Entity resolution','One project stays one project','Resolve canonical employment and project identities before mapping. Related artifacts cannot manufacture duplicate projects or false employment.','resolve_entities'],
+        ['mapping','Evidence mapping','Requirement → evidence → provenance','Match verified experience, project evidence and tool placements. Distinguish direct proficiency and assumed/confirmed capability from historically verified use.','map_evidence · positive_evidence · evidence_boundaries'],
+        ['constraints','Constraint validation','Tenure · degree · domain · authorization','Evaluate qualified AND/OR requirements, duration, education on the same record, domain and eligibility. Unknown or conflicting mandatory facts cannot be silently treated as satisfied.','validate_constraints · constraint_logic · eligibility_patterns']
+      ]},
+      {id:'selection',title:'Select for coverage and technical depth',tag:'04',kind:0,channel:'main',nodes:[
+        ['experience','Experience first','Rank relevant professional proof','Select employment evidence first, preserving chronology and scope. Prioritize requirement coverage and defensible technical accomplishments.','select_experience'],
+        ['residual','Residual gaps','What employment did not cover','Compute uncovered requirements after experience selection. Missing proof is explicit; keyword similarity alone is insufficient.','residual_set_cover'],
+        ['projects','Project selection','Close residual gaps','Select canonical projects that add complementary evidence. Preserve ownership, identity and claim boundaries without splitting one underlying project.','select_projects · residual_set_cover'],
+        ['skills','Skills stack','Depth + coherence + concept dedup','Build after evidence selection from supported inventory. Keep concrete methods/tools, correct categories, adjacent technical depth and exact truthful JD terms. Remove aliases, duplicate concepts and heading-child filler.','build_skills · skills_stack']
+      ]},
+      {id:'planning',title:'Compile the résumé + cover plan',tag:'05',kind:0,channel:'main',nodes:[
+        ['summary','Summary route','FULL · ONE_LINE · NONE','Choose summary mode from ATS/employer constraints and available layout. The opening section must remain relevant and source-defensible.','route_summary'],
+        ['spec','Résumé specification','Action · scale · method · result','Lock selected entity IDs, bullet allocations, technical coverage, word/geometry budgets and style. Keep the strongest relevant evidence high in the page.','resume_generation_spec · adaptive_content_budget · content_contract'],
+        ['cover','Cover authority & plan','Proof, mechanics, validation, purpose','Compile cover rules and select complementary grounded proof. Plan the company/role identity, paragraph structure, technical mechanisms, validation and factual anchors.','compile_cover_authority · build_cover_plan'],
+        ['compact','Compact packet','Bounded source-grounded context','Pack only the selected authoritative evidence, source limits, style and physical allocation. Compaction cannot invent facts or erase claim boundaries.','build_compact_packet'],
+        ['pair','Pair packet','One shared identity + contract','Bind résumé and cover to the same job and candidate. Include plans, source authority and expected output schema in a single generation packet.','build_pair_packet · intelligence_bus']
+      ]},
+      {id:'writing',title:'Authorize and stage one writing attempt',tag:'06',kind:0,channel:'main',nodes:[
+        ['prewriter','Pre-writer eligibility gate','Unresolved P0 → stop','Recheck mandatory constraints before spending a writer call. Normal generation cannot proceed through a hard conflict or ungrounded mandatory assertion.','production_orchestrator: enforce_pre_writer_constraint_gate'],
+        ['preflight','Model & budget preflight','Availability + durable attempt receipt','Validate the configured model/effort and packet. Record attempt and transport state durably; completed calls are not replayed on resume.','model_policy · writer_accounting'],
+        ['writer','Isolated pair writer','Sol 6.1 · XHigh','The production pair writer generates a résumé and cover candidate in one isolated invocation. Model output remains a proposal and has no release authority.','generate_pair · user_override_generate'],
+        ['candidates','Stage candidates','Schema + job contract','Validate the pair response, required structures, selected IDs, identity and output files before handing candidates to deterministic gate owners.','generate_pair · content_contract']
+      ]},
+      {id:'validation',title:'Pass every independent content gate',tag:'07',kind:1,channel:'main',nodes:[
+        ['local-truth','Atomic truth','Metrics · tools · entities · time','Check every substantive claim against authorized sources, chronology and entity-specific boundaries. Reject invented numbers, historical placements or completed outcomes.','local_truth_gate · temporal_truth · positive_evidence'],
+        ['canonical-truth','Canonical truth + claim map','Deterministic first; semantic if eligible','Local PASS produces canonical truth outputs without another model call. Only narrowly allowed ambiguity may enter semantic review; hard contradictions remain failures.','truth_gate · claim_map'],
+        ['ats-gate','ATS compatibility','Score ≥ 85 + mandatory checks','Evaluate truthful requirement visibility, exact phrases, structure and ATS compatibility. A high score cannot waive truth or mandatory requirements.','ats_gate_v2 · ats_gate'],
+        ['human-gate','Human quality','Score ≥ 85 + quality gate','Evaluate recruiter scanability, technical specificity, balance, readable density and writing quality. Independent quality failures still block release.','human_gate_v22 (active); human_gate_v21 · human_gate_v2 · human_gate retained helpers'],
+        ['cover-gate','Cover validation','Identity + proof + structure','Check candidate/company/role identity, source grounding, technical depth, paragraph structure, tone, links and proof. Semantic disputes follow their dedicated challenger branch.','cover_gate_v2 · cover_semantic_challenger'],
+        ['interview','Interview defensibility','WEAK / PROHIBITED → block','Trace claims to evidence and distinguish capability from historical application. Unsupported or weak interview-facing assertions cannot pass by relabeling provenance.','interview_defensibility']
+      ]},
+      {id:'rendering',title:'Render and verify physical documents',tag:'08',kind:0,channel:'main',nodes:[
+        ['payload','Canonical CV payload','Schema + identity + clickable links','Build a renderer payload from the current candidate, using locked template validation and canonical contact/certification targets. Preserve content invariants.','build_cv_payload · apply_resume_invariants · cv-payload-schema'],
+        ['html','Locked HTML design','Native template adapter','Assemble sections and design using the locked résumé template. Keep ordering, dates, hierarchy and link targets consistent.','build-cv-html · cv-sections-core · theme-style'],
+        ['layout','Adaptive layout','Fit the fixed one-page design','Measure and fit within bounded layout parameters. Physical fitting cannot erase required evidence or silently replace wording.','adaptive_layout · adaptive_content_budget · page-format'],
+        ['resume-pdf','Résumé PDF','Browser rendering','Render the reviewed HTML with the PDF backend while preserving links, text extraction and page geometry.','generate-pdf · verify-cv-facts'],
+        ['resume-docx','Résumé Word','Native DOCX + rendered page audit','Render Word with canonical identity and content. Audit the actual rendered page, one-line critical headers and physical clipping.','docx_renderer · docx_layout_audit'],
+        ['resume-roundtrip','Résumé roundtrip','PDF / DOCX parser + contact targets','Extract both formats and compare them with the current source payload. Check content preservation, identity, links, parseability and page constraints before rendering the cover.','resume_roundtrip · contact_identity'],
+        ['cover-render','Cover PDF + Word','Shared content + identity','Render both cover formats from the validated cover and same identity authority, including adaptive cover layout.','render_cover · cover_adaptive_layout · render_cover_docx'],
+        ['cover-roundtrip','Cover roundtrip','Rendered text + identity parity','Check both cover formats against the validated candidate, signature/contact identity and document content.','cover_roundtrip · contact_identity'],
+        ['parity','Physical parity','Geometry + content consistency','Compare rendered document geometry and content across formats. Render failures belong to rendering diagnostics, not another unnecessary writer call.','pdf_docx_geometry · production_orchestrator: physical parity']
+      ]},
+      {id:'acceptance',title:'Audit the artifacts and decide release',tag:'09',kind:1,channel:'main',nodes:[
+        ['final-audit','Final application audit','Requirement visibility + drift detection','Audit the complete pair against the exact JD, selected plans, entities and source support. Detect hidden gaps, plan drift, historical misuse and unsupported keyword coverage.','final_application_audit'],
+        ['release','Universal release gate','Every mandatory check must pass','Verify current-run report schemas, scores, truth, interview, roundtrips, identity, artifacts, hashes, paths and one-page geometry. Only then set release_ready=true. Quarantine cannot enter normal release.','pair_release_gate · production_orchestrator: run_release']
+      ]},
+      {id:'delivery',title:'Deliver the exact authenticated quartet',tag:'10',kind:0,channel:'main',nodes:[
+        ['canonical-output','Canonical artifacts','Current run; verified bytes','Retain the approved résumé PDF/Word and cover PDF/Word under the owning run, along with audit and provenance records.','production_orchestrator: publish_released_artifacts'],
+        ['delivery-check','Delivery authentication','Hash + package + same-run ownership','Resolve through the official outcome and manifest. Verify all four file hashes and PDF/DOCX validity; reject missing, altered or cross-run artifacts.','artifact_delivery'],
+        ['daily','Daily Output','2 PDFs + 2 Word files per result','Accumulate batches with unique filenames. Copy independently from canonical artifacts; use locks and atomic staging. Receipts, logs and temporary files stay outside this folder.','daily_output'],
+        ['open','Open / review','WSL paths → Windows associations','Provide authenticated folder/file actions and safe Windows path conversion. Opening is explicit; an OS handoff is not proof that a reader displayed the file. Delivery never decides release.','artifact_delivery: Windows bridge'],
+        ['outcome','Outcome + next action','Released · blocked · override · incomplete','Emit an honest run outcome and job decision receipt on success or failure. Preserve reasons, stage receipts, output links and resume checkpoints. No application submission is implied.','run_outcome · job_decision_receipt · run_manifest']
+      ]},
+      {id:'semantic',title:'Semantic ambiguity branch',tag:'CONDITIONAL',kind:2,channel:'semantic',subtitle:'Only eligible semantic disagreement enters this lane. Mechanical defects and hard contradictions do not.',nodes:[
+        ['semantic-route','Classify & route ambiguity','Requirements · truth · cover','Validate the disagreement type, stage and source fingerprint. Keep cases source-bound and fail closed when ineligible.','semantic_challenger_controller · intelligence_contracts'],
+        ['qwen','Local Qwen first','Grounded retrieval + bounded probe','Probe the relevant exact source spans using local intelligence. Retrieval is contextual assistance; corpus examples do not become candidate facts.','li_semantic_probe · li_semantic_probe_rag · li_retrieve · li_rag_context'],
+        ['grounding','Validate proposals','Schema + exact quotes + authority','Reject invalid schemas, invented citations, source mismatches, unsupported findings and attempts to waive blockers or mutate authority.','li_grounding_gate_v2 · semantic_challenger_runtime · cover_semantic_challenger'],
+        ['shared-sol','Shared Sol adjudication','High · unresolved eligible cases only','Queue unresolved eligible cases into a shared, source-bound semantic batch. Reuse saved responses and durable receipts instead of duplicating model calls. The adjudicator does not write applications or release them.','automatic_semantic_escalation · semantic_arbitration · shared_semantic_adjudicator'],
+        ['reconstruct','Deterministic reconstruction','Validated proposal → effective state','Gate owners reconstruct permissible effective interpretations from the preserved source. They do not adopt model values as factual authority.','requirement_regeneration · effective_runtime'],
+        ['revalidate','Rerun original gate','PASS → return; unresolved → stop','Rerun the relevant original requirement, truth or cover gate. Only a validated resolution continues the same job; uncertainty remains fail closed.','requirement_integrity_gate · truth_gate · cover_gate_v2']
+      ]},
+      {id:'repair',title:'Failure diagnosis & bounded recovery',tag:'CONDITIONAL',kind:2,channel:'repair',nodes:[
+        ['classifier','Failure classifier','Owner + defect + response','Distinguish source, JD structure, requirements, routing, evidence, constraints, selection, skills, writing, ATS, human, cover and rendering defects. Do not label every failure as a writing problem.','failure_classifier · production_orchestrator'],
+        ['repair-owner','Deterministic repair','Repair the owning component','Use permitted source retries, requirement regeneration, invariant fixes, truthful ATS term repair, cover repairs or rerendering. Preserve the evidence and release boundaries.','deterministic_repair_dispatcher · repair_resume_ats_terms · repair_cover_candidate · apply_resume_invariants'],
+        ['repair-retest','Retest the affected gates','Same authority, same job','After repair, refresh receipts and rerun the affected original gates and dependent downstream stages. Resume from the saved owner; do not replay completed model calls.','production_orchestrator · run_manifest'],
+        ['blocked','Fail closed / decision receipt','No unrepaired release','Hard conflicts, unresolved semantic ambiguity, invalid outputs and unrepaired defects stay blocked. A deterministic repair policy is not an unlimited automatic regeneration loop.','job_decision_receipt · run_outcome']
+      ]},
+      {id:'override',title:'Explicit user override · quarantined path',tag:'CONDITIONAL',kind:2,channel:'override',nodes:[
+        ['authorize','Explicit authorization','Job-bound reason + receipt','Require explicit user authority bound to the job, source and writer receipt. Overrides do not make unsupported facts true or silently change automatic outcomes.','overall_override · production_orchestrator: override authorization'],
+        ['quarantine','Isolated child runtime','Automatic parent stays preserved','Generate or render under a separately owned quarantine/override runtime, preserving the automatic failure and original authority.','overall_override · user_override_generate'],
+        ['unreleased','Truthful UNRELEASED artifacts','No normal release authority','Apply truth and identity boundaries and keep override disposition explicit. Such output cannot set release_ready or enter normal release.','user_override_generate · overall_override · contact_identity'],
+        ['override-delivery','Authenticated override delivery','UNRELEASED names + disposition','Only explicitly authorized, authenticated override quartets may be delivered, marked UNRELEASED. They never impersonate normal released artifacts.','artifact_delivery · daily_output']
+      ]},
+      {id:'infrastructure',title:'Continuous infrastructure',tag:'EVERY STAGE',kind:3,channel:'rail',subtitle:'These services support the entire flow; they are not extra steps executed after delivery.',nodes:[
+        ['orchestrator','Stage orchestration','Stop / resume / dependency ownership','Coordinate stage owners, per-job environments, stop-after boundaries, safe continuation and deterministic failure handling.','production_orchestrator · career_ops · batch_runner'],
+        ['manifests','Manifest & audit trail','Hashes · lifecycle · resumable_from','Maintain stage status, current artifacts, events, provenance, immutable source hashes and resumable checkpoints. Keep runtime/audit state outside delivery folders.','run_manifest · runtime · run_outcome'],
+        ['contracts','Intelligence bus & contracts','Typed proposals; bounded authority','Exchange source-bound structured packets and stage deltas. Contract validation and immutable inputs separate advisory suggestions from authoritative state.','intelligence_bus · intelligence_contracts · content_contract'],
+        ['accounting','Invocation accounting','Durable attempt + retry bounds','Record writer/model attempts, completion and output validity. Normal pair writing is one call; only the exact explicit failed-transport retry contract can permit a bounded second attempt.','writer_accounting · model_policy'],
+        ['trace','Capability trace','Observed calls; no inferred execution','Record actual Qwen attempts/completions, shared semantic calls, writer calls, retries and other audits. Deduplicate shared batch accounting. Availability alone is not proof a capability ran.','capability_trace · automatic_semantic_escalation'],
+        ['advisory','Local advisory / shadow','Optional; currently disabled normally','Optional retrieval, gold/failure corpora, hybrid shadow, disagreement and advisory diagnostics cannot overwrite truth, source facts, gate decisions or release.','li_advisory_runner · li_hybrid_shadow · li_disagreement · validate_li_shadow'],
+        ['configuration','Runtime configuration','Explicit paths + feature flags','Load configured source authority, local endpoints and semantic/advisory switches. Public examples stay fictional and private candidate authority is not a hidden fallback. Preserve the accepted production baseline rather than rebuilding it on a run.','production_configuration · config · runtime · path-resolver'],
+        ['regression','Regression & isolation','Synthetic inputs; mocked transports','Verify requirement, constraint, evidence, skills, truth, release and delivery boundaries. Public clean-install checks run with private source absent and networking disabled; they do not spend writer calls.','tests/test_engine · tests/run_isolated · tests/render_smoke · Node renderer tests']
+      ]}
+    ];
+    const byId=new Map();
+    const groups=new Map();
+    const order=[];
+    let restore=null;try{restore=JSON.parse(localStorage.getItem('careerops-architecture-state')||'null');}catch{}
+    let selected=restore?.modelContent?.stage||null;
+    let playing=restore?.privateContent?.playing??!matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function save(){try{localStorage.setItem('careerops-architecture-state',JSON.stringify({modelContent:{stage:selected},privateContent:{playing}}));}catch{}}
+    function select(id,persist=true){
+      if(!byId.has(id))return;
+      selected=id;const n=byId.get(id);
+      for(const item of byId.values())item.button.setAttribute('aria-pressed',String(item.id===id));
+      title.textContent=n.label;detail.textContent=n.description;modules.textContent=n.moduleNames;
+      draw();if(persist)save();
+    }
+    for(const phase of phases){
+      const section=document.createElement('section');section.className='phase';section.dataset.phase=phase.id;
+      const header=document.createElement('div');header.className='phase-heading';
+      const tag=document.createElement('span');tag.className='phase-tag text-small';tag.textContent=phase.tag;
+      const h=document.createElement('h3');h.textContent=phase.title;header.append(tag,h);section.append(header);
+      if(phase.subtitle){const sub=document.createElement('div');sub.className='phase-subtitle text-small';sub.textContent=phase.subtitle;section.append(sub);}
+      const grid=document.createElement('div');grid.className='node-grid';section.append(grid);const ids=[];
+      for(const [id,label,caption,description,moduleNames] of phase.nodes){
+        const item=document.createElement('div');item.className='node-item';
+        const button=document.createElement('button');button.type='button';button.className='btn viz-tile';button.textContent=label;
+        button.dataset.node=id;button.setAttribute('aria-pressed','false');button.setAttribute('aria-label',label+'. '+caption);button.dataset.tooltip=description;
+        button.addEventListener('click',()=>select(id));
+        const cap=document.createElement('div');cap.className='node-caption text-small';cap.textContent=caption;
+        item.append(button,cap);grid.append(item);ids.push(id);byId.set(id,{id,label,description,moduleNames,button,phase});
+      }
+      groups.set(phase.id,ids);phaseHost.append(section);order.push(...(phase.channel==='main'?ids:[]));
+    }
+    const ns='http://www.w3.org/2000/svg';
+    function el(name,attrs={}){const node=document.createElementNS(ns,name);for(const [k,v] of Object.entries(attrs))node.setAttribute(k,String(v));return node;}
+    let pending=0;
+    function draw(){
+      const box=body.getBoundingClientRect();svg.setAttribute('viewBox',`0 0 ${box.width} ${box.height}`);svg.replaceChildren();
+      const defs=el('defs');const marker=el('marker',{id:'careerops-arrow',viewBox:'0 0 8 8',refX:7,refY:4,markerWidth:6,markerHeight:6,orient:'auto'});
+      marker.append(el('path',{d:'M0 0 L8 4 L0 8 Z',fill:'var(--border)'}));defs.append(marker);svg.append(defs);
+      const positions=new Map();for(const n of byId.values()){const r=n.button.getBoundingClientRect();const item=n.button.parentElement.getBoundingClientRect();positions.set(n.id,{x:r.left-box.left,y:r.top-box.top,w:r.width,h:item.bottom-r.top,cx:r.left-box.left+r.width/2,cy:r.top-box.top+r.height/2,phase:n.phase.id});}
+      let wireIndex=0;
+      function wire(a,b,kind=0,conditional=false,outer=false){
+        const x=positions.get(a),y=positions.get(b);if(!x||!y)return;
+        let d;
+        if(outer){const rail=kind===2?box.width-9:10;d=`M${x.cx} ${x.y+x.h} C${x.cx} ${x.y+x.h+12} ${rail} ${x.y+x.h+12} ${rail} ${x.y+x.h+22} L${rail} ${y.y-18} C${rail} ${y.y-6} ${y.cx} ${y.y-6} ${y.cx} ${y.y}`;}
+        else if(Math.abs(x.y-y.y)<5){const left=x.cx<y.cx;const aX=left?x.x+x.w:x.x;const bX=left?y.x:y.x+y.w;d=`M${aX} ${x.cy} L${bX} ${y.cy}`;}
+        else if(x.phase===y.phase||Math.abs(x.cx-y.cx)<15){d=`M${x.cx} ${x.y+x.h} C${x.cx} ${x.y+x.h+14} ${y.cx} ${y.y-14} ${y.cx} ${y.y}`;}
+        else {const rail=13;d=`M${x.cx} ${x.y+x.h} C${x.cx} ${x.y+x.h+13} ${rail} ${x.y+x.h+13} ${rail} ${x.y+x.h+24} L${rail} ${y.y-19} C${rail} ${y.y-6} ${y.cx} ${y.y-6} ${y.cx} ${y.y}`;}
+        const path=el('path',{d,class:'wire'+(conditional?' conditional':''),'marker-end':'url(#careerops-arrow)'});svg.append(path);
+        const dot=el('circle',{r:3,fill:S[kind],class:'flow-particle',opacity:0.9});
+        const move=el('animateMotion',{path:d,dur:conditional?'5.2s':'3.4s',begin:-(wireIndex%8)*0.44+'s',repeatCount:'indefinite'});dot.append(move);svg.append(dot);wireIndex++;
+      }
+      // Stage dependencies follow the actual normal orchestrator path.
+      for(let i=0;i<order.length-1;i++){
+        const a=byId.get(order[i]),b=byId.get(order[i+1]);wire(a.id,b.id,b.phase.kind,false,a.phase.id!==b.phase.id);
+      }
+      // Conditional lanes never masquerade as extra mandatory production stages.
+      for(const phase of phases.filter(p=>['semantic','override'].includes(p.channel))){const ids=groups.get(phase.id);for(let i=0;i<ids.length-1;i++)wire(ids[i],ids[i+1],2,true);}
+      wire('classifier','repair-owner',2,true);wire('repair-owner','repair-retest',2,true);wire('classifier','blocked',2,true,true);
+      // Show cross-lane relationships for the selected stage to keep the full map legible.
+      const links={
+        jd:[['source',1]],'ats-source':[['ats',1]],market:[['routing',1]],facts:[['constraints',1],['entities',1]],evidence:[['mapping',1]],design:[['spec',1],['payload',1]],
+        integrity:[['semantic-route',2],['classifier',2]],constraints:[['prewriter',1],['blocked',2]],prewriter:[['blocked',2],['authorize',2]],
+        'local-truth':[['canonical-truth',1],['semantic-route',2],['classifier',2]],'canonical-truth':[['classifier',2]],'ats-gate':[['classifier',2]],'human-gate':[['classifier',2]],'cover-gate':[['semantic-route',2],['classifier',2]],interview:[['classifier',2]],
+        layout:[['classifier',2]],'final-audit':[['classifier',2]],release:[['classifier',2]],revalidate:[['integrity',2]],'repair-retest':[['integrity',2]],
+        blocked:[['authorize',2]],'override-delivery':[['daily',2]],orchestrator:[['run',3]],manifests:[['run',3]],contracts:[['pair',3]],accounting:[['preflight',3]],trace:[['outcome',3]],advisory:[['prewriter',3]],configuration:[['source',3]],regression:[['release',3]]
+      };
+      if(selected&&links[selected])for(const [dest,kind] of links[selected])wire(selected,dest,kind,true,true);
+      syncMotion();
+    }
+    function syncMotion(){motion.textContent=playing?'Pause flow':'Play flow';motion.setAttribute('aria-pressed',String(playing));if(playing)svg.unpauseAnimations();else svg.pauseAnimations();}
+    motion.addEventListener('click',()=>{playing=!playing;syncMotion();save();});
+    const observer=new ResizeObserver(()=>{cancelAnimationFrame(pending);pending=requestAnimationFrame(draw);});observer.observe(body);
+    if(selected&&byId.has(selected))select(selected,false);else draw();
+  })();
+  </script>
+</div>
+
+<footer class="text-small">CareerOps architecture · source-grounded, read-only schematic · <a href="assets/engine-flow.svg">Overview</a> · <a href="https://github.com/JntNayeemMSBDSA/CareerOps">Repository</a></footer>
+</main>
+</body>
+</html>

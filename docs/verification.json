@@ -44,5 +44,22 @@
   "visual_review": "PASS",
   "live_inference": "not run",
   "browser_pdf_generation": "not run",
-  "secret_scanner": "trusted local pattern and literal-context checks; Gitleaks unavailable"
+  "secret_scanner": "trusted local pattern and literal-context checks; Gitleaks unavailable",
+  "documentation_checks": {
+    "interactive_architecture_components": 75,
+    "clickable_details": "PASS",
+    "pause_play": "PASS",
+    "responsive_widths": [
+      1060,
+      736,
+      390,
+      320
+    ],
+    "browser_runtime_errors": 0,
+    "animated_preview_frames": 40,
+    "external_runtime_assets": 0,
+    "model_calls": 0,
+    "repository_publication": "not performed",
+    "pages_deployment": "not performed"
+  }
 }

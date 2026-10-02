@@ -52,5 +52,11 @@
   "limitations": [
     "Gitleaks is not installed; trusted local scanning was used.",
     "Live inference and browser PDF generation were intentionally not exercised."
-  ]
+  ],
+  "intentional_public_assets": [
+    "docs/assets/engine-flow.gif: original animated architecture overview",
+    "docs/assets/engine-flow.svg: original vector architecture overview"
+  ],
+  "public_project_links": "SAFE_PUBLIC: maintainer/project GitHub and expected GitHub Pages address; no candidate profile facts",
+  "standalone_architecture": "No host-specific SDK, development session metadata, candidate data, or inference transport; browser-local presentation state only."
 }
